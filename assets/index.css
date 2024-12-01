@@ -1,0 +1,2862 @@
+*{
+
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+ 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    
+    
+
+
+
+
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+
+ 
+}
+
+
+
+
+h1, h2, h3,h4{
+    text-rendering: optimizeLegibility;
+  }
+
+nav{
+
+
+
+   
+
+
+
+}
+
+
+
+.nav-top{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  position: relative;
+    width: 100%;
+
+}
+
+
+
+.nav-top span{
+
+
+    margin:0 0.2vw;
+    color:#fff;
+    font-weight: 700;
+   
+
+
+    
+
+
+
+}
+
+
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 1vw;
+    margin-top: 0; /* Remove margin to prevent spacing issues */
+    width: 100%;
+    background:#f2f2f2;
+
+    
+
+
+    position: fixed; /* Keeps .main-navbar at the top during scrolling */
+    
+    z-index: 999;
+    top:0px;
+    left:0px;
+
+
+
+
+  
+
+  }   
+
+
+
+.main-icon img{
+
+
+
+   object-fit: cover;
+
+
+
+
+   
+}
+
+
+.main-navbar ul{
+
+list-style: none;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap:1.5vw;
+   
+    
+    }
+
+
+    .main-navbar ul li a{
+
+
+      font-size: max(18px,1.2vw);
+      font-weight: 600;
+        color:#000000;
+      
+       
+        transition: 0.4s;
+      
+
+    }
+
+
+.main-navbar ul li a:hover{
+color:rgb(159, 105, 5) ;
+cursor: pointer;
+
+
+
+}
+
+
+
+.dropdown {
+   position: relative;
+display: inline-block;
+
+   }
+
+
+   .dropdown-content {
+     display: none;
+     position: absolute;
+    top:40px;
+  
+    left:-60px;
+    transform: translateX(-25px);
+    
+    background:#f2f2f2;
+     min-width: 270px;
+
+     
+   
+
+  
+   }
+
+
+
+   .dropdown:hover .dropdown-content {
+     display: block;
+    
+ 
+  
+     
+
+     
+   }
+
+
+
+ 
+
+
+   .dropdown-content a {
+     float: none;
+    
+     padding: 6px 8px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+     font-size: 1.2vw;
+     font-weight: 600;
+   
+    
+color:rgb(232, 183, 91);
+
+ 
+   }
+   
+
+   .dropdown  {
+     float: left;
+    
+   }
+
+
+   
+
+
+
+   .dropdown  li a{
+
+     text-decoration: none;
+  
+   }
+
+
+   
+   .dropdown  li {
+
+      display: flex;
+      align-items: center;
+
+      padding:1vw;
+   
+    }
+ 
+
+   
+
+.dropdown-content a:hover{
+
+background-color:#f2f2f2;
+
+color:rgb(232, 183, 91);
+font-weight: 900;
+
+
+
+
+
+}
+
+
+
+
+
+
+header .book {
+
+padding:1.5vw 1.5vw;
+
+font-size: 1.2vw;
+font-weight: 900;
+color:#fff;
+text-decoration: none;
+margin-top: 3vw;
+background-color: #d4000d;
+border-radius: 50px;
+transition: 0.3s ease-in ;
+
+
+}
+
+.socials-icon{
+
+
+   display: flex;
+}
+
+
+
+
+.banner_section{
+
+
+   position: relative;
+}
+
+
+.navbar-hamburger{
+
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* Dropdown menu (hidden by default) */
+.dropdown-menu-hamburger {
+  display: none;  /* Hidden by default */
+  position: absolute;
+  top: 37px;  /* Adjust this depending on the navbar height */
+  left: 0;
+  width: 100%;  /* Make the dropdown take up the full width */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin: 2px 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+padding:3px 0;
+  font-size: 18px;
+  display: block;
+
+}
+
+
+
+
+
+
+.book_section{
+
+
+
+   position: absolute;
+   bottom: 20%;
+   left:43%;
+
+
+}
+
+
+ header .book:hover{
+background-color: #c98080;
+
+cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
+
+
+    
+ .socials-icon img{
+
+
+    width: 30px;
+    height:30px;
+    margin: 0  0.5vw
+ }
+  
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+    
+
+ .h-logo{
+
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    background-color: #CC976C;
+    border-radius: 100% 100% 100% 100%;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+
+ }   
+
+
+
+ .slideshow-container {
+   
+   position: relative;
+   width: 100%;
+
+   
+  
+  
+ }
+ 
+ /* Hide the images by default */
+ .mySlides {
+   display: none;
+ }
+
+
+
+ .slideimg{
+
+
+  
+   filter:  brightness(0.7);
+object-fit: cover;
+
+ }
+ 
+ /* Next & previous buttons */
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 48%;
+ 
+  
+
+ 
+   width: auto;
+  
+   color: #fff;
+   font-weight: bold;
+   font-size: 3vw;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+ .prev{
+
+
+   margin-left:10%
+ }
+
+
+ 
+ .next{
+
+
+   margin-right:10%
+ }
+ 
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a black background color with a little bit see-through */
+ 
+ 
+ /* Caption text */
+ .text {
+   color: #fff;
+   font-size: 4vw;
+   padding: 8px 0px;
+   position: absolute;
+  font-weight: 900;
+  top:40%;
+   left:25%;
+   right:25%;
+   background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+   border-radius: 1vw;
+
+   z-index: 5;
+  
+   
+   
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+   
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ .main-content{
+
+
+
+    display: flex;
+    
+    justify-content: space-between;
+   
+
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+    margin: 3vw 0;
+  
+
+
+
+
+    
+
+ }
+
+
+.left-content-section{
+
+
+   width: 50%;
+   height: 100%;
+  
+}
+
+
+
+ .left-content-section h1{
+  
+   padding-bottom: 0.5vw;
+    
+    color:#405749;
+   font-size: 5vw;
+   font-weight: 900;
+
+
+    
+     }
+
+
+
+
+     .left-content-section  p{
+      font-size: max(15,1.3vw);
+      line-height: max(21px, 2vw);
+        color:#000000;
+        font-weight: 400;
+   
+        
+         }
+    
+
+.left-content-section p:nth-child(2){
+
+   margin-bottom: 2vw;
+}
+
+
+
+.left-content-section button {
+
+
+padding: 1vw 1.5vw;
+border-radius: 5px;
+background-color: rgb(232, 183, 91) ;
+font-weight: 900;
+font-size: 15px;
+color:#fff;
+border: none;
+transition: 0.1s;
+margin-top:1vw;
+
+
+}
+
+
+.left-content-section button:hover{
+
+
+    transform:scale(1.02);
+    cursor:pointer
+
+
+
+}
+
+.read-more-text{
+
+
+   display: none;
+}
+
+
+
+.read-more-text--show{
+
+   display:inline;
+
+
+
+}
+
+
+
+.right-content-section{
+
+
+
+   width:40%;
+  
+   
+
+ 
+
+
+}
+ 
+    
+ .right-content-section img{
+
+    width: 100%;
+    object-fit: cover;
+    height:100%;
+
+    
+
+
+    
+ }
+
+
+
+
+ .divider{
+   width: 90%; /* Set the width to 90% */
+   height: 1px; /* Set the height of the underline */
+   background-color: #ddd; /* Light gray color for the underline */
+   margin: 0  auto; /* Centers the underline horizontally and adds spacing */
+   display: block; /* Make sure it's a block element */
+}
+
+ .Section_Travel_packages{
+
+   padding: 4vw  4.5vw; 
+
+
+ }
+ .Travel-packages{
+
+
+   text-align: center;
+
+
+ }
+
+
+ .Travel-packages h1{
+
+
+   font-size: 4vw;
+   font-weight: 900;
+   color: #405749;
+ }
+
+ .Travel-packages p{
+   font-size: max(15px,1.3vw);
+   
+ 
+   color:#000000;
+   font-weight: 400;
+ }
+
+ 
+/* Container for the entire gallery */
+.gallery-container {
+   margin-top: 3vw;
+   width: 100%;
+   overflow-x: auto; /* Enables horizontal scrolling */
+   scroll-snap-type: x mandatory; /* Enables scroll snapping horizontally */
+   -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile devices */
+   cursor: pointer; /* Change cursor to pointer when not dragging */
+   scrollbar-width: none; /* Firefox: Hides the scrollbar */
+   -ms-overflow-style: none; /* Internet Explorer and Edge: Hides the scrollbar */
+   position: relative;
+   scroll-behavior: smooth; /* Smooth scrolling effect */
+  
+ 
+}
+
+/* Items Layout */
+.items {
+   display: flex;
+ 
+   flex-wrap: nowrap; /* Ensures no wrapping */
+   justify-content: flex-start; 
+   padding: 20px 0; /* Padding for spacing */
+}
+
+/* Individual Card Styling */
+.item {
+   position: relative;
+   min-width: 350px; /* Card width */
+   max-width: 400px; /* Card max width */
+   flex-shrink: 0; /* Prevent items from shrinking */
+   border-radius: 12px; /* Rounded corners for the card */
+   overflow: hidden; /* Ensure content doesn't overflow */
+   background-color: #fff; /* Card background */
+   transition: transform 0.3s ease-in-out; /* Hover effect */
+   background-size: cover; /* Ensure the background image covers the card */
+   background-position: center center; /* Center the background image */
+   background-repeat: no-repeat; /* Prevent image repetition */
+   height: 500px; /* Card height */
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end; /* Align button and title to the bottom */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+   margin:1vw;
+}
+
+/* Overlay for better text visibility */
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+  
+   transition: opacity 0.3s ease-in-out;
+}
+
+/* Title Styling */
+.item-title {
+   color: #fff;
+   font-size: 2.2vw;
+   font-weight: 900;
+   text-align: center;
+   padding: 1vw;
+   margin: 0;
+   background: rgba(0, 0, 0, 0.5); /* Title background for readability */
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+
+   transform: translateY(20px); /* Slightly offset to give animation effect */
+}
+
+/* Button Link Styling */
+.button-link {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+ 
+   background-color: #d4000d;
+   color: white;
+   padding: 12px 24px;
+   border-radius: 30px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1.2vw;
+   font-weight: 900;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   opacity: 0; /* Hidden initially */
+   transform: translateX(-50%) translateY(20px); /* Slight offset */
+   transition: 0.3s ;
+}
+
+
+
+
+/* Hover effect on each card */
+.item:hover {
+   transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Hover effect to reveal overlay */
+.item:hover .overlay {
+   opacity: 1; /* Show overlay with text */
+}
+
+/* Hover effect for the title */
+.item:hover .item-title {
+   transform: translateY(-10px); /* Slight move-up effect */
+ 
+}
+
+/* Hover effect for the button */
+.item:hover .button-link {
+   opacity: 1; /* Show the button on hover */
+   transform: translateX(-50%) translateY(-30px) ; /* Move the button up */
+}
+
+
+
+
+.travel_packages_navigate_arrows{
+
+
+
+text-align: center;
+margin-top:2vw ;
+
+
+
+
+
+
+
+}
+
+
+
+.left-arrow{
+margin-right: 3vw;
+color:#000000;
+ padding:0.5vw;
+font-weight: 900;
+font-size: 4vw;
+cursor: pointer;
+
+
+
+}
+
+
+
+.right-arrow{
+color:#000000;
+padding:0.5vw;
+   font-size: 4vw;
+cursor: pointer;
+font-weight: 900;
+
+
+}
+
+
+
+
+
+
+
+
+
+.travel_packages_navigate_arrows2{
+
+
+
+   text-align: center;
+
+   
+   
+   
+   
+   
+   
+   
+   }
+   
+   
+   
+   .left-arrow2{
+   margin-right: 3vw;
+   color:#000000;
+    padding:0.5vw;
+   font-weight: 900;
+   font-size: 4vw;
+   cursor: pointer;
+   
+   
+   
+   }
+   
+   
+   
+   .right-arrow2{
+   color:#000000;
+   padding:0.5vw;
+      font-size: 4vw;
+   cursor: pointer;
+   font-weight: 900;
+   
+   
+   }
+
+
+
+.Vacation-section{
+
+    
+background: linear-gradient(rgb(236, 219, 192), rgba(234, 214, 186, 0.842)), 
+                    url('../assets/images/bg-01.jpg');
+background-size: cover;
+background-position: center;
+
+
+
+background-repeat: no-repeat;
+min-height:500px ;
+padding-bottom: 5vw;
+
+}
+
+
+  .trip-selection{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:400px;
+
+
+  }
+
+
+
+
+
+  
+  .trip-selection p:first-child{
+         
+   
+        font-family: "Cedarville Cursive", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: max(12px,1.5vw);
+        color:rgb(9, 137, 59);
+      
+      
+    
+ }
+
+
+
+
+ .trip-selection h3{
+
+    font-size: max(22px,2.5vw);
+    font-weight: 900;
+
+
+
+ }
+
+
+
+ .trip-selection p:last-child{
+   font-size: 1.3vw;
+   line-height: 2.3vw;
+ 
+   color:#000000;
+   font-weight: 400;
+ }
+
+
+
+ .destination-search-section{
+
+
+    background-color: #fff;
+    border-radius: 8px;
+    width:80%;
+    margin:0  auto;
+    max-height: 300px;
+    padding:1.2vw 2.2vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+
+ 
+
+
+
+
+ .search-trip{
+
+
+    display: flex;
+    gap:0.5vw;
+    justify-content: center;
+    align-items: center;
+   
+
+ }
+
+ .search-trip span:first-child{
+
+
+    font-size: 1.8vw;
+    font-weight: 800;
+ }
+
+
+
+ .search-trip button{
+
+
+    padding:1.5vw 1.5vw;
+    border-radius: 8px;
+    background-color: #CC976C;
+    width: 250px;
+    font-size: 15px;
+    border: none;
+    color:#fff;
+    font-weight: 700;
+
+ }
+
+
+
+
+ .worldwide-destination{
+background:#fff;
+
+
+
+
+
+ }
+
+ .destination-sections{
+
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 3.5vw 4.5vw;
+     /* Add gap between the cards */
+ }
+
+
+
+ .destination-section-left{
+
+width: 50%;
+
+display: flex;
+flex-direction: column;
+align-items: last baseline;
+
+
+   
+
+
+
+
+
+
+ }
+
+ .destination-section-left p:first-child{
+
+
+
+   font-family: "Cedarville Cursive", cursive;
+   font-weight: 400;
+   
+ 
+   font-size: max(18px,1.2vw);
+
+
+
+ }
+
+ .destination-section-left h1{
+
+
+
+   font-size: 4vw;
+   font-weight: 900;
+   padding-top:2vw;
+   padding-bottom: 0.5vw;
+   color:#405749;
+
+
+
+
+ }
+
+
+
+
+.destination-section-left p:last-child{
+
+
+   font-weight: 400;
+   color: #000000;
+   padding-top:2vw;
+   font-size: max(15px,1.3vw);
+}
+
+ .destination-section-right{
+
+  
+width: 60%;
+
+position: relative;
+
+overflow: hidden;
+
+
+
+ }
+
+ .destination-section-right img{
+
+width: 100%;
+filter: brightness(0.8);
+   object-fit: cover;
+   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  
+
+ }
+
+/* /* Container for the destination cards */
+.destination-cards {
+   display: flex;
+   justify-content: flex-start;  /* Aligns cards to the left */
+   align-items: center;
+   gap: 20px;
+   overflow-x: auto;  /* Enable horizontal scrolling */
+
+   padding-top: 3vw;
+   padding-left: 4.5vw;
+   padding-right: 4.5vw;
+  
+   scroll-behavior: smooth; /* Optional: smooth scrolling */
+   -ms-overflow-style: none;  /* For Internet Explorer */
+   scrollbar-width: none;  /* For Firefox */
+   cursor: pointer; /* Default cursor to indicate scroll */
+ }
+ 
+ /* Hide scrollbar in WebKit browsers (Chrome, Safari, etc.) */
+ .destination-cards::-webkit-scrollbar {
+   display: none;
+ }
+ 
+ /* Each card (destination) */
+ .destination-cards .card-lists {
+   width: 300px;  /* Fixed width for each card */
+   height: 300px; /* Fixed height for each card */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 8px;
+   position: relative;
+   flex-shrink: 0;  /* Prevent cards from shrinking */
+ }
+ 
+ /* Optional: Style for card header and description inside .card-lists */
+ .destination-cards .card-lists h2 {
+   text-align: center;
+   font-weight: 700;
+   color: #fff;
+   z-index: 2;
+   position: absolute;
+   bottom: 50%;
+   font-size: max(15px,1.3vw);
+ }
+ 
+ .destination-cards .card-lists p {
+   text-align: center;
+   font-weight: 700;
+   color: #fff;
+   z-index: 2;
+   position: absolute;
+   bottom: 30%;
+   left: 20%;
+   right: 20%;
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); /* 1.4 to 1.6 times font size */
+ }
+ 
+ /* Image style */
+ .destination-cards .card-lists img {
+   width: 100%;  /* Ensures image takes the full width of the container */
+   object-fit: cover; /* Ensures the image covers the area without distortion */
+   height: 100%; /* Full height */
+   filter: brightness(0.8);  /* Dim the image */
+   border-radius: 8px;
+ }
+ 
+
+.travel_packages_navigate_arrows2{
+
+   text-align: center;
+   margin:5vw 0;
+}
+
+
+.left-arrow2{
+
+   font-size: 4vw;
+   font-weight: 900;
+   color:#000000;
+   margin-right: 3vw;
+}
+
+
+.right-arrow2{
+
+
+   font-size: 4vw;
+   font-weight: 900;
+   color:#000000;
+
+}
+
+
+
+
+
+
+
+
+
+ .section_travel_packages{
+
+
+   background: #c98080;
+   padding: 7vw 4.5vw;
+   display: flex;
+   flex-direction: column;
+ 
+ 
+
+
+ }
+
+ .travel_packages_section_left{
+
+width: 50%;
+margin:0 auto;
+text-align: center;
+margin-bottom: 2vw;
+;
+
+
+ }
+
+ .travel_packages_section_left p:first-child{
+
+
+   padding-bottom:1.5vw;
+ }
+ 
+
+ 
+
+ .travel_packages_section_left h1{
+
+
+  
+  
+   padding-bottom:2vw;
+   font-weight: 900;
+   font-size: max(25px,4vw);
+   color:#fff;
+
+ }
+
+
+
+ .travel_packages_section_left p:first-child{
+color:#fff;
+font-size: max(15px,1.3vw);
+    font-family: "Cedarville Cursive", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+  
+  
+
+ }
+
+
+ .travel_packages_section_left p:last-child{
+  
+   font-size:max(15px,1.5vw);
+   
+
+   color:#fff;
+
+    }
+   
+
+.travel_packages_section_right{
+
+
+   display: flex;
+   justify-content: space-between;
+ 
+   align-items: center;
+}
+
+
+
+
+
+
+
+
+.travel_packages_half_board{
+
+
+
+
+   background-color: rgb(255, 245, 203);
+   padding:3.5vw 3.5vw;
+   border-radius: 10px;
+   text-align: center;
+   width: 32%;
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+.travel_packages_half_board h4{
+   font-weight: 900;
+   font-size: max(22px,2vw);
+
+
+
+
+}
+
+
+
+
+
+.travel_packages_half_board span{
+   font-weight: 900;
+   font-size: max(50px,4vw);
+
+
+
+
+}
+
+
+
+.travel_packages_half_board p{
+   font-weight: 900;
+   color: #000000;
+  padding: 0.5vw 0;
+
+
+
+
+}
+
+
+
+
+
+
+.travel_packages_half_board button{
+ padding: 1vw 1vw;
+
+
+ font-size:max(15px,1vw);
+ background-color:rgb(232, 183, 91);
+
+ border-radius: 5px;
+ margin:1vw 0 ;
+ border:none;
+ transition: 1s;
+ color:#fff;
+
+ font-weight: 900;
+
+
+}
+
+
+
+.travel_packages_half_board button:hover{
+
+
+   transform: scale(1.05);
+   cursor: pointer;
+
+
+
+}
+
+
+
+
+.travel_packages_all_inclusive{
+
+
+
+
+   background-color: rgb(255, 245, 203);
+   padding:3.5vw 3.5vw;
+   border-radius: 10px;
+   text-align: center;
+   width: 32%;
+  background:#54595F;
+  color:#fff;
+
+  
+
+
+
+}
+
+
+.travel_packages_all_inclusive h4{
+
+
+   font-weight: 900;
+   font-size: max(22px,2vw);
+   color:#fff;
+
+}
+
+
+
+
+.travel_packages_all_inclusive span{
+
+   font-weight: 900;
+   font-size: max(50px,4vw);
+   color:#fff;
+
+
+}
+
+
+
+.travel_packages_all_inclusive p{
+
+   font-weight: 900;
+   color: #000000;
+   padding: 0.5vw 0;
+ 
+   color:#fff;
+}
+
+
+
+.travel_packages_all_inclusive button{
+
+   padding: 1vw 1vw;
+
+
+   font-size: max(15px,1vw);
+   background-color:rgb(232, 183, 91);
+
+   border-radius: 5px;
+   margin:1vw 0 ;
+   border:none;
+   transition: 1s;
+   color:#fff;
+   font-weight: 900;
+
+   
+}
+
+
+
+
+.travel_packages_all_inclusive button:hover{
+
+   transform: scale(1.05);
+   cursor: pointer;
+
+   
+}
+
+
+.travel_packages_incursions_included{
+
+
+
+   background-color: rgb(255, 245, 203);
+   padding:3.5vw 3.5vw;
+   border-radius: 10px;
+   text-align: center;
+   width: 32%;
+   background-color:#CC976C;
+
+
+
+}
+
+.travel_packages_incursions_included h4{
+
+
+   font-weight: 900;
+   font-size: max(22px,2vw);
+   color:#fff;
+
+
+}
+
+
+
+
+.travel_packages_incursions_included  span{
+
+
+   font-weight: 900;
+   font-size: max(50px,4vw);
+   color:#fff;
+
+ 
+}
+
+
+
+
+
+.travel_packages_incursions_included  p{
+
+
+   font-weight: 900;
+   color: #000000;
+   padding: 0.5vw 0;
+   color:#fff;
+ 
+
+ 
+}
+
+
+
+
+.travel_packages_incursions_included button{
+
+
+   padding: 1vw 1vw;
+
+
+   font-size: max(15px,1vw);
+
+   background-color: rgb(232, 183, 91);
+   font-weight: 600;
+   border-radius: 5px;
+   margin:1vw 0 ;
+   border:none;
+   transition: 1s;
+   color:#fff;
+   font-weight: 900;
+
+ 
+}
+
+
+
+
+
+.travel_packages_incursions_included button:hover{
+
+transform:scale(1.05);
+cursor: pointer;
+ 
+}
+
+
+
+.section_hotels_resorts{
+
+
+   padding:3vw 4.5vw;
+}
+
+.section_hotels_resorts h1{
+
+
+   font-size: 5vw;
+   font-weight: 900;
+   text-align: center;
+   color:#405749
+
+}
+
+
+
+.section_hotels_resorts p{
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); /* 1.4 to 1.6 times font size */
+ 
+   color:#000000;
+   font-weight: 400;
+
+}
+
+
+.hotels_array {
+   display: flex;
+   justify-content: space-between;  
+   align-items: center;
+
+   overflow-x: auto;  /* Enable horizontal scrolling */
+   padding-top: 5vw;  /* Increased top padding */
+
+   scroll-behavior: smooth; /* Optional: smooth scrolling */
+   -ms-overflow-style: none;  /* For Internet Explorer */
+   scrollbar-width: none;  /* For Firefox */
+   cursor: pointer; /* Default cursor to indicate scroll */
+}
+
+/* Styling for each hotel card */
+.hotel_card {
+   background-color: white;
+   border-radius: 12px;
+   overflow: hidden;  /* Prevent overflow from scaling */
+   position: relative;
+   margin-bottom: 30px;
+   width: 300px;  /* Fixed width for cards */
+   position: relative;
+   min-height:450px;
+   transition: 0.3s;
+ margin: 1vw;
+ 
+   
+}
+
+
+ 
+/* Hover effect on hotel card */
+.hotel_card:hover {
+ 
+   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+   
+   transform: scale(1.05);
+   
+
+}
+
+
+/* Image styling */
+.hotel_image {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+   border-radius: 12px;
+}
+
+/* Slight zoom effect on image hover */
+
+/* Hotel name styling */
+.hotel_name {
+  
+   font-weight: 900;
+  margin:0.5vw;
+   color: #000000;
+   text-transform: capitalize;
+   transition: color 0.3s ease;
+}
+
+.hotel_description {
+   color: #000000;
+   text-align: center;
+   font-size: max(15px,1.3vw);
+   font-weight: 400;
+}
+
+
+
+
+.hotel_ratings{
+
+
+   background: rgb(232, 183, 91);
+   color:#fff;
+   font-weight: 600;
+   padding:0.5vw;
+   text-align: left;
+   border-radius: 50%;
+}
+
+
+.hotel_pricings{
+
+
+   font-weight: 800;
+   color: #000000;
+}
+
+.hotel_info{
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin:0.5vw;
+}
+/* Button styling */
+.view_details_button {
+   display: block;
+   width: 100%;
+   padding: 12px 0;
+   text-align: center;
+   background-color: #cb464f;
+   color: white;
+   font-size: max(15px 2vw);
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 0 0 12px 12px;
+   margin-top: 1vw;
+  
+   transition: background-color 0.3s ease;
+}
+
+/* Hover effect on the button */
+.view_details_button:hover {
+ 
+transform: scale(1.05);
+}
+
+/* Optional: Add space around cards for smaller screens */
+@media (max-width: 1024px) {
+   .hotel_card {
+       width: calc(50% - 10px); /* Two cards per row on medium screens */
+   }
+}
+
+@media (max-width: 768px) {
+   .hotel_card {
+       width: calc(100% - 20px); /* One card per row on small screens */
+   }
+
+   .hotels_array {
+       padding-left: 2vw;
+       padding-right: 2vw;
+   }
+}
+
+
+
+
+
+
+.travel_packages_navigate_arrows3{
+
+
+
+   text-align: center;
+   margin-top:2vw ;
+   
+   
+   
+   
+   
+   
+   
+   }
+   
+   
+   
+   .left-arrow3{
+   margin-right: 3vw;
+   color:#000000;
+    padding:0.5vw;
+   font-weight: 900;
+   font-size: 4vw;
+   cursor: pointer;
+   
+   
+   
+   }
+   
+   
+   
+   .right-arrow3{
+   color:#000000;
+   padding:0.5vw;
+      font-size: 4vw;
+   cursor: pointer;
+   font-weight: 900;
+   
+   
+   }
+   
+
+
+
+
+.section_Corbett_details{
+
+
+   padding:3vw 4.5vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+align-items: center;
+   gap:2vw;
+
+
+}
+
+
+
+.Corbett_details_main{
+
+
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+
+.Corbett_details_left{
+
+
+   width: 50%;
+   
+}
+
+
+.Corbett_details_left h2{
+
+
+   font-size: max(25px,3vw);
+   font-weight: 900;
+   color:#405749;
+   margin-bottom:1vw;
+  
+
+
+
+}
+
+
+
+.Corbett_details_left button {
+
+
+
+   padding:1vw 1vw;
+   background-color:rgb(232, 183, 91);
+   border:none;
+   border-radius: 8px;
+   margin-top: 1vw;
+   color:#fff;
+   font-weight: 900;
+   font-size: max(15px 2vw);
+   cursor: pointer;
+}
+
+
+
+
+.Corbett_details_left p{
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+ 
+   color:#000000;
+   font-weight: 400;
+   margin-bottom: 2vw;  
+  
+
+}
+
+
+
+
+
+.Corbett_details_left span{
+
+
+   font-size: 1vw;
+   font-weight: 600;
+   color:#000;
+   }
+   
+
+
+
+
+.Corbett_details_left img {
+
+
+
+   border-radius: 10px;
+   width: 100%;
+   height:100%;
+   object-fit: cover;
+}
+
+
+
+
+.Corbett_details_right  {
+
+width: 40%;
+text-align: left;
+}
+
+
+
+
+
+.Corbett_details_right h2{
+
+
+   font-size: max(25px,3vw);
+   font-weight: 900;
+   color:#405749;
+   margin-bottom: 1vw;
+
+
+}
+
+
+
+
+
+
+
+.Corbett_details_right p{
+
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw);
+ 
+   color:#000000;
+   font-weight: 400;
+   margin-bottom: 2vw;
+
+
+}
+   
+
+.Corbett_details_right button {
+
+
+
+   padding:1vw  1.5vw;
+   background-color:rgb(232, 183, 91);
+   border:none;
+   border-radius: 10px;
+   margin: 2vw 0;
+   color:#fff;
+   font-weight: 900;
+   font-size: max(15px 2vw);
+   cursor: pointer;
+   }
+
+.Corbett_details_right  img {
+
+
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+.Corbett_safari_zones{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
+.Corbett_safari_zones h3{
+
+
+   font-size: max(25px,3vw);
+   font-weight: 900;
+   color:#405749;
+   margin-bottom: 2vw;
+}
+
+
+
+
+.Corbett_safari_zones p{
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+ color:#000000;
+font-weight: 400;
+margin-bottom: 2vw;
+
+}
+
+
+.Corbett_safari_zones strong {
+   font-weight: 900;   /* Ensures the text is bold */
+   color: #000000;      /* Dark green color for better contrast */
+   
+ 
+ }
+
+
+
+
+ .safari_booking h2{
+
+
+   font-size: max(25px,3vw);
+   line-height: max(21px, 2vw); 
+   font-weight: 900;
+   color:#405749;
+   margin-bottom: 2vw;
+
+ }
+
+
+
+
+ .safari_booking h3{
+
+
+   font-size: max(15px,2vw);
+   font-weight: 900;
+   color:#000000;
+   margin-bottom: 2vw;
+
+ }
+
+
+
+ 
+
+ .safari_booking p{
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+ 
+   color:#000000;
+   font-weight: 400;
+   margin-bottom: 2vw;
+
+ }
+
+
+ .book_safari_btn{
+
+
+
+   padding:1vw 1vw;
+   background-color: rgb(232, 183, 91);
+   color: #fff;
+   font-weight: 600;
+   font-size: max(15px 2vw);
+   Border:none;
+   border-radius: 10px;
+   margin-top: 2vw;
+   
+ }
+
+
+
+.section_wandering_soul{
+
+
+
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:4.5vw 4.5vw;
+}
+
+
+.section_wandering_soul_section_left{
+
+
+
+   width: 40%;
+
+}
+
+
+
+
+.section_wandering_soul_section_left :first-child{
+
+
+   
+   font-family: "Cedarville Cursive", cursive;
+   font-weight: 400;
+   font-style: normal;
+   font-size:max(10px,1vw);
+   color:#000000;
+   margin-bottom:1vw ;
+  
+
+
+   
+
+}
+
+
+
+.section_wandering_soul_section_left h1{
+
+    
+color:#405749;
+font-size: 4vw;
+font-weight: 900;
+margin-bottom:1vw ;
+
+}
+
+
+
+
+.section_wandering_soul_section_left :nth-child(3){
+
+
+   font-weight: 400;
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+
+   color:#000000;
+   margin-bottom:1vw ;
+}
+
+
+
+
+
+.section_wandering_soul_section_left :nth-child(4){
+
+
+   font-weight: 400;
+   font-size: 1.3vw;
+   color:#000000;
+   margin-bottom:1vw ;
+}
+
+
+
+
+
+.section_wandering_soul_section_left :nth-child(6){
+
+
+   font-weight: 400;
+   font-size: 1.3vw;
+   color:#000000;
+   
+   margin-bottom:1vw ;
+  
+}
+
+
+
+
+
+.section_wandering_soul_section_left button{
+
+   padding:1.2vw;
+   background-color: rgb(232, 183, 91);
+   font-weight: 900;
+   margin-top: 1vw;
+   border: none;
+   border-radius: 5px;
+   color:#fff;
+   font-size: max(15px, 1vw);
+
+
+
+}
+.section_wandering_soul_section_right{
+
+
+   width: 50%;
+   background-size: contain;       
+} 
+
+
+
+
+
+
+
+.section_wandering_soul_section_right img{
+
+
+   width:100%;
+   margin:none;
+   padding:none;
+
+
+
+}
+
+
+
+
+
+   .loading-line {
+      width: 100%;
+      background-color: #e0e0e0; 
+      border-radius: 4px;
+      height: 5px;
+      overflow: hidden;
+      margin:0.8vw 0;
+ 
+    
+   
+   }
+
+
+
+
+   
+
+   .loading-line-2 {
+     
+      width: 95%; 
+      height: 100%;
+      background-color:#66b2e2; 
+    
+   
+   }
+
+
+
+   
+
+   .loading-line-3 {
+     
+      width: 90%; 
+      height: 100%;
+      background-color:#66b2e2; 
+    
+   
+   }
+
+
+
+
+   .section_travel_blog{
+
+
+
+      padding: 2vw 4.5vw;
+   }
+
+
+   .roaming_tales_blogs{
+width: 40%;
+margin: 0 auto;
+text-align: center;
+   }
+
+
+
+
+   .roaming_tales_blogs :first-child{
+      font-family: "Cedarville Cursive", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: max(15px,1.3vw);
+      line-height: max(21px, 2vw); 
+      color:#405749;
+      margin-bottom: 1.3vw;
+
+
+
+   }
+
+   .roaming_tales_blogs h1{
+
+
+      font-size: max(50px,4vw);
+      font-weight: 900;
+      margin-bottom: 1vw;
+      color:#405749;
+   }
+
+
+
+
+   .roaming_tales_blogs :nth-child(3){
+
+
+      color:#405749;
+      font-weight: 400;
+      font-size: 1.3vw;
+
+   }
+
+
+
+   .travel_blog_grid_container {
+      display: grid;
+      grid-template-columns: 1fr  1fr; /* Left column is twice as wide as the right column */
+      align-items: center;
+     
+    
+     
+      gap: 2rem; /* Adds spacing between columns */
+      margin-top: 4vw; /* Moves the grid down */
+    }
+    
+    
+
+
+
+    
+    .blog_post_left_2{
+
+
+      margin-top: 2vw;
+    }
+    .travel_blog_grid_left span {
+      font-weight: 600;
+      font-size: 1vw;
+      
+  margin-top: 1vw;
+      color: #fff;
+      padding: 0.3vw;
+      background-color: #cb464f;
+      border-radius: 8px;
+    }
+    
+    .travel_blog_grid_left p {
+      font-weight: 400;
+      font-size: max(12px,1.2vw);
+   line-height: max(21px, 2vw);
+      margin-bottom: 1vw;
+      color: #000000;
+    }
+    
+    .travel_blog_grid_left h3 {
+      font-weight: 900;
+      font-size: max(15px,1.3vw);
+      line-height: max(21px, 2vw); 
+      margin-bottom: 1vw;
+      margin-top: 1vw;
+    }
+    
+    .travel_blog_grid_left img {
+      width: 100%;
+      border-radius: 8px;
+
+      object-fit: cover;
+    }
+    
+    
+    .blog_post {
+      background: #fff;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 1.5vw;
+    
+      
+      gap: 2vw;
+     
+    }
+    
+    .blog_post img {
+      width: 200px;
+      height: 200px; 
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    
+    .blog_post h3 {
+      font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+      
+      font-weight: 900;
+      margin-top: 0.5vw;
+    }
+    
+    .blog_post span {
+      font-size: 1vw;
+      color: #fff;
+      padding: 0.3vw;
+      background-color: #cb464f;
+      border-radius: 8px;
+      font-weight: 800;
+      
+    }
+    
+    .blog_post p {
+      font-size: max(12px,1.2vw);
+   line-height: max(21px, 2vw); 
+      margin-bottom: 1vw;
+      color: #000000;
+    }
+    
+    .travel_blog_grid_left button {
+      background: rgb(232, 183, 91);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.2vw;
+      font-weight: 900;
+    }
+    
+    button:hover {
+      background-color: #d4000d; /* Slightly darker red for hover effect */
+    }
+    
+
+
+ 
+ /* General footer styling */
+.footer {
+   background:#f2f2f2;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #000000;
+   padding-top: 3vw;
+
+   padding-left: 4.5vw;
+   padding-right: 4.5vw;
+   padding-bottom: 1vw;
+
+
+
+  
+   font-family: Arial, sans-serif;
+ }
+ 
+ .footer-container {
+   display: flex;
+   justify-content: space-between; 
+   gap:2.5vw;
+  
+
+
+   margin: 5vw 0;
+ }
+ 
+
+
+ .footer-column{
+
+   width: 33.33%;
+   margin:  0 auto;
+   text-align:center;
+ }
+ 
+ 
+ .footer-column h1 {
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw);
+   font-weight: 900;
+   margin-bottom: 1rem;
+   color: #000000;
+ }
+ 
+ .footer-column h3 {
+   font-size: 2vw;
+   margin-bottom: 2vw;
+   font-weight: 900;
+   color: #000000;
+ }
+ 
+ .footer-column ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ .footer-column ul li {
+   margin-bottom: 2vw;
+   font-size: 1.2vw;
+   font-weight: 900;
+ }
+
+
+
+
+ 
+ .footer-column ul li  a{
+   margin-bottom: 1vw;
+ }
+ 
+ 
+ .footer-column ul li a {
+   color: #000000;
+   font-weight: 900;
+   text-decoration:none;
+   padding: 1vw 1vw;
+   background-color: #cb464f;
+   border-radius: 8px;
+
+  
+
+ }
+
+
+ 
+ .footer-column a:hover {
+   text-decoration: underline;
+ }
+ 
+
+
+ 
+ .socials-icon img:hover {
+   opacity: 0.8;
+ }
+ 
+ /* Footer bottom */
+ .footer-bottom {
+   text-align: left;
+   padding-top: 2vw;
+
+ }
+ 
+ .footer-bottom p {
+   margin-right:  1vw;
+   font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+   color: #000000;
+   display: inline-block;
+   font-weight: 900;
+ }
+ 
+ .footer-bottom-content-right{
+
+
+
+   position: fixed;
+   bottom:2vw;
+   right:2vw;
+   z-index: 10;
+ }
+ 
+
+ 
+ .footer-bottom-content-right a:first-child{
+
+
+padding:1vw 1vw;
+border-radius: 8px;
+background-color:rgb(232, 183, 91);
+font-weight: 900;
+margin:1vw;
+ }
+
+
+
+ .footer-bottom-content-right a:last-child{
+
+
+   padding:1vw 1vw;
+   border-radius: 8px;
+   background-color:#000000;
+   font-weight: 900;
+   margin:1vw;
+    }
+
+
+@media only screen and (max-width: 480px) {
+
+
+
+.main-icon img {
+
+
+   width: 100px;
+
+}
+
+/* Show dropdown menu when hamburger is clicked */
+.navbar-hamburger.open .dropdown-menu-hamburger {
+   display: block;  /* Show dropdown */
+ }
+
+
+
+ .dropdown-menu-hamburger .nav-links{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center
+ }
+ /* Hide social media icons on mobile when dropdown is open */
+ .socials-icon .social-icon {
+   display: none;
+ }
+
+
+
+
+ .dropdown-menu-hamburger .nav-links li {
+   width: 100%;  /* Make each <li> take up the full width of the dropdown */
+ }
+
+
+
+
+ /* Show hamburger icon in mobile view */
+ .navbar-hamburger {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+ }
+
+ .dropdown-menu-hamburger .nav-links li a {
+   display: block;
+   width: 100%;  /* Ensure the links fill the entire width */
+   text-align: center;  /* Center the text */
+ }
+
+  
+
+.dropdown svg {
+
+
+   display: none;
+}
+
+
+.main-navbar .main_nav_ul li a {
+
+display:none;
+
+}
+
+
+
+
+
+
+
+.main-content{
+
+
+   display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+}
+
+
+.left-content-section{
+
+
+   width: 100%;
+}
+
+
+.right-content-section{
+
+
+   width: 100%;
+   margin-top: 2vw;
+}
+
+
+
+.right-content-section img{
+
+width:100%;
+height:50vw;
+object-fit: cover;
+   
+}
+
+
+
+
+.gallery-container{
+
+
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 0 3vw;
+
+
+
+
+
+}
+
+
+
+.gallery-container .item{
+
+
+   width: 50%;
+
+   height:40vw;
+
+
+
+
+
+}
+
+
+
+.search-trip{
+
+
+   text-align: center;
+}
+
+  .adventure-section-travel-container{
+
+
+   flex-wrap: wrap;
+  }
+
+
+
+
+
+
+.destination-sections{
+
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+
+
+
+
+.destination-section-left{
+
+
+   width: 100%;
+
+
+}
+
+.destination-section-right {
+
+
+   display:none;
+}
+
+
+
+
+
+
+
+
+  .Corbett_details_main{
+
+
+
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+}
+
+
+.Corbett_details_left{
+
+
+   width: 100%;
+}
+
+
+
+.Corbett_details_right{
+
+
+
+width:100%
+
+}
+
+
+
+
+
+
+
+
+
+.travel_blog_grid_container{
+
+
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  
+}
+
+
+@media only screen and (min-width: 900px) {
+  
+}

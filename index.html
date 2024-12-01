@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/index.css" />
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/brands.min.css" integrity="sha512-7rXIvd/xj1FnI2zKQjjXzDFxC4twqBByp8yxOgEQJs4C/aNzNyoQsOO7VxH0RgYNhbAYLJLwzqslaP50KTTHIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+<title>Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <header >
+    
+      <nav>
+        
+
+        <div class="main-navbar">
+      <div class="main-icon"><img src = 'assets/images/logo.png'  ></div>
+          <ul  class = main_nav_ul>
+
+
+            <div class="dropdown">
+             
+            <li><a>Home  </a> <svg   height = "20px" width = "20px"; xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg> </li>
+              <div class="dropdown-content">
+                <a href="#">Home1 </a>
+                <a href="#">Home2</a>
+         
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+             
+              <li><a>Hotels</a>  <svg   height = "20px" width = "20px"; xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg> </li>
+                <div class="dropdown-content">
+                  <a href="#">Search Page </a>
+                  <a href="#">Packages</a>
+                  <a href="#">Travel</a>
+                  <a href="#">Destinations</a>
+                  <a href="#">Typologies</a>
+           
+                </div>
+              </div>
+
+
+
+           
+
+
+                <div class="dropdown">
+             
+                  <li><a>Packages </a> <svg   height = "20px" width = "20px"; xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg> </li>
+                    <div class="dropdown-content">
+                      <a href="#">Shop </a>
+                      <a href="#">Single Product</a>
+               
+                    </div>
+                    
+           
+                  </div>
+   
+
+                  
+                  <li><a>Contact Us</a></li>
+
+          </ul>
+          <div class="socials-icon">
+            <!-- Social media icons (hidden initially on mobile) -->
+            <img src="assets/icons/icons8-facebook-50.png" alt="facebook" class="social-icon" />
+            <img src="assets/icons/icons8-twitter-logo-50.png" alt="twitter" class="social-icon" />
+            <img src="assets/icons/icons8-youtube-50.png" alt="youtube" class="social-icon" />
+          
+            <div class="navbar-hamburger">
+              <!-- Hamburger icon -->
+              <img
+                src="assets/icons/icons8-menu-50.png"
+                alt="hamburger"
+                class="hamburger-icon"
+                onclick="toggleMenu()"
+              />
+          
+              <!-- Dropdown menu containing navigation links -->
+              <div class="dropdown-menu-hamburger">
+                <ul class="nav-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </nav>
+
+    <section class = "banner_section"> 
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides faded">
+          <figure><img
+            src="assets/images/Untitled design (4).png" alt=""
+            style="width: 100%; height: 50vw;"
+            class="slideimg"
+          />
+         <figcaption> <div class="text"> Welcome to Jim Corbette National Park  </div>
+         </figcaption>
+        </div>
+      
+      </figure>
+       
+
+        <div class="mySlides faded">
+          <figure><img
+            src="assets/images/pexels-saptashwa-mandal-656231969-19834893.jpg" alt=""
+            style="width: 100%;height: 50vw ;"
+            class="slideimg"
+          />
+
+         <figcaption>
+          
+          <div class="text">
+          Caption two
+          </div>
+        </figcaption>
+      </figure>
+      
+        </div>
+  
+        <div class="mySlides faded"> 
+         <figure> <img 
+          src="assets/images/tierra.jpeg.webp" style="width: 100%; height:50vw;"     class="slideimg" alt=""/>
+          <figcaption><div class="text">Caption Three</div></figcaption>
+          </figure>
+        </div>
+       
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+
+      <div class = "book_section"> <a  class = "book" href = "#"> Book Your Tour </a></div>
+
+    </section>
+       </header>
+
+
+     
+    </div>
+    <main>
+<section class = "main-content">
+
+  <div class="left-content-section">
+    
+    <h1>Jim Corbett National Reserve</h1>
+    <p>
+      Honored with the title of a national park in 1936, Jim Corbett – The Famous Abode of the Tigers is Asia’s very first national park. However, the conservation of this land started way back in 1868, as it was the time when the British Forest Department excluded agricultural activities and operation of cattle station here. Since then, there is no looking back. In the initial days this park was named after Sir Malcolm Hailey, the Governor of United Provinces and thus, was popular as ‘Hailey National Park’. Later in 1954-55, it was called ‘Ramganga National Park’, as it covered the Ramganga River and the village.The saga doesn’t end here; within a short span of time it was again renamed as ‘Jim Corbett National Park’,so as to honor Edward James Jim Corbett-the man who contributed a lot to the establishment of the park. The conservation thus started, always saw an upward graph. In 1973, Corbett National Park stood as the first Tiger Reserve under Project Tiger – an initiative to protect the big striped cats.Today the Corbett National Park of India is one of the most visited wildlife destinations. Right from the tiger’s roar that gives you goose bumps, to the chirping of the birds that is like music to the ears. Wildlife at its best can be found flourishing in Corbett. The wild beings not only dwell here, they grow here.</p>
+      <p id="more-text" style="display: none;;">The saga doesn’t end here; within a short span of time it was again renamed as ‘Jim Corbett National Park’,so as to honor Edward James Jim Corbett-the man who contributed a lot to the establishment of the park. The conservation thus started, always saw an upward graph. In 1973, Corbett National Park stood as the first Tiger Reserve under Project Tiger – an initiative to protect the big striped cats.Today the Corbett National Park of India is one of the most visited wildlife destinations. Right from the tiger’s roar that gives you goose bumps, to the chirping of the birds that is like music to the ears. Wildlife at its best can be found flourishing in Corbett. The wild beings not only dwell here, they grow here.</p>
+  
+    <button id="read-more-btn">Read More</button>
+  </div>
+  
+
+  
+
+<div class = "right-content-section">
+ <img src = "assets/images/pexels-jhelmuth-3333554.jpg"/>
+
+</div>
+
+</section>
+
+<div class = 'divider'></div>
+
+<section class="Section_Travel_packages">
+  <div class = "Travel-packages">
+
+    <h1>Travel Packages</h1>
+    <p class = "">Visit Jim Corbett National Park in Uttarakhand to watch the majestic tiger in all his glory with exciting Corbett National Park Tour Packages. We offer you a variety of packages that offer you the best experience during your safari to Jim Corbett National Park.</p>
+
+  </div>
+ 
+  <div class="gallery-container">
+    <div class="items">
+
+      <div class="item" style="background-image: url('assets/images/i-parallax-03-package-01.jpeg');">
+        <div class="overlay">
+          <h2 class="item-title">Corbette Nanital Tour</h2>
+          <a href="#" class="button-link">Explore</a>
+        </div>
+      </div>
+  
+      <div class="item" style="background-image: url('assets/images/i-parallax-04-package-02.jpeg');">
+        <div class="overlay">
+          <h2 class="item-title">Dhikala Tour Packages</h2>
+          <a href="#" class="button-link">Explore</a>
+        </div>
+      </div>
+  
+      <div class="item" style="background-image: url('assets/images/i-parallax-05-package-03.jpeg');">
+        <div class="overlay">
+          <h2 class="item-title">Elephant Safari Tour Corbett</h2>
+          <a href="#" class="button-link">Explore</a>
+        </div>
+      </div>
+  
+      <div class="item" style="background-image: url('assets/images/pexels-arthousestudio-4639085.jpg');">
+        <div class="overlay">
+          <h2 class="item-title">Bangkok</h2>
+          <a href="#" class="button-link">Explore</a>
+        </div>
+      </div>
+
+      
+      
+    </div>
+  </div>
+  
+
+  <!-- Arrows for navigation -->
+  <div class="travel_packages_navigate_arrows">
+    <span class="arrow left-arrow">&#8592;</span>
+    <span class="arrow right-arrow">&#8594;</span>
+  </div>
+ 
+</section>
+
+
+<div class = 'divider'></div>
+
+
+
+<section class = "worldwide-destination">
+
+<div class = "destination-sections">
+  
+  <div class = "destination-section-left">
+  
+  
+    <p>Next Adventure</p>
+    <h1>Travel Destinations Availabe Worldwide </h1>
+    <p>We have compiled a list of top destinations across the globe, scoured the world for the most alluring and fascinating places to visit. From the beautiful beaches of the Caribbean to the majestic mountains of Europe and the vibrant cities of Asia, our destination list has something for everyone.</p>
+    
+  
+  
+  </div>
+  
+  <div class = "destination-section-right">
+  <img src = "assets/images/pexels-laracc-29438524.jpg " height="500px" width="400px"  >
+
+  
+  </div>
+
+</div>
+<div class="destination-cards">
+
+  <div>
+    <div class="card-lists">
+      <img src="assets/images/pexels-enric-cruz-lopez-6272196.jpg" alt="Greece"/>
+      <h2>Greece</h2>
+      <p>Experience the ancient history and beaches</p>
+    </div>
+
+    
+  </div>
+
+
+
+
+  <div>
+
+    <div class="card-lists">
+      <img src="assets/images/i-parallax-03-package-01.jpeg" alt="Egypt"/>
+      <h2>Egypt</h2>
+      <p>Discover the land of pharaohs & pyramids</p>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <div>
+
+
+    <div class="card-lists">
+      <img src="assets/images/pexels-jhelmuth-3333554.jpg" alt="Africa"/>
+      <h2>Africa</h2>
+      <p>Embark on a journey of a lifetime</p>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div>
+
+    <div class="card-lists">
+      <img src="assets/images/pexels-hsapir-1109898.jpg" alt="France"/>
+      <h2>France</h2>
+      <p>Indulge in the art, culture, and cuisine</p>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <div>
+    <div class="card-lists">
+      <img src="assets/images/pexels-hsapir-1109898.jpg" alt="France"/>
+      <h2>France</h2>
+      <p>Indulge in the art, culture, and cuisine</p>
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <div>
+
+
+    <div class="card-lists">
+      <img src="assets/images/pexels-hsapir-1109898.jpg" alt="France"/>
+      <h2>France</h2>
+      <p>Indulge in the art, culture, and cuisine</p>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+
+  <!-- Arrows for navigation -->
+
+  
+  <div class="travel_packages_navigate_arrows2">
+    
+    <span class="arrow left-arrow2">&#8592;</span>
+    <span class="arrow right-arrow2">&#8594;</span>
+  </div>
+
+
+</section >
+
+<div class = "divider"></div>
+
+<section class="section_hotels_resorts">
+  <h1>Hotels And Resorts</h1>
+  <p>From cultural to beaches to delectable cuisine, India is a land that bestowed travelers with numerous jewels. And adding that oomph to its rich hospitality are its world-class hotels and resorts that perfectly combine the modern elegance and traditional Indian warmth. But the pleasure and distinctness you enjoy while staying at forest and jungle lodges is somewhat a unique experience to live forever, especially when it is about Corbett National Park.. Take a look . </p>
+  
+  
+  
+  
+  <div class="hotels_array">
+
+
+
+<div>
+    <div class="hotel_card">
+      <img src="assets/images/resort1.jpg" alt="Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Corbett Lila Vilas,a Pleasant blend of comfort</h3>
+      <p class = "hotel_description">
+        
+      </p>
+
+  <div class = "hotel_info">
+
+
+    <span class = "hotel_ratings">8.8</span>
+    <span class = "hotel_pricings">Starting from $5500</span>
+
+
+  </div>
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+    
+
+  </div>
+
+
+
+  <div>
+
+    <div class="hotel_card">
+      <img src="assets/images/resort2.jpg" alt="Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Best Camps to Stay in Corbett National Park</h3>
+      <p class = "hotel_description"></p>
+      <div class = "hotel_info">
+
+
+        <span class = "hotel_ratings">8.8</span>
+        <span class = "hotel_pricings">Starting from $5500</span>
+    
+    
+      </div>
+      
+
+      
+    <a href="#" class="view_details_button">View Details</a>
+
+    </div>
+
+
+  </div> 
+
+
+<div>
+
+    <div class="hotel_card">
+      <img src="assets/images/resort3.jpg" alt="Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Forest Lodges in Jim Corbett National Park</h3>
+      
+      <p class = "hotel_description"></p>
+      <div class = "hotel_info">
+
+
+        <span class = "hotel_ratings">8.8</span>
+        <span class = "hotel_pricings">Starting from $5500</span>
+    
+    
+      </div>
+
+
+    
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+
+  </div>
+
+
+
+   <div>
+    <div class="hotel_card">
+      <img src="assets/images/resort4.jpg" alt = "Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Top Luxury Resorts in Corbett National Park</h3>
+      <p class = "hotel_description"></p>
+      <div class = "hotel_info">
+
+
+        <span class = "hotel_ratings">8.8</span>
+        <span class = "hotel_pricings">Starting from $5500</span>
+    
+    
+      </div>
+
+     
+    
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+
+
+  </div>
+
+
+  
+  <div>
+    <div class="hotel_card">
+      <img src="assets/images/resort4.jpg" alt = "Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Top Luxury Resorts in Corbett National Park</h3>
+      <p class = "hotel_description"></p>
+      <div class = "hotel_info">
+
+
+        <span class = "hotel_ratings">8.8</span>
+        <span class = "hotel_pricings">Starting from $5500</span>
+    
+    
+      </div>
+
+    
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+
+
+  </div>
+
+
+
+  
+  <div>
+    <div class="hotel_card">
+      <img src="assets/images/resort4.jpg" alt = "Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Top Luxury Resorts in Corbett National Park</h3>
+     <p></p>
+     <div class = "hotel_info">
+
+
+      <span class = "hotel_ratings">8.8</span>
+      <span class = "hotel_pricings">Starting from $5500</span>
+  
+  
+    </div>
+    
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+
+
+  </div>
+  
+   <div>
+    <div class="hotel_card">
+      <img src="assets/images/resort4.jpg" alt = "Hotel Image" class="hotel_image">
+      <h3 class="hotel_name">Top Luxury Resorts in Corbett National Park</h3>
+      <p></p>
+      <div class = "hotel_info">
+
+
+        <span class = "hotel_ratings">8.8</span>
+        <span class = "hotel_pricings">Starting from $5500</span>
+    
+    
+      </div>
+     
+    
+      <a href="#" class="view_details_button">View Details</a>
+    </div>
+
+
+  </div>
+ 
+  </div>
+
+  <!-- Arrows for navigation -->
+
+  
+  <div class="travel_packages_navigate_arrows3">
+    
+    <span class="arrow left-arrow3">&#8592;</span>
+    <span class="arrow right-arrow3">&#8594;</span>
+  </div>
+
+
+</section>
+
+
+
+<div class = "divider"></div>
+
+
+<section class = "section_Corbett_details">
+
+<div class = "Corbett_details_main">
+
+<div class = Corbett_details_left>
+
+<h2>
+  Best Time To Visit
+</h2>
+
+<p>When it comes to wildlife holidays in India, Jim Corbett National Park (Corbett as commonly known) is a well-known name that captures the fascination of tourists because of its exotic natural surroundings and enormity of wildness. Besides home of several animals, the park is included under “Project Tiger” and is an immensely popular place to spot the fiery Bengal TIGER.If you are thinking when is the best time to visit Corbett National Park? Tourists can throng the park in any period of the year as per its zones. Corbett features five distinct zones and each zone has a different topography with different visiting period.
+</p>
+
+
+<p id = "extra-text" style = "display: none;">
+Jhirna Zone, which is 16 km away from Ramnagar, is a round-the-year tourist area of Jim Corbett National Park because of its dry topographical features. Similarly, Sitabani or Sonanadi Zone can be visited in any month of the year. Though this zone is not a part of Corbett in original terms and falls in Sonanadi Wildlife Sanctuary, which is situated just on the periphery of Corbett Park.
+However if you want to access the core area of the park, i.e. Dhikala Zone then just schedule your trip in between 15th November till 15th June.  Enrich with pristine natural beauty, the zone is considered as the prime tourist area and remained close during rest of the year. Bijrani Zone remains active only during 01st October to 30th June while the visiting time of Durga Devi Zone, the farthest tourist region of Corbett from Ramnagar (25 km), is from 15th November till 15th June every year.
+
+</p>
+
+<button  id = "read-more-btn2">Read More</button>
+
+</div>
+
+
+
+<div class = "Corbett_details_right">
+
+<img src =  "assets/images/tiger.jpg"   alt = ''/>
+  
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class = "Corbett_details_main">
+
+  
+  
+  
+  <div class = "Corbett_details_left">
+        
+  <img src =  "assets/images/pexels-phreewil-535431.jpg"   alt = ''/>
+  
+  
+  </div>
+  
+  
+  
+  
+  <div class = Corbett_details_right>
+    <h2>
+      Safari Timings
+    </h2>
+  
+    <p>
+    
+  
+  Explore the richness of Mother Nature at Corbett National Park with jungle safari tours and discover what makes this little gem a paradise for photographers, adventure seekers and wildlife lovers. A safari tour is the best way to come face-to-face with some fiery faces (tiger, jackal, wild boar and Himalayan bear) of the park.
+  There are three types of safaris available in Jim Corbett National Park; Jeep Safari, Elephant Safari and Canter Safari. Among these, jeep and elephant safaris are the most common ones and are available for every zone of the park. But Canter safaris run only in Dhikala Zone, the core area of the national park. Also note that only those people can do jeep safari at Dhikala zone having permits to stay at the forest lodges situated at Dhikala zone.
+    </p>
+    
+    
+    <p id = "extra-text2" style = "display: none;">
+    
+      If staying outside Dhikala zone then canter safari is the only option to do safari at Dhikala zone.
+Because of the varied topography and enormity of wilderness, safari timing in Corbett are mainly limited to sunshine period of the day only. The park normally opens at 6’o’ clock in morning and remains open till 11’o’ clock in morning while in the afternoon the park’s opening timing is 1430 to 1730. However the timings can be changed as per the season. So it is good to get the entire information from the forest officials.
+    
+    </p>
+    
+    <button id = "read-more-btn3">Read More</button>
+    
+    </div>
+
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  <div class="Corbett_safari_zones">
+    <h3>Safari Zones at Corbett</h3>
+  
+    <p><strong>Dhikala Zone</strong>: It is the main tourist and core area of the park. Situated on the edges of the valley Patli Dun, Dhikala Zone is dotted with picturesque natural vistas and is considered a good site to spot herds of elephants, chitals and deer as well as Bengal Tiger. It opens from 15th November till 15th June only.</p>
+    
+    <p><strong>Jhirna Zone</strong>: Lying at a distance of 16km from Ramnagar, Jhirna Zone is the most comfortable safari zone that opens throughout the year. The zone is mainly noted for its bamboo vegetation and wonderful bird watching experiences. Jhirna zone lies in the southern area of Corbett.</p>
+    
+    <p><strong>Bijrani Zone</strong>: Another notable zone blessed with enormous yet mixed topographical features. The entry gate to Bijrani zone is Amadanda. The chances of tiger spotting are more here in comparison to other zones. Bijrani zone remains open only during 01st October to 30th June.</p>
+    
+    <p><strong>Durga Devi Zone</strong>: Situated about 28 km away from Ramnagar, it is better to call Durga Devi Zone a tough challenge for visitors. Its hilly topography and deep dark woody vegetation are quite favorable for witnessing several distinct species of birds. The zone is operational between 15th November till 15th June every year.</p>
+  </div>
+  
+      
+
+
+<div class = "safari_booking">
+
+
+
+  <h2>
+    Corbett Safari Booking
+  </h2>
+
+  <h3>
+Booking Procedure
+  </h3>
+
+ <p>All the procedures of safari booking at Corbett are done by the forest officials at the park as per the guidelines of India’s Forest Department. And pressurizing any official for any kind of liberation in safari booking and in scheduling safari timing is against the law and is a punishable offence. However there is restriction on the number of entering vehicles as per the season and zone.</p>
+
+
+  <h3>
+    Advance Booking of Jeep Safari
+      </h3>
+    
+<p>Tourists can also enjoy advance booking of a jeep safari to avoid last-minute hassle at Corbett National Park. The booking is on first-cum-first service and can be done for both morning and evening safaris for Jhirna, Bijrani and Durgadevi zones. The advance amount is non-refundable and must be deposited along with photo id proof (driving license/voter id/pan card) and complete details of the person (gender, full name, birth date etc).
+  * Passport detail of foreign nationals is mandatory.</p>
+
+
+<button class = "book_safari_btn">Book Now</button>
+
+
+
+</div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class = "section_wandering_soul">
+
+  <div class = "section_wandering_soul_section_left">
+
+    <p>Wandering Soul</p>
+
+    <h1>Discover Your Next Adventure</h1>
+    <p>Whether you're planning a romantic honeymoon or a family vacation, our price section has got you covered. So, start browsing today and find the perfect vacation package at a price that won't leave you feeling guilty.</p>
+    <p>Organised Group Tour</p>
+    <div class="loading-line">
+      <div class="loading-line-2"></div>
+    </div>
+    <p>Single Customized Trip</p>
+    <div class="loading-line">
+
+      <div class="loading-line-3"></div>
+    </div>
+    <button>More Info</button>
+
+  </div>
+
+
+  <div class = "section_wandering_soul_section_right">
+
+<figure><img src = "assets/images/wanderingsoul.jpeg"  alt =  ""/>
+</figure>
+
+
+
+  </div>
+
+
+</section>
+
+<section class = "section_travel_blog">
+  <div class = "roaming_tales_blogs">
+
+    <p>Roaming Tales</p>
+   <h1>Travel Blog</h1>
+   <p></p>
+  </div>
+
+
+  <div class="travel_blog_grid_container">
+    <!-- Left Column -->
+    <div class="travel_blog_grid_left">
+
+      <div class = "blog_post_left_1">
+      <figure><img src="assets/images/Swedish-Couple-Uttarakhand.jpg" alt="Vacation Image" /></figure>
+      <span>April 7, 2023</span>
+      <h3>Swedish Royal Couple Visit Jim Corbett National Park</h3>
+      <p>King Carl XVI Gustaf Folke Hubertus and Queen Silvia Renate Sommerlath, recently visited the Jim Corbett</p>
+    
+
+    </div>
+
+
+    <div  class = "blog_post_left_2" style="margin-top: 1vw;" >
+      <figure><img src="assets/images/tiger.jpg" alt="Hidden Gem 1" /></figure>
+     <div> <span>April 7, 2023</span>
+      <h3>Tiger spotted in Jim Corbett National</h3>
+      <p>A tiger was sighted in a Corbett National Park by a group of tourists. The tiger was wandering in the woods when one of the tourists spotted it</p>
+    </div>
+    </div>
+
+
+
+
+    
+
+      
+  </div>
+
+  
+    <!-- Right Column -->
+    <div class="travel_blog_grid_right">
+      <div class="blog_post">
+        <figure><img src="assets/images/grid-image1.jpeg" alt="Hidden Gem 1" /></figure>
+       <div> <span>April 7, 2023</span>
+        <h3>Corbett Rejoices as Tourists Trickle in Record Numbers</h3>
+        <p>While religious tourism in Uttarakhand is yet to recover fully from the devastating flood that hit.</p>
+      </div>
+      </div>
+      <div class="blog_post">
+
+        <figure><img src="assets/images/grid-image2.jpeg" alt="Hidden Gem 2" /></figure>
+        <div><span>April 7, 2023</span>
+        <h3>Corbett Nainital Tour</h3>
+        <p>Offering a perfect mélange of nature meeting the wildlife, the Corbett-Nainital Tour is ideal for those.</p>
+      </div>
+      </div>
+      <div class="blog_post">
+        <figure><img src="assets/images/pexels-enric-cruz-lopez-6272196.jpg" alt="Hidden Gem 3" /></figure>
+        <div><span>April 7, 2023</span>
+        <h3>Tiger Monitoring Software to be Launched in Corbett</h3>
+        <p>In a move that is both innovative and important, in the sense that tigers are so</p>
+      </div>
+      </div>
+      <div class="blog_post">
+        <figure><img src="assets/images/tree-bird-paint-branch-wallpaper-preview.jpg" alt="Hidden Gem 4" /></figure>
+       <div><span>April 7, 2023</span>
+        <h3>Jim Corbett National Park Bird Watching Expedition</h3>
+        <p>Watching your favorite bird in the beautiful surroundings of the Himalayan territory is the best thing</p>
+      </div> 
+      </div>
+      <div class="blog_post">
+        <figure><img src="assets/images/grid-image4.jpeg" alt="Hidden Gem 4" /></figure>
+       <div><span>April 7, 2023</span>
+        <h3>Off the Beaten Path Adventures</h3>
+        <p>Tips for finding adventurous activities in unexpected places.</p>
+      </div> 
+      </div>
+     
+      
+    </div>
+
+   
+
+  </div>
+  
+</section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Column 1: About -->
+      <div class="footer-column">
+  <h1 style="text-align: left;">Travel beyond your imagination with our Travel agency</h1>
+      
+      </div>
+  
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+        <h3>Address</h3>
+        <ul>
+          <li>1080 Brickell Ave</li>
+          <li>Miami Florida</li>
+          <li>United States of America</li>
+         
+        </ul>
+        <div class = "socials-icon">
+          <img src="assets/icons/icons8-facebook (1).svg" alt="facebook" />
+          <img src="assets/icons/icons8-twitter (1).svg" alt="twitter" />
+          <img src=" assets/icons/icons8-youtube-logo.svg" alt="youtube" />
+        </div>
+      </div>
+  
+      <!-- Column 3: Contact -->
+      <div class="footer-column">
+        <h3 style = "margin-bottom:2vw ;">Contact</h3>
+        <ul>
+          <li><a>info@travel.com</a></li>
+          <li>+ 01 483 593 284</li>
+        
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div><p>travel Word Press theme</p>
+      <p>Rental</p>
+      <p> Insurance</p>
+    </div>
+ 
+    </div>
+  </footer>
+  
+
+ 
+
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src  = "assets/index.js"></script>
+  </body>
+</html>

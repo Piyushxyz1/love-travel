@@ -2088,10 +2088,10 @@ margin-bottom: 2vw;
    padding:1vw 1vw;
    background-color: rgb(232, 183, 91);
    color: #fff;
-   font-weight: 600;
-   font-size: max(15px 2vw);
+   font-weight: 900;
+   font-size: max(15px ,1vw);
    Border:none;
-   border-radius: 10px;
+   border-radius: 5px;
    margin-top: 2vw;
    
  }

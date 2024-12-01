@@ -1194,7 +1194,8 @@ filter: brightness(0.8);
    z-index: 2;
    position: absolute;
    bottom: 50%;
-   font-size: max(15px,1.3vw);
+   font-size: max(20px,1.3vw);
+   
  }
  
  .destination-cards .card-lists p {
@@ -1203,11 +1204,11 @@ filter: brightness(0.8);
    color: #fff;
    z-index: 2;
    position: absolute;
-   bottom: 30%;
+   bottom: 25%;
    left: 20%;
    right: 20%;
-   font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw); /* 1.4 to 1.6 times font size */
+   font-size: max(12px,1.2vw);
+
  }
  
  /* Image style */
@@ -1881,14 +1882,14 @@ align-items: center;
 
 
 
-   padding:1vw 1vw;
+   padding:1.2vw 1.2vw;
    background-color:rgb(232, 183, 91);
    border:none;
-   border-radius: 8px;
+   border-radius: 5px;
    margin-top: 1vw;
    color:#fff;
    font-weight: 900;
-   font-size: max(15px 2vw);
+   font-size: max(15px, 1vw);
    cursor: pointer;
 }
 
@@ -1979,14 +1980,14 @@ text-align: left;
 
 
 
-   padding:1vw  1.5vw;
+   padding:1.2vw  1.2vw;
    background-color:rgb(232, 183, 91);
    border:none;
-   border-radius: 10px;
+   border-radius: 5px;
    margin: 2vw 0;
    color:#fff;
    font-weight: 900;
-   font-size: max(15px 2vw);
+   font-size: max(15px, 1vw);
    cursor: pointer;
    }
 
@@ -2085,7 +2086,7 @@ margin-bottom: 2vw;
 
 
 
-   padding:1vw 1vw;
+   padding:1.2vw 1.2vw;
    background-color: rgb(232, 183, 91);
    color: #fff;
    font-weight: 900;

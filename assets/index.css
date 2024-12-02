@@ -254,7 +254,7 @@ header .book {
 
 padding:1.5vw 1.5vw;
 
-font-size: 1.2vw;
+font-size: max(17px,1.3vw);
 font-weight: 900;
 color:#fff;
 text-decoration: none;

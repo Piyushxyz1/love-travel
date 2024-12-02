@@ -569,6 +569,7 @@ height: 58vw;
    font-weight: 900;
    margin-bottom: 2vw;
    line-height: 1;
+ 
 
 
     
@@ -2723,7 +2724,12 @@ display:none;
    width: 100%;
 }
 
+.left-content-section h1{
 
+text-align: center;
+
+
+}
 .right-content-section{
 
 

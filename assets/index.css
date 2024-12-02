@@ -2689,7 +2689,12 @@ display:none;
 
 .button-link{
 
-
+  
+   font-size: max(14px, 5vw); /* Slightly smaller font size on mobile */
+   padding: 10px 20px; 
+      bottom: 12%; /* Further adjust button for smaller screens */
+   font-size: max(12px, 5vw); /* Further reduce font size on very small screens */
+   padding: 8px 16px; /* Even smaller padding for tiny screens */
    opacity: 1;
 }
 
@@ -2739,9 +2744,9 @@ object-fit: cover;
 .gallery-container .item{
 
 
-   width: 50%;
 
-   height:40vw;
+height: 60vw;
+
 
 
 

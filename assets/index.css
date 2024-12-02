@@ -2360,9 +2360,6 @@ text-align: center;
       display: grid;
       grid-template-columns: 1fr  1fr; /* Left column is twice as wide as the right column */
       align-items: center;
-     
-    
-     
       gap: 2rem; /* Adds spacing between columns */
       margin-top: 4vw; /* Moves the grid down */
     }
@@ -2379,7 +2376,7 @@ text-align: center;
     }
     .travel_blog_grid_left span {
       font-weight: 600;
-      font-size: 1vw;
+      font-size: max(13px,1vw);
       
   margin-top: 1vw;
       color: #fff;
@@ -2438,13 +2435,14 @@ text-align: center;
    line-height: max(21px, 2vw); 
       
       font-weight: 900;
-      margin-top: 0.5vw;
+      margin-top: 1vw;
     }
     
     .blog_post span {
-      font-size: 1vw;
+      font-size:max(13px,1vw);
       color: #fff;
-      padding: 0.3vw;
+      padding: 1.2vw;
+     
       background-color: #cb464f;
       border-radius: 8px;
       font-weight: 800;
@@ -2524,7 +2522,7 @@ text-align: center;
  }
  
  .footer-column h3 {
-   font-size: 2vw;
+   font-size: max(20px,1.2vw);
    margin-bottom: 2vw;
    font-weight: 900;
    color: #000000;
@@ -2538,7 +2536,7 @@ text-align: center;
  
  .footer-column ul li {
    margin-bottom: 2vw;
-   font-size: 1.2vw;
+   font-size:  max(12px,1.2vw) ;
    font-weight: 900;
  }
 
@@ -2548,6 +2546,7 @@ text-align: center;
  
  .footer-column ul li  a{
    margin-bottom: 1vw;
+   font-size:  max(12px,1.2vw) ;
  }
  
  
@@ -2558,6 +2557,7 @@ text-align: center;
    padding: 1vw 1vw;
    background-color: #cb464f;
    border-radius: 8px;
+   font-size:  max(15px,1.3vw) ;
 
   
 
@@ -2882,7 +2882,7 @@ height: 60vw;
 
 
 
-width:100%
+width:100%;
 
 }
 
@@ -2900,9 +2900,25 @@ width:100%
 
    display: flex;
    flex-direction: column;
-   justify-content: center;
+ 
+   width: 100%;
 
 
+}
+
+.travel_blog_grid_left{
+
+
+   width: 100%;
+}
+
+
+
+.travel_blog_container_right{
+
+
+
+   width: 100%;
 }
 
 
@@ -2910,11 +2926,17 @@ width:100%
 
 
    display: flex;
-   flex-direction: column-reverse;
-
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 
+.blog_post img{
+
+
+   width: 90vw;
+}
 
 
 }

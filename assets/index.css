@@ -423,6 +423,7 @@ cursor: pointer;
   
    filter:  brightness(0.7);
 object-fit: cover;
+height: 60vw;
 
  }
  

@@ -553,6 +553,7 @@ height: 58vw;
 
    width: 50%;
    height: 100%;
+
   
 }
 
@@ -593,11 +594,11 @@ height: 58vw;
 .left-content-section button {
 
 
-padding: 1.5vw 1.5vw;
+padding: 1.2vw 1.2vw;
 border-radius: 5px;
 background-color: rgb(232, 183, 91) ;
 font-weight: 900;
-font-size: 15px;
+font-size: max(15px, 1vw);
 color:#fff;
 border: none;
 transition: 0.1s;

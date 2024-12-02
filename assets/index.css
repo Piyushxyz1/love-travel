@@ -691,7 +691,7 @@ margin-top:1vw;
  .Travel-packages h1{
 
 
-   font-size: max(25px,5vw);
+   font-size:  max(50px,4vw) ;
    font-weight: 900;
    color: #405749;
  }
@@ -1302,7 +1302,7 @@ margin-bottom: 2vw;
   
    padding-bottom:2vw;
    font-weight: 900;
-   font-size: max(25px,4vw);
+   font-size:  max(50px,4vw) ;
    color:#fff;
 
  }
@@ -1626,7 +1626,7 @@ cursor: pointer;
 .section_hotels_resorts h1{
 
 
-   font-size: 5vw;
+   font-size:  max(50px,4vw) ;
    font-weight: 900;
    text-align: center;
    color:#405749
@@ -2813,9 +2813,29 @@ height: 60vw;
 
 
 
+.section_wandering_soul{
+
+
+   display: flex;
+   flex-direction: column;
+  
+  
+}
+
+.section_wandering_soul_section_left{
 
 
 
+   width: 100%;
+}
+
+
+
+.section_wandering_soul_section_right{
+
+
+   width: 100%;
+}
 
 
   .Corbett_details_main{

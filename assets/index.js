@@ -314,7 +314,10 @@ document.getElementById("read-more-btn3").addEventListener("click", function() {
 
 
 
-
+function toggleMenu() {
+  const navbar = document.querySelector('.navbar-hamburger');
+  navbar.classList.toggle('open');  // Toggles the 'open' class to show/hide the menu
+}
 function toggleMenu() {
   const navbarHamburger = document.querySelector('.navbar-hamburger');
   navbarHamburger.classList.toggle('open');  // Toggle the 'open' class to show/hide the menu

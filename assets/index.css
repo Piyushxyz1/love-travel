@@ -2515,7 +2515,7 @@ text-align: center;
  
  
  .footer-column h1 {
-   font-size: max(17px,1.3vw);
+   font-size: max(17px,2vw);
    line-height: max(21px, 2vw);
    font-weight: 900;
    margin-bottom: 1rem;
@@ -2523,7 +2523,7 @@ text-align: center;
  }
  
  .footer-column h3 {
-   font-size: max(14px,1.2vw);
+   font-size: max(14px,1.8vw);
    margin-bottom: 2vw;
    font-weight: 900;
    color: #000000;
@@ -2558,7 +2558,7 @@ text-align: center;
    padding: 1vw 1vw;
    background-color: #cb464f;
    border-radius: 8px;
-   font-size:  max(15px,1.3vw) ;
+   font-size:  max(12px,1vw) ;
 
   
 

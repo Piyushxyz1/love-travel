@@ -152,15 +152,14 @@ display: inline-block;
 
 
    .dropdown-content {
-     display: none;
-     position: absolute;
-    top:40px;
-  
-    left:-60px;
-    transform: translateX(-25px);
+   display: none;
+   position: absolute;
+   top:40px;
+   left:-60px;
+   transform: translateX(-25px);
     
-    background:#f2f2f2;
-     min-width: 270px;
+   background:#f2f2f2;
+   min-width: 270px;
 
      
    
@@ -308,6 +307,9 @@ header .book {
   cursor: pointer;
   width: 50px;
   height: 50px;
+ 
+  padding: 1vw;
+  
 }
 
 
@@ -319,10 +321,12 @@ header .book {
   top: 37px;  /* Adjust this depending on the navbar height */
   left: 0;
   width: 100%;  /* Make the dropdown take up the full width */
-  background-color: #fff;
+ background-color: #f2f2f2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000;
+
+
 }
 
 .nav-links {
@@ -332,14 +336,16 @@ header .book {
 }
 
 .nav-links li {
-  margin: 2px 0;
+  margin: 1px 0;
 }
 
 .nav-links li a {
   text-decoration: none;
-padding:3px 0;
-  font-size: 18px;
+padding:1px 0;
+text-align: left;
+
   display: block;
+
 
 }
 
@@ -2899,6 +2905,14 @@ width:100%
 
 }
 
+
+.blog_post{
+
+
+   display: flex;
+   flex-direction: column-reverse;
+
+}
 
 
 

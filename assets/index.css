@@ -33,15 +33,6 @@ h1, h2, h3,h4{
     text-rendering: optimizeLegibility;
   }
 
-nav{
-
-
-
-   
-
-
-
-}
 
 
 
@@ -568,8 +559,8 @@ object-fit: cover;
 
 
 
-     .left-content-section  p{
-      font-size: max(15,1.3vw);
+     .left-content-section p{
+      font-size: max(18px,1.3vw);
       line-height: max(21px, 2vw);
         color:#000000;
         font-weight: 400;

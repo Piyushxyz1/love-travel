@@ -2906,20 +2906,9 @@ width:100%;
 
 }
 
-.travel_blog_grid_left{
-
-
-   width: 100%;
-}
 
 
 
-.travel_blog_container_right{
-
-
-
-   width: 100%;
-}
 
 
 .blog_post{
@@ -2928,7 +2917,7 @@ width:100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
+
 }
 
 

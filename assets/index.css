@@ -432,13 +432,8 @@ height: 60vw;
    cursor: pointer;
    position: absolute;
    top: 48%;
- 
-  
-
- 
    width: auto;
-  
-   color: #fff;
+  color: #fff;
    font-weight: bold;
    font-size: 3vw;
    transition: 0.6s ease;
@@ -676,8 +671,7 @@ margin-top:1vw;
 
  .Travel-packages h1{
 
-
-   font-size: 4vw;
+   font-size: max(25px,5vw);
    font-weight: 900;
    color: #405749;
  }
@@ -1286,7 +1280,7 @@ margin-bottom: 2vw;
   
    padding-bottom:2vw;
    font-weight: 900;
-   font-size: max(25px,4vw);
+   font-size: max(25px,5vw);
    color:#fff;
 
  }
@@ -1609,8 +1603,7 @@ cursor: pointer;
 
 .section_hotels_resorts h1{
 
-
-   font-size: 5vw;
+   font-size: max(25px,5vw);
    font-weight: 900;
    text-align: center;
    color:#405749
@@ -1620,7 +1613,7 @@ cursor: pointer;
 
 
 .section_hotels_resorts p{
-   font-size: max(15px,1.3vw);
+   font-size: max(18px,1.3vw);
    line-height: max(21px, 2vw); /* 1.4 to 1.6 times font size */
  
    color:#000000;
@@ -2348,7 +2341,7 @@ text-align: center;
     }
     .travel_blog_grid_left span {
       font-weight: 600;
-      font-size: 1vw;
+      font-size:  max(10px, 1vw);
       
   margin-top: 1vw;
       color: #fff;
@@ -2411,9 +2404,9 @@ text-align: center;
     }
     
     .blog_post span {
-      font-size: 1vw;
+      font-size: max(10px,1vw);
       color: #fff;
-      padding: 0.3vw;
+      padding: 8px;
       background-color: #cb464f;
       border-radius: 8px;
       font-weight: 800;
@@ -2485,15 +2478,15 @@ text-align: center;
  
  
  .footer-column h1 {
-   font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw);
+   font-size: max(25px,3vw);
+
    font-weight: 900;
    margin-bottom: 1rem;
    color: #000000;
  }
  
  .footer-column h3 {
-   font-size: 2vw;
+   font-size: max(20px,2vw);
    margin-bottom: 2vw;
    font-weight: 900;
    color: #000000;
@@ -2507,7 +2500,7 @@ text-align: center;
  
  .footer-column ul li {
    margin-bottom: 2vw;
-   font-size: 1.2vw;
+   font-size: max(17px,1.3vw);
    font-weight: 900;
  }
 
@@ -2840,6 +2833,14 @@ width:100%
 
 }
 
+
+.travel_blog_grid_right{
+
+
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+}
 
 
 

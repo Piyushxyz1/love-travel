@@ -493,10 +493,9 @@ height: 58vw;
   top:38%;
    left:25%;
    right:25%;
-   background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+  
    border-radius: 1vw;
-
-   z-index: 5;
+   z-index: 11;
   
    
    

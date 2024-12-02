@@ -546,7 +546,7 @@ height: 60vw;
    padding-bottom: 0.5vw;
     
     color:#405749;
-   font-size: 5vw;
+   font-size: max(25px,5vw);
    font-weight: 900;
 
 
@@ -576,7 +576,7 @@ height: 60vw;
 .left-content-section button {
 
 
-padding: 1vw 1.5vw;
+padding: 1.5vw 1.5vw;
 border-radius: 5px;
 background-color: rgb(232, 183, 91) ;
 font-weight: 900;
@@ -673,7 +673,7 @@ margin-top:1vw;
  .Travel-packages h1{
 
 
-   font-size: 4vw;
+   font-size: max(25px,5vw);
    font-weight: 900;
    color: #405749;
  }
@@ -753,7 +753,7 @@ margin-top:1vw;
 /* Title Styling */
 .item-title {
    color: #fff;
-   font-size: 2.2vw;
+   font-size: max(20px,2.2vw);
    font-weight: 900;
    text-align: center;
    padding: 1vw;
@@ -778,7 +778,7 @@ margin-top:1vw;
    border-radius: 30px;
    text-align: center;
    text-decoration: none;
-   font-size: 1.2vw;
+   font-size: max(15px,1.2vw);
    font-weight: 900;
    transition: background-color 0.3s ease, transform 0.3s ease;
    opacity: 0; /* Hidden initially */
@@ -2676,11 +2676,13 @@ display:none;
 
 }
 
-.banner_section{
 
-   height:70vw;
+
+.button-link{
+
+
+   opacity: 1;
 }
-
 
 .left-content-section{
 

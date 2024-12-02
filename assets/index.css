@@ -249,21 +249,32 @@ font-weight: 900;
 
 
 
-
 header .book {
+   padding: 1.5vw 1.5vw;
+   font-size: max(10px, 1.3vw);
+   font-weight: 900;
+   color: #fff;
+   text-decoration: none;
+   margin-top: 3vw; /* Adjust margin for larger screens */
+   background-color: #d4000d;
+   border-radius: 50px;
+   transition: 0.3s ease-in;
+}
 
-padding:1.5vw 1.5vw;
+@media (max-width: 767px) {
+   header .book {
+      padding: 8px 16px; /* Reduce padding for mobile devices */
+      font-size: max(12px, 4vw); /* Adjust font size for mobile */
+      margin-top: 2vw; /* Adjust margin-top for smaller screens */
+   }
+}
 
-font-size: max(15px,1.3vw);
-font-weight: 900;
-color:#fff;
-text-decoration: none;
-margin-top: 3vw;
-background-color: #d4000d;
-border-radius: 50px;
-transition: 0.3s ease-in ;
-
-
+@media (max-width: 480px) {
+   header .book {
+      padding: 6px 12px; /* Further reduce padding for very small screens */
+      font-size: max(10px, 3vw); /* Further reduce font size for very small screens */
+      margin-top: 1.5vw; /* Adjust margin-top for very small screens */
+   }
 }
 
 .socials-icon{
@@ -342,7 +353,7 @@ padding:3px 0;
 
 
    position: absolute;
-   bottom: 20%;
+   bottom: 12%;
    left:25%;
    right: 25%;
 
@@ -430,7 +441,7 @@ cursor: pointer;
   
    filter:  brightness(0.7);
 object-fit: cover;
-height: 60vw;
+height: 58vw;
 
  }
  
@@ -475,11 +486,11 @@ height: 60vw;
  /* Caption text */
  .text {
    color: #fff;
-   font-size: 4vw;
+   font-size: max(20px,5vw);
    padding: 8px 0px;
    position: absolute;
   font-weight: 900;
-  top:40%;
+  top:38%;
    left:25%;
    right:25%;
    background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
@@ -2690,7 +2701,7 @@ display:none;
 .button-link{
 
   
-   font-size: max(14px, 5vw); /* Slightly smaller font size on mobile */
+   font-size: max(10px, 3vw); /* Slightly smaller font size on mobile */
    padding: 10px 20px; 
       bottom: 12%; /* Further adjust button for smaller screens */
    font-size: max(12px, 5vw); /* Further reduce font size on very small screens */

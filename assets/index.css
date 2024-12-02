@@ -545,7 +545,7 @@ height: 60vw;
    padding-bottom: 0.5vw;
     
     color:#405749;
-   font-size: 5vw;
+   font-size: max(25px,5vw);
    font-weight: 900;
 
 

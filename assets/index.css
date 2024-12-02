@@ -254,7 +254,7 @@ header .book {
 
 padding:1.5vw 1.5vw;
 
-font-size: max(17px,1.3vw);
+font-size: max(15px,1.3vw);
 font-weight: 900;
 color:#fff;
 text-decoration: none;
@@ -343,11 +343,18 @@ padding:3px 0;
 
    position: absolute;
    bottom: 20%;
-   left:43%;
+   left:25%;
+   right: 25%;
 
 
 }
 
+
+.book_section{
+
+
+   text-align: center;
+}
 
  header .book:hover{
 background-color: #c98080;
@@ -752,6 +759,8 @@ margin-top:1vw;
 
 /* Title Styling */
 .item-title {
+   position: absolute;
+   bottom: 50%;
    color: #fff;
    font-size: max(20px,2.2vw);
    font-weight: 900;

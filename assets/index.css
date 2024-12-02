@@ -576,7 +576,7 @@ height: 58vw;
 
 
    .left-content-section p{
-      font-size: max(18px,1.3vw);
+      font-size: max(15px,1.3vw);
       line-height: max(21px, 2vw);
         color:#000000;
         font-weight: 400;
@@ -2819,6 +2819,7 @@ height: 60vw;
 
    display: flex;
    flex-direction: column;
+   gap:2vw;
   
   
 }
@@ -2828,6 +2829,7 @@ height: 60vw;
 
 
    width: 100%;
+   
 }
 
 

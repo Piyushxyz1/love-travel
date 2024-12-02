@@ -562,11 +562,12 @@ height: 58vw;
 
  .left-content-section h1{
   
-   padding-bottom: 0.5vw;
+   
     
     color:#405749;
-   font-size: max(25px,5vw);
+   font-size: max(50px,4vw);
    font-weight: 900;
+   margin-bottom: 2vw;
 
 
     
@@ -695,6 +696,7 @@ margin-top:1vw;
    font-size:  max(50px,4vw) ;
    font-weight: 900;
    color: #405749;
+   line-height: 1;
  }
 
  .Travel-packages p{
@@ -1118,6 +1120,7 @@ align-items: last baseline;
    padding-top:2vw;
    padding-bottom: 0.5vw;
    color:#405749;
+
 
 
 
@@ -1630,7 +1633,8 @@ cursor: pointer;
    font-size:  max(50px,4vw) ;
    font-weight: 900;
    text-align: center;
-   color:#405749
+   color:#405749;
+   line-height: 1;
 
 }
 

@@ -875,7 +875,7 @@ margin-right: 3vw;
 color:#000000;
  padding:0.5vw;
 font-weight: 900;
-font-size: 4vw;
+font-size: max(20px,4vw);
 cursor: pointer;
 
 
@@ -887,7 +887,7 @@ cursor: pointer;
 .right-arrow{
 color:#000000;
 padding:0.5vw;
-   font-size: 4vw;
+font-size: max(20px,4vw);
 cursor: pointer;
 font-weight: 900;
 
@@ -924,7 +924,7 @@ font-weight: 900;
    color:#000000;
     padding:0.5vw;
    font-weight: 900;
-   font-size: 4vw;
+   font-size: max(20px,4vw);
    cursor: pointer;
    
    
@@ -936,7 +936,7 @@ font-weight: 900;
    .right-arrow2{
    color:#000000;
    padding:0.5vw;
-      font-size: 4vw;
+   font-size: max(20px,4vw);
    cursor: pointer;
    font-weight: 900;
    
@@ -1840,7 +1840,7 @@ transform: scale(1.05);
    color:#000000;
     padding:0.5vw;
    font-weight: 900;
-   font-size: 4vw;
+   font-size: max(20px,4vw);
    cursor: pointer;
    
    
@@ -1852,7 +1852,7 @@ transform: scale(1.05);
    .right-arrow3{
    color:#000000;
    padding:0.5vw;
-      font-size: 4vw;
+   font-size: max(20px,4vw);
    cursor: pointer;
    font-weight: 900;
    
@@ -2365,14 +2365,25 @@ text-align: center;
 
    }
 
-
-
    .travel_blog_grid_container {
       display: grid;
-      grid-template-columns: 1fr  1fr; /* Left column is twice as wide as the right column */
-      align-items: center;
+      grid-template-columns: 1fr 1fr; /* Default layout: two equal columns */
+     
       gap: 2rem; /* Adds spacing between columns */
       margin-top: 4vw; /* Moves the grid down */
+    }
+    
+    @media (max-width: 768px) {
+      .travel_blog_grid_container {
+        grid-template-columns: 1fr; /* Stacks the columns on smaller screens */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .travel_blog_grid_container {
+        gap: 1rem; /* Reduces gap on very small screens */
+        margin-top: 5vw; /* Adjusts margin on very small screens */
+      }
     }
     
     
@@ -2962,6 +2973,11 @@ width:100%;
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) and (max-width:1200px) {
   
+
+    
+    
+
+
 }

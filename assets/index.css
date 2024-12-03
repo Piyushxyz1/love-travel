@@ -2635,6 +2635,17 @@ margin:1vw;
     }
 
 
+
+
+    .footer_social_icons img{
+
+   height:40px;
+   width:40px;
+   margin:5px;
+   padding:5px;
+
+   }
+
 @media only screen and (max-width: 480px) {
 
 

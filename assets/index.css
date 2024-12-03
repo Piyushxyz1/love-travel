@@ -2650,6 +2650,9 @@ margin:1vw;
 
 
 
+
+
+
 .main-icon img {
 
 
@@ -2944,6 +2947,18 @@ width:100%;
 
 
    width: 90vw;
+}
+
+
+
+
+.footer_social_icons img{
+
+
+   height:25px;
+   width: 25px;
+   margin:2px;
+   padding:2px;
 }
 
 

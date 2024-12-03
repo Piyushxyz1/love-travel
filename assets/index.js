@@ -135,7 +135,7 @@ $('.destination-cards').slick({
   slidesToScroll: 4,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1370,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -144,7 +144,7 @@ $('.destination-cards').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -209,8 +209,9 @@ $('.hotels_array').slick({
   slidesToShow: 4,
   slidesToScroll: 4,
   responsive: [
+    
     {
-      breakpoint: 1024,
+      breakpoint: 1370,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -219,7 +220,7 @@ $('.hotels_array').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2

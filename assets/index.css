@@ -1669,8 +1669,8 @@ cursor: pointer;
 
 .hotels_array {
    display: flex;
-   justify-content: space-between;  
-   align-items: center;
+   justify-content: space-between;
+  
 
    overflow-x: auto;  /* Enable horizontal scrolling */
    padding-top: 5vw;  /* Increased top padding */
@@ -1688,11 +1688,11 @@ cursor: pointer;
    overflow: hidden;  /* Prevent overflow from scaling */
    position: relative;
    margin-bottom: 30px;
-   width: 300px;  /* Fixed width for cards */
+   max-width: 300px;  /* Fixed width for cards */
    position: relative;
    min-height:450px;
    transition: 0.3s;
- margin: 1vw;
+
  
    
 }
@@ -1704,7 +1704,7 @@ cursor: pointer;
  
    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
    
-   transform: scale(1.05);
+   transform: scale(1.03);
    
 
 }
@@ -1791,23 +1791,7 @@ cursor: pointer;
 transform: scale(1.05);
 }
 
-/* Optional: Add space around cards for smaller screens */
-@media (max-width: 1024px) {
-   .hotel_card {
-       width: calc(50% - 10px); /* Two cards per row on medium screens */
-   }
-}
 
-@media (max-width: 768px) {
-   .hotel_card {
-       width: calc(100% - 20px); /* One card per row on small screens */
-   }
-
-   .hotels_array {
-       padding-left: 2vw;
-       padding-right: 2vw;
-   }
-}
 
 
 

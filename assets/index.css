@@ -1203,8 +1203,8 @@ filter: brightness(0.8);
  
  /* Each card (destination) */
  .destination-cards .card-lists {
-   width: 300px;  /* Fixed width for each card */
-   height: 300px; /* Fixed height for each card */
+   width: 400px;  /* Fixed width for each card */
+   height: 400px; /* Fixed height for each card */
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -1219,11 +1219,6 @@ filter: brightness(0.8);
  }
 
 
- .card-lists:hover{
-
-
-   transform: scale(1.05);
- }
  
  /* Optional: Style for card header and description inside .card-lists */
  .destination-cards .card-lists h2 {
@@ -1246,7 +1241,7 @@ bottom: 50%;
    color: #fff;
    z-index: 2;
    position: absolute;
-   bottom: 25%;
+   bottom: 35%;
    left: 20%;
    right: 20%;
    font-size: max(12px,1.2vw);
@@ -1264,6 +1259,38 @@ bottom: 50%;
  }
  
 
+
+
+
+
+.destination-cards .card-lists button{
+
+
+  
+   border-radius: 20px;
+   background-color: #d4000d;
+   position: absolute;
+   left: 26%;
+   bottom:10%;
+   font-size: max(18px,2vw);
+   color:#fff;
+   font-weight: 900;
+   border:none;
+   padding: 12px 24px;
+
+
+
+}
+
+
+
+
+ 
+ .card-lists:hover{
+
+
+   transform: scale(1.05);
+ }
 .travel_packages_navigate_arrows2{
 
    text-align: center;
@@ -2394,10 +2421,12 @@ text-align: center;
 
    .travel_blog_grid_container {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* Default layout: two equal columns */
-     
-      gap: 2rem; /* Adds spacing between columns */
-      margin-top: 4vw; /* Moves the grid down */
+      grid-template-columns: 1fr 1fr; 
+      justify-content: center;
+    
+      gap:2rem;
+      margin-top: 3vw;
+   
     }
     
     @media (max-width: 768px) {
@@ -2456,17 +2485,31 @@ text-align: center;
       border-radius: 8px;
 
       object-fit: cover;
+      margin-bottom:1vw ;
     }
-    
+
+   .blog_post_left_1 span ,.blog_post_left_2 span{
+
+      font-weight: 800;
+      font-size:max(13px,1vw);
+
+      background-color: #cb464f;
+      border-radius: 8px;
+      padding:0.5vw;
+      
+   }
+   
+   
     
     .blog_post {
       background: #fff;
       border-radius: 8px;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      width: 100%;
-      margin-top: 1.5vw;
+    
+      margin-bottom: 1vw;
+ 
+      
     
       
       gap: 2vw;
@@ -2474,8 +2517,8 @@ text-align: center;
     }
     
     .blog_post img {
-      width: 200px;
-      height: 200px; 
+      width: 250px;
+      height: 250px; 
       border-radius: 8px;
       object-fit: cover;
     }
@@ -2491,7 +2534,7 @@ text-align: center;
     .blog_post span {
       font-size:max(13px,1vw);
       color: #fff;
-      padding: 1vw;
+      padding: 0.5vw;
      
       background-color: #cb464f;
       border-radius: 8px;

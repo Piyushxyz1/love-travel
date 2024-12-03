@@ -1723,6 +1723,21 @@ cursor: pointer;
    border-radius: 12px;
 }
 
+
+
+.hotel_categories{
+
+
+margin-top: 3vw;
+
+}
+.hotel_categories h1{
+
+   color:#cb464f;
+
+   text-align: left;
+   font-weight: 900;
+}
 /* Slight zoom effect on image hover */
 
 /* Hotel name styling */

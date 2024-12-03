@@ -1677,7 +1677,7 @@ cursor: pointer;
    align-items: center;
 
    overflow-x: auto;  /* Enable horizontal scrolling */
-   padding-top: 5vw;  /* Increased top padding */
+   padding-top: 2vw;  /* Increased top padding */
 
    scroll-behavior: smooth; /* Optional: smooth scrolling */
    -ms-overflow-style: none;  /* For Internet Explorer */

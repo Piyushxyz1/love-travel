@@ -1181,9 +1181,9 @@ filter: brightness(0.8);
 /* /* Container for the destination cards */
 .destination-cards {
    display: flex;
-   justify-content: flex-start;  /* Aligns cards to the left */
+   justify-content: center;  /* Aligns cards to the left */
    align-items: center;
-   gap: 20px;
+   margin-right: 1vw;
    overflow-x: auto;  /* Enable horizontal scrolling */
 
    padding-top: 3vw;
@@ -1212,16 +1212,20 @@ filter: brightness(0.8);
    border-radius: 8px;
    position: relative;
    flex-shrink: 0;  /* Prevent cards from shrinking */
+   margin-right: 1.5vw;
+  
  }
  
  /* Optional: Style for card header and description inside .card-lists */
  .destination-cards .card-lists h2 {
-   text-align: center;
-   font-weight: 700;
-   color: #fff;
-   z-index: 2;
-   position: absolute;
-   bottom: 50%;
+   
+font-weight: 700;
+color: #fff;
+z-index: 2;
+position: absolute;
+
+left:40%;
+bottom: 50%;
    font-size: max(20px,1.3vw);
    
  }
@@ -1669,8 +1673,8 @@ cursor: pointer;
 
 .hotels_array {
    display: flex;
-   justify-content: space-between;
-  
+   justify-content: space-between;  
+   align-items: center;
 
    overflow-x: auto;  /* Enable horizontal scrolling */
    padding-top: 5vw;  /* Increased top padding */
@@ -1688,11 +1692,11 @@ cursor: pointer;
    overflow: hidden;  /* Prevent overflow from scaling */
    position: relative;
    margin-bottom: 30px;
-   max-width: 300px;  /* Fixed width for cards */
+   width: 300px;  /* Fixed width for cards */
    position: relative;
    min-height:450px;
    transition: 0.3s;
-
+ margin: 1vw;
  
    
 }
@@ -1704,7 +1708,7 @@ cursor: pointer;
  
    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
    
-   transform: scale(1.03);
+   transform: scale(1.05);
    
 
 }
@@ -1791,7 +1795,23 @@ cursor: pointer;
 transform: scale(1.05);
 }
 
+/* Optional: Add space around cards for smaller screens */
+@media (max-width: 1024px) {
+   .hotel_card {
+       width: calc(50% - 10px); /* Two cards per row on medium screens */
+   }
+}
 
+@media (max-width: 768px) {
+   .hotel_card {
+       width: calc(100% - 20px); /* One card per row on small screens */
+   }
+
+   .hotels_array {
+       padding-left: 2vw;
+       padding-right: 2vw;
+   }
+}
 
 
 
@@ -2623,17 +2643,14 @@ margin:1vw;
 
     .footer_social_icons img{
 
-   height:40px;
-   width:40px;
-   margin: 0 4px;
-   padding:0 4px;
+   height:25px;
+   width:25px;
+
+
 
    }
 
 @media only screen and (max-width: 480px) {
-
-
-
 
 
 
@@ -2931,18 +2948,6 @@ width:100%;
 
 
    width: 90vw;
-}
-
-
-
-
-.footer_social_icons img{
-
-
-   height:25px;
-   width: 25px;
-   margin:2px;
-   padding:2px;
 }
 
 

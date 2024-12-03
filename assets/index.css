@@ -1212,8 +1212,17 @@ filter: brightness(0.8);
    border-radius: 8px;
    position: relative;
    flex-shrink: 0;  /* Prevent cards from shrinking */
-   margin-right: 1.5vw;
+   
+ transition: 0.3s ease;
+ padding: 1vw;
   
+ }
+
+
+ .card-lists:hover{
+
+
+   transform: scale(1.05);
  }
  
  /* Optional: Style for card header and description inside .card-lists */
@@ -1223,6 +1232,7 @@ font-weight: 700;
 color: #fff;
 z-index: 2;
 position: absolute;
+background: rgb(0,0,0,0.5);
 
 left:40%;
 bottom: 50%;
@@ -1240,6 +1250,7 @@ bottom: 50%;
    left: 20%;
    right: 20%;
    font-size: max(12px,1.2vw);
+   
 
  }
  

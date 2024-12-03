@@ -2522,8 +2522,8 @@ text-align: center;
  
  
  .footer-column h1 {
-   font-size: max(17px,2vw);
-   line-height: max(21px, 2vw);
+   font-size: max(17px,3vw);
+  
    font-weight: 900;
    margin-bottom: 1rem;
    color: #000000;

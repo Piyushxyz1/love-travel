@@ -104,7 +104,7 @@ const rightArrow = document.querySelector('.right-arrow');
 
 leftArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left: -350, 
+    left: -400, 
     behavior: 'smooth', 
   });
 });
@@ -112,8 +112,8 @@ leftArrow.addEventListener('click', () => {
 
 rightArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left:350,
-    behavior: 'smooth', 
+    left:400,
+    behavior:'smooth', 
   });
 });
 

@@ -914,9 +914,11 @@ margin-top:1vw;
 
 
   .item {
-    width: 100%;
-   margin: 0 2vw;
-    height: 350px;
+    width:90vw;
+   margin: 0 30px;
+    height: 450px;
+  
+
   }
 
   .item-title {

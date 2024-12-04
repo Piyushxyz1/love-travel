@@ -96,24 +96,24 @@ gallery.addEventListener('mousemove', (e) => {
 
 
 
-// Select the gallery container and arrows
+
 const galleryContainer = document.querySelector('.gallery-container');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-// Slide the container to the left
+
 leftArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left: -350, // Scroll left by 300px
-    behavior: 'smooth', // Smooth scrolling
+    left: -380, 
+    behavior: 'smooth', 
   });
 });
 
-// Slide the container to the right
+
 rightArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left:350, // Scroll right by 300px
-    behavior: 'smooth', // Smooth scrolling
+    left:380,
+    behavior: 'smooth', 
   });
 });
 
@@ -179,7 +179,7 @@ const rightArrow2 = document.querySelector('.right-arrow2');
 // Slide the container to the left
 leftArrow2.addEventListener('click', () => {
   destinationcards.scrollBy({
-    left: -300, // Scroll left by 300px
+    left: -400, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
@@ -187,7 +187,7 @@ leftArrow2.addEventListener('click', () => {
 // Slide the container to the right
 rightArrow2.addEventListener('click', () => {
   destinationcards.scrollBy({
-    left: 300, // Scroll right by 300px
+    left: 400, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
@@ -249,14 +249,14 @@ const rightArrow3 = document.querySelector('.right-arrow3');
 
 leftArrow3.addEventListener('click', () => {
   hotelsandresorts.scrollBy({
-    left: -300, // Scroll left by 300px
+    left: -350, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
 
 rightArrow3.addEventListener('click', () => {
   hotelsandresorts.scrollBy({
-    left: 300, // Scroll right by 300px
+    left: 350, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });

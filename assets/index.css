@@ -475,7 +475,7 @@ cursor: pointer;
 .text {
   color: #fff;
   font-size: max(30px, 5vw);
-  padding: 8px;
+  
   position: absolute;
   font-weight: 900;
   top: 50%; /* Vertically center the text */

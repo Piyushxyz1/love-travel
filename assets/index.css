@@ -1809,13 +1809,23 @@ cursor: pointer;
 margin-top: 3vw;
 
 }
+
+
 .hotel_categories h1{
 
-  color:#405749;
-
-   text-align: left;
+   
+   font-size: max(25px,3vw);
    font-weight: 900;
+   color:#405749;
+   margin-bottom:1vw;
+   text-align: left;
 }
+
+
+
+
+
+
 /* Slight zoom effect on image hover */
 
 /* Hotel name styling */

@@ -154,7 +154,7 @@ display: inline-block;
    .dropdown-content {
    display: none;
    position: absolute;
-   top:40px;
+   top:45px;
    left:-60px;
    transform: translateX(-25px);
     
@@ -915,7 +915,7 @@ margin-top:1vw;
 
   .item {
     width: 100%;
-   margin: 0 20px;
+   margin: 0 2vw;
     height: 350px;
   }
 

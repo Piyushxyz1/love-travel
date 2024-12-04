@@ -690,164 +690,243 @@ margin-top:1vw;
    display: block; /* Make sure it's a block element */
 }
 
- .Section_Travel_packages{
+/* Section Styling */
+.Section_Travel_packages {
+  padding: 4vw 4.5vw;
+}
 
-   padding: 4vw  4.5vw; 
+.Travel-packages {
+  text-align: center;
+}
 
+.Travel-packages h1 {
+  font-size: max(50px, 4vw);
+  font-weight: 900;
+  color: #405749;
+  line-height: 1;
+  margin-bottom: 2vw;
+}
 
- }
- .Travel-packages{
+.Travel-packages p {
+  font-size: max(15px, 1.3vw);
+  color: #000000;
+  font-weight: 400;
+}
 
-
-   text-align: center;
-
-
- }
-
-
- .Travel-packages h1{
-
-
-   font-size:  max(50px,4vw) ;
-   font-weight: 900;
-   color: #405749;
-   line-height: 1;
-   margin-bottom: 2vw;
- }
-
- .Travel-packages p{
-   font-size: max(15px,1.3vw);
-   
- 
-   color:#000000;
-   font-weight: 400;
- }
-
- 
 /* Container for the entire gallery */
 .gallery-container {
-   margin-top: 3vw;
-   width: 100%;
-   overflow-x: auto; /* Enables horizontal scrolling */
-   scroll-snap-type: x mandatory; /* Enables scroll snapping horizontally */
-   -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile devices */
-   cursor: pointer; /* Change cursor to pointer when not dragging */
-   scrollbar-width: none; /* Firefox: Hides the scrollbar */
-   -ms-overflow-style: none; /* Internet Explorer and Edge: Hides the scrollbar */
-   position: relative;
-   scroll-behavior: smooth; /* Smooth scrolling effect */
-  
- 
+  margin-top: 3vw;
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Enables scroll snapping horizontally */
+  -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile devices */
+  cursor: pointer; /* Change cursor to pointer when not dragging */
+  scrollbar-width: none; /* Firefox: Hides the scrollbar */
+  -ms-overflow-style: none; /* Internet Explorer and Edge: Hides the scrollbar */
+  position: relative;
+  scroll-behavior: smooth; /* Smooth scrolling effect */
 }
 
 /* Items Layout */
 .items {
-   display: flex;
- 
-   flex-wrap: nowrap; /* Ensures no wrapping */
-   justify-content: flex-start; 
-   padding: 20px 0; /* Padding for spacing */
+  display: flex;
+  flex-wrap: nowrap; /* Ensures no wrapping */
+  justify-content: flex-start;
+  padding: 20px 0; /* Padding for spacing */
 }
 
 /* Individual Card Styling */
 .item {
-   position: relative;
-   min-width: 350px; /* Card width */
-   max-width: 400px; /* Card max width */
-   flex-shrink: 0; /* Prevent items from shrinking */
-   border-radius: 12px; /* Rounded corners for the card */
-   overflow: hidden; /* Ensure content doesn't overflow */
-   background-color: #fff; /* Card background */
-   transition: transform 0.3s ease-in-out; /* Hover effect */
-   background-size: cover; /* Ensure the background image covers the card */
-   background-position: center center; /* Center the background image */
-   background-repeat: no-repeat; /* Prevent image repetition */
-   height: 500px; /* Card height */
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end; /* Align button and title to the bottom */
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
-   margin:1vw;
+  position: relative;
+  min-width: 350px; /* Card width */
+  max-width: 400px; /* Card max width */
+  flex-shrink: 0; /* Prevent items from shrinking */
+  border-radius: 12px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure content doesn't overflow */
+  background-color: #fff; /* Card background */
+  transition: transform 0.3s ease-in-out; /* Hover effect */
+  background-size: cover; /* Ensure the background image covers the card */
+  background-position: center center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  height: 500px; /* Card height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align button and title to the bottom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+  margin: 1vw;
 }
 
 /* Overlay for better text visibility */
 .overlay {
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 10px;
-  
-   transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 /* Title Styling */
 .item-title {
-   position: absolute;
-   bottom: 50%;
-   color: #fff;
-   font-size: max(20px,2.2vw);
-   font-weight: 900;
-   text-align: center;
-   padding: 1vw;
-   margin: 0;
-   background: rgba(0, 0, 0, 0.5); /* Title background for readability */
-   border-radius: 10px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-   transition: transform 0.3s ease, opacity 0.3s ease;
-
-   transform: translateY(20px); /* Slightly offset to give animation effect */
+  position: absolute;
+  bottom: 50%;
+  color: #fff;
+  font-size: max(20px, 2.2vw);
+  font-weight: 900;
+  text-align: center;
+  padding: 1vw;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5); /* Title background for readability */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(20px); /* Slightly offset to give animation effect */
 }
 
 /* Button Link Styling */
 .button-link {
-   position: absolute;
-   bottom: 20%;
-   left: 50%;
- 
-   background-color: #d4000d;
-   color: white;
-   padding: 12px 24px;
-   border-radius: 30px;
-   text-align: center;
-   text-decoration: none;
-   font-size: max(15px,2vw);
-   font-weight: 900;
-   transition: background-color 0.3s ease, transform 0.3s ease;
-   opacity: 0; /* Hidden initially */
-   transform: translateX(-50%) translateY(20px); /* Slight offset */
-   transition: 0.3s ;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  background-color: #d4000d;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: max(15px, 2vw);
+  font-weight: 900;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  opacity: 0; /* Hidden initially */
+  transform: translateX(-50%) translateY(20px); /* Slight offset */
+  transition: 0.3s;
 }
-
-
-
 
 /* Hover effect on each card */
 .item:hover {
-   transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Hover effect to reveal overlay */
 .item:hover .overlay {
-   opacity: 1; /* Show overlay with text */
+  opacity: 1; /* Show overlay with text */
 }
 
 /* Hover effect for the title */
 .item:hover .item-title {
-   transform: translateY(-10px); /* Slight move-up effect */
- 
+  transform: translateY(-10px); /* Slight move-up effect */
 }
 
 /* Hover effect for the button */
 .item:hover .button-link {
-   opacity: 1; /* Show the button on hover */
-   transform: translateX(-50%) translateY(-30px) ; /* Move the button up */
+  opacity: 1; /* Show the button on hover */
+  transform: translateX(-50%) translateY(-30px); /* Move the button up */
+}
+
+/* Media Queries for responsiveness */
+
+/* Large screens (laptops, desktops) */
+@media (max-width: 1200px) {
+  .Section_Travel_packages {
+    padding: 3vw 3.5vw;
+  }
+
+  .Travel-packages h1 {
+    font-size: max(45px, 3.8vw);
+  }
+
+  .Travel-packages p {
+    font-size: max(14px, 1.2vw);
+  }
+
+  .item {
+    min-width: 300px;
+    max-width: 350px;
+    height: 450px;
+  }
+
+  .item-title {
+    font-size: max(18px, 2vw);
+  }
+
+  .button-link {
+    font-size: max(14px, 1.8vw);
+    padding: 10px 20px;
+  }
+}
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 768px) {
+  .Section_Travel_packages {
+    padding: 4vw 4vw;
+  }
+
+  .Travel-packages h1 {
+    font-size: max(40px, 5vw);
+  }
+
+  .Travel-packages p {
+    font-size: max(13px, 1.4vw);
+  }
+
+  .gallery-container {
+    margin-top: 5vw;
+  }
+
+  .item {
+    min-width: 270px;
+    max-width: 320px;
+    height: 400px;
+  }
+
+  .item-title {
+    font-size: max(16px, 2.5vw);
+  }
+
+  .button-link {
+    font-size: max(14px, 2vw);
+    padding: 10px 20px;
+  }
+}
+
+/* Small screens (smartphones, mobile devices) */
+@media (max-width: 480px) {
+  .Section_Travel_packages {
+    padding: 5vw 3vw;
+  }
+
+  .Travel-packages h1 {
+    font-size: max(30px, 6vw);
+  }
+
+  .Travel-packages p {
+    font-size: max(12px, 2.5vw);
+  }
+
+  .gallery-container {
+    margin-top: 6vw;
+  }
+
+  .item {
+    min-width: 250px;
+    max-width: 280px;
+    height: 350px;
+  }
+
+  .item-title {
+    font-size: max(14px, 3.5vw);
+  }
+
+  .button-link {
+    font-size: max(12px, 3vw);
+    padding: 8px 18px;
+  }
 }
 
 
@@ -1177,7 +1256,14 @@ filter: brightness(0.8);
   
 
  }
-/* Container for the destination cards */
+
+
+
+
+
+
+
+ /* Container for the destination cards */
 .destination-cards {
    display: flex;
    justify-content: flex-start;  /* Align cards to the left */
@@ -1226,10 +1312,11 @@ filter: brightness(0.8);
    color: #fff;
    z-index: 2;
    position: absolute;
-   background: rgba(0,0,0,0.5);
-   left: 40%;
-   bottom: 50%;
-   font-size: max(20px,1.3vw);
+   left: 50%;
+   transform: translateX(-50%);  /* Center horizontally */
+   bottom: 50%;  /* Initially position at the center */
+   font-size: max(20px, 1.3vw);
+   text-align: center;
  }
  
  .destination-cards .card-lists p {
@@ -1241,7 +1328,7 @@ filter: brightness(0.8);
    bottom: 35%;
    left: 20%;
    right: 20%;
-   font-size: max(12px,1.2vw);
+   font-size: max(12px, 1.2vw);
  }
  
  /* Image style */
@@ -1261,7 +1348,7 @@ filter: brightness(0.8);
    left: 50%;
    bottom: 10%;  /* Adjust vertical position */
    transform: translateX(-50%);  /* Center the button horizontally */
-   font-size: max(18px,2vw);
+   font-size: max(18px, 2vw);
    color: #fff;
    font-weight: 900;
    border: none;
@@ -1322,7 +1409,6 @@ filter: brightness(0.8);
      padding: 10px 20px;
    }
  }
- 
 
  
  .card-lists:hover{

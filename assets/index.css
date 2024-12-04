@@ -1011,116 +1011,6 @@ padding-bottom: 5vw;
 }
 
 
-  .trip-selection{
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height:400px;
-
-
-  }
-
-
-
-
-
-  
-  .trip-selection p:first-child{
-         
-   
-        font-family: "Cedarville Cursive", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: max(12px,1.5vw);
-        color:rgb(9, 137, 59);
-      
-      
-    
- }
-
-
-
-
- .trip-selection h3{
-
-    font-size: max(22px,2.5vw);
-    font-weight: 900;
-
-
-
- }
-
-
-
- .trip-selection p:last-child{
-   font-size: 1.3vw;
-   line-height: 2.3vw;
- 
-   color:#000000;
-   font-weight: 400;
- }
-
-
-
- .destination-search-section{
-
-
-    background-color: #fff;
-    border-radius: 8px;
-    width:80%;
-    margin:0  auto;
-    max-height: 300px;
-    padding:1.2vw 2.2vw;
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
- }
-
-
- 
-
-
-
-
- .search-trip{
-
-
-    display: flex;
-    gap:0.5vw;
-    justify-content: center;
-    align-items: center;
-   
-
- }
-
- .search-trip span:first-child{
-
-
-    font-size: 1.8vw;
-    font-weight: 800;
- }
-
-
-
- .search-trip button{
-
-
-    padding:1.5vw 1.5vw;
-    border-radius: 8px;
-    background-color: #CC976C;
-    width: 250px;
-    font-size: 15px;
-    border: none;
-    color:#fff;
-    font-weight: 700;
-
- }
-
-
-
 
  .worldwide-destination{
 background:#fff;
@@ -2673,11 +2563,13 @@ text-align: center;
    background-size: cover;
    background-repeat: no-repeat;
    color: #000000;
-   padding-top: 3vw;
+ display: flex;
+justify-content: center;
+align-items: center;
+ 
 
    padding-left: 4.5vw;
    padding-right: 4.5vw;
-   padding-bottom: 1vw;
 
 
 
@@ -2688,6 +2580,7 @@ text-align: center;
  .footer-container {
    display: flex;
    justify-content: space-between; 
+   
    gap:2.5vw;
   
 
@@ -2728,7 +2621,7 @@ text-align: center;
  
  .footer-column ul li {
    margin-bottom: 2vw;
-   font-size:  max(12px,1vw) ;
+   font-size:  max(12px,1.5vw) ;
    font-weight: 900;
  }
 
@@ -2769,68 +2662,20 @@ text-align: center;
  }
  
  /* Footer bottom */
- .footer-bottom {
-   text-align: left;
-   padding-top: 2vw;
-
- }
  
- .footer-bottom p {
-   margin-right:  1vw;
-   font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw); 
-   color: #000000;
-   display: inline-block;
-   font-weight: 900;
- }
- 
- .footer-bottom-content-right{
-
-
-
-   position: fixed;
-   bottom:2vw;
-   right:2vw;
-   z-index: 10;
- }
- 
-
- 
- .footer-bottom-content-right a:first-child{
-
-
-padding:1vw 1vw;
-border-radius: 8px;
-background-color:rgb(232, 183, 91);
-font-weight: 900;
-margin:1vw;
- }
-
-
-
- .footer-bottom-content-right a:last-child{
-
-
-   padding:1vw 1vw;
-   border-radius: 8px;
-   background-color:#000000;
-   font-weight: 900;
-   margin:1vw;
-    }
-
-
 
 
     .footer_social_icons img{
 
-   height:25px;
-   width:25px;
+   height:50px;
+   width:50px;
+   margin:1rem;
 
 
 
    }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 900px) {
 
 
 
@@ -3087,6 +2932,7 @@ height: 60vw;
 
 
 
+
 .Corbett_details_right{
 
 
@@ -3136,6 +2982,22 @@ width:100%;
    width: 90vw;
 }
 
+
+.footer{
+
+
+  height:300px;
+}
+
+.footer_social_icons img{
+
+  height:25px;
+  width:25px;
+  margin:1px;
+
+
+
+  }
 
 }
 

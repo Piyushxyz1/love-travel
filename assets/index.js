@@ -104,7 +104,7 @@ const rightArrow = document.querySelector('.right-arrow');
 // Slide the container to the left
 leftArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left: -300, // Scroll left by 300px
+    left: -320, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
@@ -112,7 +112,7 @@ leftArrow.addEventListener('click', () => {
 // Slide the container to the right
 rightArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left: 300, // Scroll right by 300px
+    left: 360, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });

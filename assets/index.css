@@ -753,7 +753,7 @@ margin-top:1vw;
   flex-direction: column;
   justify-content: flex-end; /* Align button and title to the bottom */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
-  margin: 1vw;
+ margin: 1vw;
 }
 
 /* Overlay for better text visibility */
@@ -891,15 +891,13 @@ margin-top:1vw;
 
   .button-link {
     font-size: max(14px, 2vw);
-    padding: 10px 20px;
+    padding: 10px 25px;
   }
 }
 
 /* Small screens (smartphones, mobile devices) */
 @media (max-width: 480px) {
-  .Section_Travel_packages {
-    padding: 5vw 3vw;
-  }
+  
 
   .Travel-packages h1 {
     font-size: max(30px, 6vw);
@@ -913,9 +911,11 @@ margin-top:1vw;
     margin-top: 6vw;
   }
 
+
+
   .item {
-    min-width: 250px;
-    max-width: 280px;
+    width: 100%;
+   margin: 0 20px;
     height: 350px;
   }
 

@@ -883,9 +883,10 @@ margin-top:1vw;
 
 
   .item {
-    width:90vw;
-   margin: 0 30px;
-    height: 450px;
+   min-width: 100%;
+
+
+    
   
 
   }
@@ -2612,14 +2613,8 @@ text-align: center;
       border-radius: 8px;
       display: flex;
       justify-content: center;
-    
-      margin-bottom: 1vw;
- 
-      
-    
-      
+    margin-bottom: 1vw;
       gap: 2vw;
-     
     }
     
     .blog_post img {
@@ -2756,7 +2751,7 @@ text-align: center;
    padding: 1vw 1vw;
    background-color: #cb464f;
    border-radius: 8px;
-   font-size:  max(12px,1vw) ;
+   font-size:  max(12px,1vw);
 
   
 
@@ -2860,7 +2855,7 @@ margin:1vw;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center
+   justify-content: center;
  }
  /* Hide social media icons on mobile when dropdown is open */
  .socials-icon .social-icon {

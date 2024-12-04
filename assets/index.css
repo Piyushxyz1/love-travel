@@ -474,7 +474,7 @@ cursor: pointer;
 /* Caption text */
 .text {
   color: #fff;
-  font-size: max(20px, 5vw);
+  font-size: max(30px, 5vw);
   padding: 8px;
   position: absolute;
   font-weight: 900;

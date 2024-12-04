@@ -677,9 +677,10 @@ margin-top:1vw;
 }
 
 .Travel-packages p {
-  font-size: max(17px, 1.3vw);
-  color: #000000;
-  font-weight: 400;
+  font-size: max(15px,1.3vw);
+   line-height: max(21px, 2vw); 
+   color:#000000;
+  
 }
 
 /* Container for the entire gallery */
@@ -870,9 +871,6 @@ margin-top:1vw;
     font-size: max(30px, 6vw);
   }
 
-  .Travel-packages p {
-    font-size: max(12px, 2.5vw);
-  }
 
   .gallery-container {
     margin-top: 6vw;

@@ -1866,6 +1866,20 @@ transform: scale(1.05);
 
 
 
+.hotels_array2 {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding-top: 2vw;  /* Increased top padding */
+
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+  -ms-overflow-style: none;  /* For Internet Explorer */
+  scrollbar-width: none;  /* For Firefox */
+  cursor: pointer; /* Default cursor to indicate scroll */
+}
+
 
 .travel_packages_navigate_arrows3{
 
@@ -1909,6 +1923,52 @@ transform: scale(1.05);
    }
    
 
+
+
+
+
+   
+.travel_packages_navigate_arrows4{
+
+
+
+  text-align: center;
+  margin-top:2vw ;
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  .left-arrow4{
+  margin-right: 3vw;
+  color:#000000;
+   padding:0.5vw;
+  font-weight: 900;
+  font-size: max(20px,4vw);
+  cursor: pointer;
+  
+  
+  
+  }
+  
+  
+  
+  .right-arrow4{
+  color:#000000;
+  padding:0.5vw;
+  font-size: max(20px,4vw);
+  cursor: pointer;
+  font-weight: 900;
+  
+  
+  }
+  
 
 
 

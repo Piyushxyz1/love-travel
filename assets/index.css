@@ -484,7 +484,38 @@ cursor: pointer;
   text-align: center;
   z-index: 10; /* Ensure the caption appears above the image */
   border-radius: 1vw;
+  
 }
+
+
+
+
+.fadetext {
+
+
+animation: fading 2s ease-in-out ;
+
+
+}
+
+
+@keyframes fading {
+
+
+  0%{
+
+    opacity: 0;
+  }
+
+
+  100%{
+
+
+    opacity: 1;
+  }
+  
+}
+
 
 /* Number text (1/3 etc) */
 .numbertext {

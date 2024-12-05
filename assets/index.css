@@ -320,7 +320,7 @@ header .book {
   position: absolute;
   top: 37px;  /* Adjust this depending on the navbar height */
   right: 0;
-  width: 100%;  /* Make the dropdown take up the full width */
+  width: 90%;
 
  background-color: #f2f2f2;
   
@@ -353,7 +353,7 @@ animation: magic 0.5s ease-in-out;
 
     opacity: 1;
 
-width: 100%;
+width: 90%;
 
 
 
@@ -365,18 +365,23 @@ width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
+  
+
+ 
 }
 
 .nav-links li {
   margin: 1px 0;
+ transform: translateX(145px);
+  
+
+  
 }
 
 .nav-links li a {
   text-decoration: none;
 padding:1px 0;
-text-align: left;
-
-  display: block;
+display: block;
 
 
 }

@@ -321,12 +321,13 @@ header .book {
   top: 37px;  /* Adjust this depending on the navbar height */
   right: 0;
   width: 90%;
+  height: 700px;
 
  background-color: #f2f2f2;
   
   padding: 10px 0;
   z-index: 1000;
-animation: magic 0.5s ease-in-out;
+animation: magic 0.5s ease-in-out ;
 
 }
 
@@ -339,6 +340,7 @@ animation: magic 0.5s ease-in-out;
  
     opacity: 0;
     width: 0%;
+    height: 0%;
   
 
   
@@ -354,6 +356,7 @@ animation: magic 0.5s ease-in-out;
     opacity: 1;
 
 width: 90%;
+height:700px;
 
 
 

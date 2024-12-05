@@ -442,8 +442,10 @@ document.getElementById("read-more-btn3").addEventListener("click", function() {
 function toggleMenu() {
   const socials = document.querySelector('.navbar-hamburger');
   socials.classList.toggle('open');  // Toggles the 'open' class to show/hide the icons
+  const overlay = document.getElementById('overlay');
+  if (socials.classList.contains('open')) {
+    overlay.style.display = 'block'; // Show the dark background overlay
+  } else {
+    overlay.style.display = 'none'; // Hide the dark background overlay
+  }
 }
-
-
-
-

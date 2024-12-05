@@ -319,14 +319,46 @@ header .book {
   display: none;  /* Hidden by default */
   position: absolute;
   top: 37px;  /* Adjust this depending on the navbar height */
-  left: 0;
+  right: 0;
   width: 100%;  /* Make the dropdown take up the full width */
+
  background-color: #f2f2f2;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   z-index: 1000;
+animation: magic 0.5s ease-in forwards;
+
+}
 
 
+@keyframes magic {
+  
+
+
+  0%{
+ 
+    opacity: 0;
+    width: 0%;
+  
+
+  
+
+
+
+  }
+
+
+  100%{
+  
+
+    opacity: 1;
+
+width: 100%;
+
+
+
+}
+  
 }
 
 .nav-links {
@@ -505,12 +537,13 @@ animation: fading 2s ease-in-out ;
   0%{
 
     opacity: 0;
+    
   }
 
 
   100%{
 
-
+  
     opacity: 1;
   }
   
@@ -2393,7 +2426,6 @@ align-items: center;
  .footer-container {
    display: flex;
    justify-content: space-between; 
-  
    
    gap:2.5vw;
   
@@ -2417,14 +2449,14 @@ align-items: center;
   
    font-weight: 900;
    margin-bottom: 1rem;
-  
+   color: #000000;
  }
  
  .footer-column h3 {
    font-size: max(14px,1.8vw);
    margin-bottom: 2vw;
    font-weight: 900;
-   
+   color: #000000;
  }
  
  .footer-column ul {

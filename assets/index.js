@@ -215,7 +215,7 @@ $('.hotels_array').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -249,14 +249,14 @@ const rightArrow3 = document.querySelector('.right-arrow3');
 
 leftArrow3.addEventListener('click', () => {
   hotelsandresorts.scrollBy({
-    left: -335, // Scroll left by 300px
+    left: -358, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
 
 rightArrow3.addEventListener('click', () => {
   hotelsandresorts.scrollBy({
-    left: 335, // Scroll right by 300px
+    left: 358, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
@@ -285,7 +285,7 @@ $('.hotels_array2').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -319,14 +319,14 @@ const rightArrow4 = document.querySelector('.right-arrow4');
 
 leftArrow4.addEventListener('click', () => {
   hotelsandresorts2.scrollBy({
-    left: -300, // Scroll left by 300px
+    left: -358, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
 
 rightArrow4.addEventListener('click', () => {
   hotelsandresorts2.scrollBy({
-    left: 300, // Scroll right by 300px
+    left: 358, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
@@ -350,7 +350,7 @@ $('.hotels_array3').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -383,14 +383,14 @@ const rightArrow5 = document.querySelector('.right-arrow5');
 
 leftArrow5.addEventListener('click', () => {
   hotelsandresorts3.scrollBy({
-    left: -300, // Scroll left by 300px
+    left: -358, // Scroll left by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });
 
 rightArrow5.addEventListener('click', () => {
   hotelsandresorts3.scrollBy({
-    left: 300, // Scroll right by 300px
+    left: 358, // Scroll right by 300px
     behavior: 'smooth', // Smooth scrolling
   });
 });

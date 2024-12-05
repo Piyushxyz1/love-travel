@@ -372,7 +372,7 @@ width: 90%;
 
 .nav-links li {
   margin: 1px 0;
- transform: translateX(145px);
+ transform: translateX();
   
 
   

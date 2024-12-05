@@ -580,7 +580,7 @@ cursor: pointer;
 .left-content-section button {
 
 
-padding: 1.2vw 1.2vw;
+padding: 1.5vw 1.5vw;
 border-radius: 5px;
 background-color: rgb(232, 183, 91) ;
 font-weight: 900;
@@ -1308,362 +1308,6 @@ filter: brightness(0.8);
 
 
 
-
- .section_travel_packages{
-
-
-   background: #c98080;
-   padding: 7vw 4.5vw;
-   display: flex;
-   flex-direction: column;
- 
- 
-
-
- }
-
- .travel_packages_section_left{
-
-width: 50%;
-margin:0 auto;
-text-align: center;
-margin-bottom: 2vw;
-;
-
-
- }
-
- .travel_packages_section_left p:first-child{
-
-
-   padding-bottom:1.5vw;
- }
- 
-
- 
-
- .travel_packages_section_left h1{
-
-
-  
-  
-   padding-bottom:2vw;
-   font-weight: 900;
-   font-size:  max(50px,4vw) ;
-   color:#fff;
-
- }
-
-
-
- .travel_packages_section_left p:first-child{
-color:#fff;
-font-size: max(15px,1.3vw);
-    font-family: "Cedarville Cursive", cursive;
-        font-weight: 400;
-        font-style: normal;
-
-  
-  
-
- }
-
-
- .travel_packages_section_left p:last-child{
-  
-   font-size:max(15px,1.5vw);
-   
-
-   color:#fff;
-
-    }
-   
-
-.travel_packages_section_right{
-
-
-   display: flex;
-   justify-content: space-between;
- 
-   align-items: center;
-}
-
-
-
-
-
-
-
-
-.travel_packages_half_board{
-
-
-
-
-   background-color: rgb(255, 245, 203);
-   padding:3.5vw 3.5vw;
-   border-radius: 10px;
-   text-align: center;
-   width: 32%;
-
-  
-}
-
-
-
-
-
-
-
-
-
-
-.travel_packages_half_board h4{
-   font-weight: 900;
-   font-size: max(22px,2vw);
-
-
-
-
-}
-
-
-
-
-
-.travel_packages_half_board span{
-   font-weight: 900;
-   font-size: max(50px,4vw);
-
-
-
-
-}
-
-
-
-.travel_packages_half_board p{
-   font-weight: 900;
-   color: #000000;
-  padding: 0.5vw 0;
-
-
-
-
-}
-
-
-
-
-
-
-.travel_packages_half_board button{
- padding: 1vw 1vw;
-
-
- font-size:max(15px,1vw);
- background-color:rgb(232, 183, 91);
-
- border-radius: 5px;
- margin:1vw 0 ;
- border:none;
- transition: 1s;
- color:#fff;
-
- font-weight: 900;
-
-
-}
-
-
-
-.travel_packages_half_board button:hover{
-
-
-   transform: scale(1.05);
-   cursor: pointer;
-
-
-
-}
-
-
-
-
-.travel_packages_all_inclusive{
-
-
-
-
-   background-color: rgb(255, 245, 203);
-   padding:3.5vw 3.5vw;
-   border-radius: 10px;
-   text-align: center;
-   width: 32%;
-  background:#54595F;
-  color:#fff;
-
-  
-
-
-
-}
-
-
-.travel_packages_all_inclusive h4{
-
-
-   font-weight: 900;
-   font-size: max(22px,2vw);
-   color:#fff;
-
-}
-
-
-
-
-.travel_packages_all_inclusive span{
-
-   font-weight: 900;
-   font-size: max(50px,4vw);
-   color:#fff;
-
-
-}
-
-
-
-.travel_packages_all_inclusive p{
-
-   font-weight: 900;
-   color: #000000;
-   padding: 0.5vw 0;
- 
-   color:#fff;
-}
-
-
-
-.travel_packages_all_inclusive button{
-
-   padding: 1vw 1vw;
-
-
-   font-size: max(15px,1vw);
-   background-color:rgb(232, 183, 91);
-
-   border-radius: 5px;
-   margin:1vw 0 ;
-   border:none;
-   transition: 1s;
-   color:#fff;
-   font-weight: 900;
-
-   
-}
-
-
-
-
-.travel_packages_all_inclusive button:hover{
-
-   transform: scale(1.05);
-   cursor: pointer;
-
-   
-}
-
-
-.travel_packages_incursions_included{
-
-
-
-   background-color: rgb(255, 245, 203);
-   padding:3.5vw 3.5vw;
-   border-radius: 10px;
-   text-align: center;
-   width: 32%;
-   background-color:#CC976C;
-
-
-
-}
-
-.travel_packages_incursions_included h4{
-
-
-   font-weight: 900;
-   font-size: max(22px,2vw);
-   color:#fff;
-
-
-}
-
-
-
-
-.travel_packages_incursions_included  span{
-
-
-   font-weight: 900;
-   font-size: max(50px,4vw);
-   color:#fff;
-
- 
-}
-
-
-
-
-
-.travel_packages_incursions_included  p{
-
-
-   font-weight: 900;
-   color: #000000;
-   padding: 0.5vw 0;
-   color:#fff;
- 
-
- 
-}
-
-
-
-
-.travel_packages_incursions_included button{
-
-
-   padding: 1vw 1vw;
-
-
-   font-size: max(15px,1vw);
-
-   background-color: rgb(232, 183, 91);
-   font-weight: 600;
-   border-radius: 5px;
-   margin:1vw 0 ;
-   border:none;
-   transition: 1s;
-   color:#fff;
-   font-weight: 900;
-
- 
-}
-
-
-
-
-
-.travel_packages_incursions_included button:hover{
-
-transform:scale(1.05);
-cursor: pointer;
- 
-}
-
-
-
 .section_hotels_resorts{
 
 
@@ -2024,15 +1668,15 @@ align-items: center;
 
 
 
-   padding:1.2vw 1.2vw;
-   background-color:rgb(232, 183, 91);
-   border:none;
-   border-radius: 5px;
-   margin-top: 1vw;
-   color:#fff;
-   font-weight: 900;
-   font-size: max(15px, 1vw);
-   cursor: pointer;
+  padding: 1.5vw 1.5vw;
+  border-radius: 5px;
+  background-color: rgb(232, 183, 91) ;
+  font-weight: 900;
+  font-size: max(15px, 1vw);
+  color:#fff;
+  border: none;
+  transition: 0.1s;
+  margin-top:1vw;
 }
 
 
@@ -2122,16 +1766,19 @@ text-align: left;
 
 
 
-   padding:1.2vw  1.2vw;
-   background-color:rgb(232, 183, 91);
-   border:none;
-   border-radius: 5px;
-   margin: 2vw 0;
-   color:#fff;
-   font-weight: 900;
-   font-size: max(15px, 1vw);
-   cursor: pointer;
-   }
+  padding: 1.5vw 1.5vw;
+  border-radius: 5px;
+  background-color: rgb(232, 183, 91) ;
+  font-weight: 900;
+  font-size: max(15px, 1vw);
+  color:#fff;
+  border: none;
+  transition: 0.1s;
+  margin-top:1vw;
+  margin-bottom: 2vw;
+
+
+  }
 
 .Corbett_details_right  img {
 
@@ -2229,15 +1876,15 @@ margin-bottom: 2vw;
  .book_safari_btn{
 
 
-
-   padding:1.2vw 1.2vw;
-   background-color: rgb(232, 183, 91);
-   color: #fff;
-   font-weight: 900;
-   font-size: max(15px ,1vw);
-   Border:none;
-   border-radius: 5px;
-   margin-top: 2vw;
+  padding: 1.5vw 1.5vw;
+  border-radius: 5px;
+  background-color: rgb(232, 183, 91) ;
+  font-weight: 900;
+  font-size: max(15px, 1vw);
+  color:#fff;
+  border: none;
+  transition: 0.1s;
+  margin-top:2vw;
    
  }
 
@@ -2342,14 +1989,17 @@ margin-bottom:1vw ;
 
 .section_wandering_soul_section_left button{
 
-   padding:1.2vw;
-   background-color: rgb(232, 183, 91);
-   font-weight: 900;
-   margin-top: 1vw;
-   border: none;
-   border-radius: 5px;
-   color:#fff;
-   font-size: max(15px, 1vw);
+
+  padding: 1.5vw 1.5vw;
+  border-radius: 5px;
+  background-color: rgb(232, 183, 91) ;
+  font-weight: 900;
+  font-size: max(15px, 1vw);
+  color:#fff;
+  border: none;
+  transition: 0.1s;
+  margin-top:2vw;
+  margin-bottom: 2vw;
 
 
 

@@ -122,10 +122,10 @@ list-style: none;
 
     .main-navbar ul li a{
 
-
-      font-size: max(18px,1.2vw);
-      font-weight: 600;
-        color:#000000;
+      font-size: max(18px,1.3vw);
+      font-weight: 800;
+        color:#405749;
+        padding: 0 2px;
       
        
         transition: 0.4s;
@@ -135,7 +135,7 @@ list-style: none;
 
 
 .main-navbar ul li a:hover{
-color:rgb(159, 105, 5) ;
+
 cursor: pointer;
 
 
@@ -195,7 +195,7 @@ display: inline-block;
      font-weight: 600;
    
     
-color:rgb(232, 183, 91);
+color:#405749;
 
  
    }
@@ -235,7 +235,7 @@ color:rgb(232, 183, 91);
 
 background-color:#f2f2f2;
 
-color:rgb(232, 183, 91);
+
 font-weight: 900;
 
 
@@ -1555,6 +1555,77 @@ transform: scale(1.05);
 }
 
 
+
+
+
+
+.hotels_array3 {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  padding-top: 2vw;  /* Increased top padding */
+
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+  -ms-overflow-style: none;  /* For Internet Explorer */
+  scrollbar-width: none;  /* For Firefox */
+  cursor: pointer; /* Default cursor to indicate scroll */
+}
+
+
+
+
+
+
+
+.travel_packages_navigate_arrows5{
+
+
+
+  text-align: center;
+  margin-top:2vw ;
+  
+  
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  .left-arrow5{
+  margin-right: 3vw;
+  color:#000000;
+   padding:0.5vw;
+  font-weight: 900;
+  font-size: max(20px,4vw);
+  cursor: pointer;
+  
+  
+  
+  }
+  
+  
+  
+  .right-arrow5{
+  color:#000000;
+  padding:0.5vw;
+  font-size: max(20px,4vw);
+  cursor: pointer;
+  font-weight: 900;
+  
+  
+  }
+  
+  
+  
+  
+
+
+
 .travel_packages_navigate_arrows3{
 
 
@@ -2304,7 +2375,7 @@ text-align: center;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   color: #000000;
+   color: #405749;
  display: flex;
 justify-content: center;
 align-items: center;
@@ -2322,6 +2393,7 @@ align-items: center;
  .footer-container {
    display: flex;
    justify-content: space-between; 
+  
    
    gap:2.5vw;
   
@@ -2345,14 +2417,14 @@ align-items: center;
   
    font-weight: 900;
    margin-bottom: 1rem;
-   color: #000000;
+  
  }
  
  .footer-column h3 {
    font-size: max(14px,1.8vw);
    margin-bottom: 2vw;
    font-weight: 900;
-   color: #000000;
+   
  }
  
  .footer-column ul {

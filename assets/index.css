@@ -372,7 +372,7 @@ width: 90%;
 
 .nav-links li {
   margin: 1px 0;
- transform: translateX();
+ transform: translateX(35%);
   
 
   
@@ -382,6 +382,8 @@ width: 90%;
   text-decoration: none;
 padding:1px 0;
 display: block;
+font-weight: 400;
+font-size: 12px;
 
 
 }

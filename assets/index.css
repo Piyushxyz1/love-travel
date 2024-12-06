@@ -314,7 +314,7 @@ header .book {
 .dropdown-menu-hamburger {
   display: none;  /* Hidden by default */
   position: absolute;
-  top: 41px;  /* Adjust this depending on the navbar height */
+  top: 40px;  /* Adjust this depending on the navbar height */
   right: 0;
   width: 90%;
   height: 100vh;

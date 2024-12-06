@@ -450,7 +450,7 @@ function toggleMenu() {
       },200)
     } else {
       let doc = document.body;
-      doc.style.backgroundColor = "";  // Remove the background color when the menu is closed
+      doc.style.backgroundColor = "";  
     }
   }
 }

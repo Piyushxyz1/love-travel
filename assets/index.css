@@ -546,8 +546,7 @@ cursor: pointer;
   position: relative;
   width: 100%;
   height: 100%;
-
-  overflow: hidden; /* Hide any overflow for the slides */
+overflow: hidden; /* Hide any overflow for the slides */
 }
 
 /* Hide the images by default */

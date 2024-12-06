@@ -324,8 +324,8 @@ header .book {
   background-size: cover;
   padding: 10px 0;
   animation: magic 0.5s ease-in-out ;
+  z-index: 100;
 }
-
 
 @keyframes magic {
   

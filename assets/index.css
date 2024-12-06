@@ -318,13 +318,12 @@ header .book {
   right: 0;
   width: 90%;
   height: 100vh;
-
- background-color: #000000;
-  
+  background:url("../assets/images/reduced_brightness_60_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 10px 0;
-
-animation: magic 0.5s ease-in-out ;
-
+  animation: magic 0.5s ease-in-out ;
 }
 
 
@@ -386,6 +385,7 @@ width: 90%;
   
 
   left:2vw;
+  z-index: 10;
 
 
 
@@ -408,6 +408,7 @@ height:12px;
 width: 12px;
 position: absolute;
 right:5vw;
+z-index: 10;
 
 
 }

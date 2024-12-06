@@ -445,6 +445,7 @@ function toggleMenu() {
   if (socials.classList.contains('open')) {
     let doc = document.body;  // Get the body element
     doc.style.backgroundColor = "rgba(0, 0, 0, 0.5)";  // Set background color with transparency
+   
   } else {
     let doc = document.body;
     doc.style.backgroundColor = "";  // Remove the background color when the menu is closed

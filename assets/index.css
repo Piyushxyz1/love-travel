@@ -2441,8 +2441,8 @@ align-items: center;
  
  .footer-column ul li {
    margin-bottom: 2vw;
-   font-size:  max(12px,1.5vw) ;
-   font-weight: 900;
+   font-size:  max(10px,1vw) ;
+   font-weight: 800;
  }
 
 
@@ -2451,18 +2451,18 @@ align-items: center;
  
  .footer-column ul li  a{
    margin-bottom: 1vw;
-   font-size:  max(12px,1vw) ;
+   font-size:  max(10px,1vw) ;
  }
  
  
  .footer-column ul li a {
    color: #000000;
-   font-weight: 900;
+   font-weight: 800;
    text-decoration:none;
    padding: 1vw 1vw;
    background-color: #cb464f;
    border-radius: 8px;
-   font-size:  max(12px,1vw);
+   font-size:  max(10px,1vw);
 
   
 
@@ -2487,9 +2487,9 @@ align-items: center;
 
     .footer_social_icons img{
 
-   height:50px;
-   width:50px;
-   margin:1rem;
+   height:40px;
+   width:40px;
+   margin:1vw;
 
 
 

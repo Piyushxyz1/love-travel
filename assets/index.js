@@ -447,7 +447,7 @@ function toggleMenu() {
 
         doc.style.backgroundColor = "rgba(0, 0, 0, 0.5)";  // Set background color with transparency
 
-      },400)
+      },200)
     } else {
       let doc = document.body;
       doc.style.backgroundColor = "";  // Remove the background color when the menu is closed

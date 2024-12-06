@@ -729,7 +729,7 @@ animation: fading 2s ease-in-out ;
 .left-content-section button {
 
 
-padding: 1.5vw 1.5vw;
+padding: 1vw 1vw;
 border-radius: 5px;
 background-color: rgb(232, 183, 91) ;
 font-weight: 900;
@@ -1868,7 +1868,7 @@ align-items: center;
 
 
 
-  padding: 1.5vw 1.5vw;
+  padding: 1vw 1vw;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -1966,7 +1966,7 @@ text-align: left;
 
 
 
-  padding: 1.5vw 1.5vw;
+  padding: 1vw 1vw;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -2076,7 +2076,7 @@ margin-bottom: 2vw;
  .book_safari_btn{
 
 
-  padding: 1.5vw 1.5vw;
+  padding: 1vw 1vw;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -2190,7 +2190,7 @@ margin-bottom:1vw ;
 .section_wandering_soul_section_left button{
 
 
-  padding: 1.5vw 1.5vw;
+  padding: 1vw 1vw;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -2441,7 +2441,7 @@ text-align: center;
       background: rgb(232, 183, 91);
       color: #fff;
       border: none;
-      padding: 0.75rem 1.5rem;
+      padding: 1vw 1vw;
       border-radius: 4px;
       cursor: pointer;
       font-size: 1.2vw;
@@ -2586,6 +2586,11 @@ align-items: center;
 }
 
 
+.main-navbar .main_nav_ul li a {
+
+  display:none;
+  
+  }
 
 
 .main-icon img {
@@ -2648,11 +2653,6 @@ align-items: center;
 }
 
 
-.main-navbar .main_nav_ul li a {
-
-display:none;
-
-}
 
 
 
@@ -2666,6 +2666,13 @@ display:none;
 
 
 
+
+.left-content-section button{
+
+
+  padding:1.5vw 1.5vw;
+
+}
 .main-content{
 
 
@@ -2779,6 +2786,16 @@ height: 60vw;
 }
 
 
+.Corbett_details_left button{
+
+  padding: 1.5vw 1.5vw;
+}
+
+
+.Corbett_details_right button {
+
+  padding:1.5vw;
+}
 
 
 
@@ -2850,6 +2867,11 @@ height: 60vw;
 
 width:100%;
 
+}
+.Corbett_safari_zones button{
+
+
+  padding:1.5vw 1.5vw;
 }
 
 

@@ -404,8 +404,8 @@ width: 90%;
 
 
 .nav-links li a img{
-height:12px;
-width: 12px;
+height:15px;
+width: 15px;
 position: absolute;
 right:5vw;
 z-index: 20;
@@ -462,8 +462,8 @@ animation: heads 1s ease-in;
 padding:1vw 0;
 
 
-font-weight: 400;
-font-size: 12px;
+font-weight: 500;
+font-size: 15px;
 color:#fff;
 
   }

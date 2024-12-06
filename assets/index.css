@@ -193,12 +193,8 @@ display: inline-block;
      text-align: center;
      font-size: 1.2vw;
      font-weight: 600;
-   
-    
-color:#405749;
-
- 
-   }
+    color:#405749;
+    }
    
 
    .dropdown  {
@@ -216,7 +212,7 @@ color:#405749;
      text-decoration: none;
   
    }
-
+  
 
    
    .dropdown  li {
@@ -318,12 +314,12 @@ header .book {
 .dropdown-menu-hamburger {
   display: none;  /* Hidden by default */
   position: absolute;
-  top: 37px;  /* Adjust this depending on the navbar height */
+  top: 41px;  /* Adjust this depending on the navbar height */
   right: 0;
   width: 90%;
   height: 100vh;
 
- background-color: #f2f2f2;
+ background-color: #000000;
   
   padding: 10px 0;
   z-index: 1000;
@@ -376,12 +372,15 @@ width: 90%;
   
 }
 
-.nav-links li a {
+ .dropdown-menu-hamburger .nav-links li a {
   text-decoration: none;
 padding:1px 0;
 display: block;
 font-weight: 400;
 font-size: 12px;
+color:#fff;
+
+
 
 
 }
@@ -2529,6 +2528,7 @@ align-items: center;
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   
  }
  /* Hide social media icons on mobile when dropdown is open */
  .socials-icon .social-icon {

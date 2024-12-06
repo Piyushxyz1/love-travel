@@ -437,12 +437,20 @@ document.getElementById("read-more-btn3").addEventListener("click", function() {
 
 
 
-
-
 function toggleMenu() {
   const socials = document.querySelector('.navbar-hamburger');
   socials.classList.toggle('open');  // Toggles the 'open' class to show/hide the icons
+
+  // Check if the 'open' class is in the class list
+  if (socials.classList.contains('open')) {
+    let doc = document.body;  // Get the body element
+    doc.style.backgroundColor = "rgba(0, 0, 0, 0.5)";  // Set background color with transparency
+  } else {
+    let doc = document.body;
+    doc.style.backgroundColor = "";  // Remove the background color when the menu is closed
+  }
 }
+
 
 
 

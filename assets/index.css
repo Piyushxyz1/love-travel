@@ -2499,11 +2499,21 @@ align-items: center;
 
 
 
+
+.main-navbar{
+
+
+  padding:5px;
+}
+
+
+
+
 .main-icon img {
 
 
    width: 100px;
-   padding: 1vw;
+   
 
 }
 

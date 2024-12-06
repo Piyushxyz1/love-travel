@@ -323,7 +323,7 @@ header .book {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 10px 0;
-  animation: magic 0.5s ease-in-out ;
+  animation: magic 0.3s ease-in-out ;
   z-index: 999;
 }
 
@@ -385,7 +385,7 @@ width: 90%;
   
 
   left:2vw;
-  z-index: 10;
+  z-index: 999;
 
 
 
@@ -408,7 +408,7 @@ height:15px;
 width: 15px;
 position: absolute;
 right:5vw;
-z-index: 20;
+z-index: 999;
 
 
 }
@@ -420,7 +420,7 @@ color:#fff;
 text-align: center;
 padding-left: 1vw;
 font-weight: 400;
-animation: heads 1s ease-in;
+animation: heads 1.5s ease-in;
 
 }
 

@@ -1413,24 +1413,23 @@ filter: brightness(0.8);
    align-items: center;
 
    overflow-x: auto;  /* Enable horizontal scrolling */
-   padding-top: 2vw;  /* Increased top padding */
-
-   scroll-behavior: smooth; /* Optional: smooth scrolling */
+   padding-top: 2vw; 
+   scroll-behavior: smooth; 
    -ms-overflow-style: none;  /* For Internet Explorer */
    scrollbar-width: none;  /* For Firefox */
-   cursor: pointer; /* Default cursor to indicate scroll */
+   cursor: pointer; 
 }
 
 /* Styling for each hotel card */
 .hotel_card {
    background-color: white;
    border-radius: 12px;
-   overflow: hidden;  /* Prevent overflow from scaling */
+   overflow: hidden;  
    position: relative;
    margin-bottom: 30px;
-   width: 300px;  /* Fixed width for cards */
+   width: 300px;  
    position: relative;
-   min-height:450px;
+   height:500px;
    transition: 0.3s;
  margin: 1vw;
  

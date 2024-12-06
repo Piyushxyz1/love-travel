@@ -219,7 +219,7 @@ $('.hotels_array').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 884,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -289,7 +289,7 @@ $('.hotels_array2').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 884,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
@@ -354,7 +354,7 @@ $('.hotels_array3').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 884,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2

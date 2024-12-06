@@ -355,17 +355,17 @@ width: 90%;
   
 }
 
-.nav-links {
+ 
+.dropdown-menu-hamburger .nav-links {
   list-style: none;
-  padding: 0;
-  margin: 0;
+ 
 
   
 
  
 }
 
-.nav-links li a {
+ .dropdown-menu-hamburger .nav-links li a {
   position: relative;
 
 
@@ -380,7 +380,7 @@ width: 90%;
 
 
 
-.nav-links li a span {
+  .dropdown-menu-hamburger .nav-links li a span {
   position: absolute;
 
   

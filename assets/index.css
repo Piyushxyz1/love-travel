@@ -365,25 +365,57 @@ width: 90%;
 }
 
 .nav-links li {
-  margin: 1px 0;
- transform: translateX(35%);
+
+
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  
+  
+
+}
+
+.nav-links li  a{
+transform: translateX(-40%);
+text-align: center;
   
 
   
 }
 
+
+
+
+
+.nav-links li  img{
+
+
+height:12px;
+width: 12px;
+margin-right: 3vw;
+
+
+
+  
+}
+.dropdown-menu-hamburger h1{
+
+color:#fff;
+text-align: left;
+padding-left: 1vw;
+font-weight: 400;
+
+}
+
  .dropdown-menu-hamburger .nav-links li a {
   text-decoration: none;
-padding:1px 0;
+padding:1vw 0;
 display: block;
 font-weight: 400;
 font-size: 12px;
 color:#fff;
 
-
-
-
-}
+  }
 
 
 

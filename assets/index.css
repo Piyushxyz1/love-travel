@@ -1556,36 +1556,6 @@ margin-top: 3vw;
 transform: scale(1.05);
 }
 
-/* Optional: Add space around cards for smaller screens */
-@media (max-width: 1024px) {
-   .hotel_card {
-       width: calc(50% - 10px); /* Two cards per row on medium screens */
-   }
-}
-
-@media (max-width: 768px) {
-   .hotel_card {
-       width: calc(100% - 20px); /* One card per row on small screens */
-   }
-
-   .hotels_array {
-       padding-left: 2vw;
-       padding-right: 2vw;
-   }
-
-   .hotels_array2 {
-    padding-left: 2vw;
-    padding-right: 2vw;
-}
-
-
-.hotels_array3 {
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
-}
-
-
 
 
 
@@ -2286,18 +2256,6 @@ text-align: center;
    
     }
     
-    @media (max-width: 768px) {
-      .travel_blog_grid_container {
-        grid-template-columns: 1fr; /* Stacks the columns on smaller screens */
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .travel_blog_grid_container {
-        gap: 1rem; /* Reduces gap on very small screens */
-        margin-top: 5vw; /* Adjusts margin on very small screens */
-      }
-    }
     
     
 
@@ -2545,6 +2503,7 @@ align-items: center;
 
 
    width: 100px;
+   padding: 1vw;
 
 }
 

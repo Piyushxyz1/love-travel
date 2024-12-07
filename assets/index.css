@@ -9,7 +9,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    
+    user-select: none;  /* Disable text selection */
+    -webkit-user-select: none;  /* Disable text selection for Safari */
+    -moz-user-select: none;  /* For older Firefox versions */
+    -ms-user-select: none;  /* For Internet Explorer */
     
 
 
@@ -845,6 +848,7 @@ margin-top:1vw;
   -ms-overflow-style: none; /* Internet Explorer and Edge: Hides the scrollbar */
   position: relative;
   scroll-behavior: smooth; /* Smooth scrolling effect */
+  
 }
 
 /* Items Layout */

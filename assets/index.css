@@ -412,7 +412,7 @@ height:15px;
 width: 15px;
 position: absolute;
 right:5vw;
-z-index: 999;
+
 
 
 }
@@ -840,7 +840,7 @@ margin-top:1vw;
 /* Container for the entire gallery */
 .gallery-container {
   margin-top: 3vw;
-  width: 100%;
+
   overflow-x: auto; /* Enables horizontal scrolling */
   scroll-snap-type: x mandatory; /* Enables scroll snapping horizontally */
   -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile devices */
@@ -850,6 +850,7 @@ margin-top:1vw;
   position: relative;
   scroll-behavior: smooth; /* Smooth scrolling effect */
   
+  
 }
 
 /* Items Layout */
@@ -858,13 +859,15 @@ margin-top:1vw;
   flex-wrap: nowrap; /* Ensures no wrapping */
   justify-content: flex-start;
   padding: 20px 0; /* Padding for spacing */
+  width: 100%;
 }
 
 /* Individual Card Styling */
 .item {
   position: relative;
-  min-width: 350px; /* Card width */
-  max-width: 400px; /* Card max width */
+  width: 430px; /* Card width */
+
+
   flex-shrink: 0; /* Prevent items from shrinking */
   border-radius: 12px; /* Rounded corners for the card */
   overflow: hidden; /* Ensure content doesn't overflow */
@@ -877,7 +880,7 @@ margin-top:1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Align button and title to the bottom */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow for depth */
+ 
  margin: 1vw;
 }
 
@@ -957,7 +960,7 @@ margin-top:1vw;
 /* Media Queries for responsiveness */
 
 /* Large screens (laptops, desktops) */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .Section_Travel_packages {
     padding: 3vw 3.5vw;
   }
@@ -969,8 +972,8 @@ margin-top:1vw;
  
 
   .item {
-    min-width: 300px;
-    max-width: 350px;
+    width: 31%;
+   
     height: 450px;
   }
 
@@ -984,10 +987,12 @@ margin-top:1vw;
   }
 }
 
-/* Medium screens (tablets, small laptops) */
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 912px) {
   .Section_Travel_packages {
-    padding: 4vw 4vw;
+    padding: 4vw 4.5vw;
   }
 
   .Travel-packages h1 {
@@ -1002,9 +1007,52 @@ margin-top:1vw;
     margin-top: 5vw;
   }
 
+
+
+  
+
   .item {
-    min-width: 270px;
-    max-width: 320px;
+    width: 49%;
+  
+    height: 400px;
+  }
+
+  .item-title {
+    font-size: max(16px, 2.5vw);
+  }
+
+  .button-link {
+    font-size: max(14px, 2vw);
+    padding: 10px 25px;
+  }
+}
+
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 768px) {
+  .Section_Travel_packages {
+    padding: 4vw 4.5vw;
+  }
+
+  .Travel-packages h1 {
+    font-size: max(40px, 5vw);
+  }
+
+  .Travel-packages p {
+    font-size: max(13px, 1.4vw);
+  }
+
+  .gallery-container {
+    margin-top: 5vw;
+  }
+
+
+
+  
+
+  .item {
+    width: 50%;
+  
     height: 400px;
   }
 
@@ -1034,13 +1082,8 @@ margin-top:1vw;
 
 
   .item {
-   min-width: 100%;
-   margin-right:3vw;
-   
 
-
-    
-  
+width: 100%;
 
   }
 

@@ -93,36 +93,23 @@ gallery.addEventListener('mousemove', (e) => {
 
 
 
-
-
-
-
 const galleryContainer = document.querySelector('.gallery-container');
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
 
-
 leftArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left: -300, 
+    left: -window.innerWidth,  // Scroll by 100% of the viewport width to the left
     behavior: 'smooth', 
   });
 });
 
-
 rightArrow.addEventListener('click', () => {
   galleryContainer.scrollBy({
-    left:300,
-    behavior:'smooth', 
+    left: window.innerWidth,  // Scroll by 100% of the viewport width to the right
+    behavior: 'smooth', 
   });
 });
-
-
-   
-
-
-
-
 
 
 

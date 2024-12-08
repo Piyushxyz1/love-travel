@@ -375,6 +375,7 @@ width: 90%;
 
   margin: 2vw;
   padding: 2vw;
+
   
   
 
@@ -387,10 +388,10 @@ width: 90%;
 
   
 
-  left:2vw;
+
   z-index: 999;
 
-
+  background: rgba(0, 0, 0, 0.9);
 
  
   

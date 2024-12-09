@@ -419,18 +419,25 @@ document.getElementById("read-more-btn3").addEventListener("click", function() {
     btn.textContent = "Read More";
   }
 });
+// Hamburger Menu Toggle (For Mobile Screens)
+const hamMenu = document.querySelector(".ham-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
 
+hamMenu.addEventListener("click", () => {
+  // Check if the screen width is 900px or smaller
+  if (window.innerWidth <= 900) {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  }
+});
 
+// Hotels Submenu Toggle (For Clicking Hotels)
+const hotelMenu = document.querySelector(".has-submenu");
 
-function toggleMenu() {
-  const socials = document.querySelector('.navbar-hamburger');
-  socials.classList.toggle('open');  // Toggles the 'open' class to show/hide the icons
+hotelMenu.addEventListener("click", function(event) {
+  // Prevent the click from affecting other elements (e.g., not triggering the hamMenu click)
+  event.preventDefault();
 
-  // Check if the screen width is less than 768px (mobile devices)
- 
-}
-
-
-
-
-
+  // Toggle the "active" class to show or hide the sublist under Hotels
+  hotelMenu.classList.toggle("active");
+});

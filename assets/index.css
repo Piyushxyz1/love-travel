@@ -74,7 +74,7 @@ h1, h2, h3,h4{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 1vw;
+    padding: 0.5vw 0.5vw;
     margin-top: 0; /* Remove margin to prevent spacing issues */
     width: 100%;
     background:#f2f2f2;
@@ -110,7 +110,7 @@ h1, h2, h3,h4{
 }
 
 
-.main-navbar ul{
+.main-navbar   ul{
 
 list-style: none;
     display:flex;
@@ -213,6 +213,8 @@ display: inline-block;
    .dropdown  li a{
 
      text-decoration: none;
+     color: #405749;
+ 
   
    }
   
@@ -278,6 +280,8 @@ header .book {
 
 
    display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
@@ -290,178 +294,154 @@ header .book {
 }
 
 
-.navbar-hamburger{
 
-
-
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-
-
-}
-
-.hamburger-icon {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-
-
+a {
   
 }
+a:visited {
+
+}
+a:hover {
+
+}
 
 
-
-.dropdown-menu-hamburger {
-  display: none;  
-  position: absolute;
-  top: 40px; 
-  right: 0;
+/* off-screen-menu */
+.off-screen-menu {
+  display: none;
+  background-color:  rgb(34, 37, 49);
+  height: 300px;
   width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 60px;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
   
-  background:#000000;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 10px 0;
-  animation: magic 0.3s ease-in-out ;
-  z-index: 999;
-}
-
-@keyframes magic {
-  
-
-
-  0%{
  
-    opacity: 0;
-    width: 0%;
-
-  
- }
-
-
-  100%{
-  
-
-    opacity: 1;
-
-
-
-
-
-
-}
-  
-}
-
+  text-align: left;
  
-.dropdown-menu-hamburger .nav-links {
-  list-style: none;
-
-   
-}
-
- .dropdown-menu-hamburger .nav-links li {
-
-  margin: 2vw;
-  padding: 2vw 0;
-  
-
+  transition: .3s ease;
 }
 
 
-
-  .dropdown-menu-hamburger .nav-links li a  {
-
-  background: rgba(0, 0, 0, 0.6);
-  transform: translateX(-30%);
+.off-screen-menu ul  {
 
 
-}
+  display: block;
+  margin-top: 20px;
 
-
-.sub-dropdown li{
-
-
-
-  
-
-
-color:#fff;
   
 }
 
 
 
+.off-screen-menu ul  li {
 
 
-
-.nav-links li a img{
-height:15px;
-width: 15px;
-position: absolute;
-top:8px;
-
-
-
+  margin:10px;
+  
 }
 
-
-.dropdown-menu-hamburger h1{
-
-color:#fff;
-text-align: center;
-padding-left: 1vw;
-font-weight: 400;
-animation: heads 1.5s ease-in;
-
-}
-
-
-
-
-@keyframes heads {
-
-
-  0%{
-
-
-    opacity:0;
-  }
+.off-screen-menu ul li a {
 
 
   
-  50%{
-
-
-    opacity:0;
-  }
-  
-
-
-  100%{
-
-
-    opacity:1;
-  }
-
-
-}
-
-
-
- .dropdown-menu-hamburger .nav-links li a {
   text-decoration: none;
-padding:1vw 0;
+  
+  font-size: 18px;
+  padding: 8px;
+  
+}
+.off-screen-menu.active {
+  right: 0;
+}
 
 
-font-weight: 500;
-font-size: 15px;
-color:#fff;
 
-  }
+.off-screen-menu a {
+  text-decoration: none; /* Remove default underline */
+  display: block; /* Make the entire area clickable */
+  padding: 10px 0; /* Optional: Adds padding to the links */
+  color: white; /* Adjust the link color */
+  border-bottom: 1px solid white; /* Always show the underline below each item*/
 
+}
+
+
+
+
+.off-screen-menu a {
+  text-decoration: none; /* Remove default underline */
+  display: block; /* Make the entire area clickable */
+  padding: 10px 0; /* Optional: Adds padding to the links */
+  color: white; /* Adjust the link color */
+  border-bottom: 2px solid white; /* Always show the underline below each item */
+}
+
+/* Style for sub-menu (hidden by default) */
+.off-screen-menu .sub-menu {
+  display: none; /* Hide the sublist by default */
+  padding-left: 20px; /* Indent the sublist items */
+  max-height: 0; /* Ensure it's collapsed */
+  overflow: hidden; /* Hide content that exceeds max-height */
+  transition: max-height 0.5s ease-in-out; /* Smooth transition for top-to-bottom effect */
+}
+
+.off-screen-menu .has-submenu.active .sub-menu {
+  display: block; /* Show the sublist when the parent is active */
+  max-height: 500px; /* Allow the sublist to expand, adjust as necessary */
+}
+
+/* Add some padding and space between sublist items */
+.off-screen-menu .sub-menu li {
+  margin: 5px 0;
+}
+
+
+
+
+
+/* ham menu */
+.ham-menu {
+  height: 50px;
+  width: 35px;
+margin-left: 0.5vw;
+margin-right: 0.5vw;
+  position: relative;
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: #405749;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span {
+  background-color: #405749;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 
 

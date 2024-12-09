@@ -426,7 +426,8 @@ function toggleMenu() {
   const socials = document.querySelector('.navbar-hamburger');
   socials.classList.toggle('open');  // Toggles the 'open' class to show/hide the icons
 
-  
+  // Check if the screen width is less than 768px (mobile devices)
+ 
 }
 
 

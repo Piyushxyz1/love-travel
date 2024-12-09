@@ -426,20 +426,7 @@ function toggleMenu() {
   const socials = document.querySelector('.navbar-hamburger');
   socials.classList.toggle('open');  // Toggles the 'open' class to show/hide the icons
 
-  // Check if the screen width is less than 768px (mobile devices)
-  if (window.innerWidth < 768) {
-    if (socials.classList.contains('open')) {
-      let doc = document.body;  // Get the body element
-      setTimeout(()=>{
-
-        doc.style.backgroundColor = "rgba(0, 0, 0, 0.5)";  // Set background color with transparency
-
-      },200)
-    } else {
-      let doc = document.body;
-      doc.style.backgroundColor = "";  
-    }
-  }
+  
 }
 
 

@@ -330,26 +330,25 @@ header .book {
   
 }
 
-
-.off-screen-menu .sub-menu{
-
-
+.off-screen-menu .sub-menu {
+  max-height: 0;
+  overflow: hidden;
   display: block;
- 
-
-  
+  animation: sub 2s forwards;
 }
 
-
-
-.off-screen-menu .sub-menu2{
-
-
-  display: block;
- 
+@keyframes sub {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 500px; /* Adjust this value based on the content */
+  }
+}
 
   
-}
+
+
 
 
 .off-screen-menu ul  li {

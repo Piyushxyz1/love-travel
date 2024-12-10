@@ -309,8 +309,8 @@ a:hover {
 /* off-screen-menu */
 .off-screen-menu {
   display: none;
-  background-color:  rgb(34, 37, 49);
-  height: 300px;
+  background-color:  #fff;
+  min-height: 300px;
   width: 100%;
   max-width: 450px;
   position: fixed;
@@ -326,7 +326,7 @@ a:hover {
 }
 
 
-.off-screen-menu ul  {
+.off-screen-menu .drop-list {
 
 
   display: block;
@@ -334,6 +334,17 @@ a:hover {
 
   
 }
+
+
+.off-screen-menu .sub-menu{
+
+
+  display: block;
+ 
+
+  
+}
+
 
 
 
@@ -360,48 +371,38 @@ a:hover {
 
 
 
+.drop-list li:nth-child(2){
+
+  position: relative;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .off-screen-menu a {
-  text-decoration: none; /* Remove default underline */
-  display: block; /* Make the entire area clickable */
-  padding: 10px 0; /* Optional: Adds padding to the links */
-  color: white; /* Adjust the link color */
-  border-bottom: 1px solid white; /* Always show the underline below each item*/
-
+  text-decoration: none; 
+  display: block; 
+  padding: 10px 0; 
+  color: white; 
+  border-bottom: 2px solid #ddd; 
 }
-
-
-
-
-.off-screen-menu a {
-  text-decoration: none; /* Remove default underline */
-  display: block; /* Make the entire area clickable */
-  padding: 10px 0; /* Optional: Adds padding to the links */
-  color: white; /* Adjust the link color */
-  border-bottom: 2px solid white; /* Always show the underline below each item */
-}
-
-/* Style for sub-menu (hidden by default) */
-.off-screen-menu .sub-menu {
-  display: none; /* Hide the sublist by default */
-  padding-left: 20px; /* Indent the sublist items */
-  max-height: 0; /* Ensure it's collapsed */
-  overflow: hidden; /* Hide content that exceeds max-height */
-  transition: max-height 0.5s ease-in-out; /* Smooth transition for top-to-bottom effect */
-}
-
-.off-screen-menu .has-submenu.active .sub-menu {
-  display: block; /* Show the sublist when the parent is active */
-  max-height: 500px; /* Allow the sublist to expand, adjust as necessary */
-}
-
-/* Add some padding and space between sublist items */
-.off-screen-menu .sub-menu li {
-  margin: 5px 0;
-}
-
-
-
-
 
 /* ham menu */
 .ham-menu {
@@ -443,6 +444,29 @@ margin-right: 0.5vw;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+
+
+
+.sub-menu {
+  height: 0;
+  padding-top: 0;     
+  padding-bottom: 0;  
+  overflow: hidden;   
+  list-style: none;
+    transition: height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
+}
+
+
+.menu-item.active .sub-menu {
+  height: auto; 
+  padding-bottom: 8px; 
+}
+
+.sub-menu a {
+  text-decoration: none;
+
+  display: block;
+}
 
 
 
@@ -516,29 +540,27 @@ cursor: pointer;
 
  }   
 
-/* Slideshow container */
 .slideshow-container {
   position: relative;
   width: 100%;
   height: 100%;
-overflow: hidden; /* Hide any overflow for the slides */
+overflow: hidden; 
 }
 
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 
 }
 
-/* Image styling */
+
 .slideimg {
   filter: brightness(0.7);
   object-fit: cover;
-  height: 58vw; /* Ensure the image covers the full height */
-  width: 100%;  /* Ensure the image covers the full width */
+  height: 58vw; 
+  width: 100%;  
 }
 
-/* Next & Previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -550,31 +572,31 @@ overflow: hidden; /* Hide any overflow for the slides */
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  z-index: 10; /* Make sure buttons are above the image */
-  transform: translateY(-50%); /* Vertically center the buttons */
+  z-index: 10;
+  transform: translateY(-50%); 
 }
 
 .prev {
-  left: 5%; /* Position the 'prev' button on the left */
+  left: 5%; 
 }
 
 .next {
-  right: 5%; /* Position the 'next' button on the right */
-  border-radius: 3px 0 0 3px; /* Round the right side */
+  right: 5%; 
+  border-radius: 3px 0 0 3px; 
 }
 
-/* Caption text */
+
 .text {
   color: #fff;
   font-size: max(30px, 5vw);
   
   position: absolute;
   font-weight: 900;
-  top: 50%; /* Vertically center the text */
-  left: 50%; /* Horizontally center the text */
-  transform: translate(-50%, -50%); /* Center both vertically and horizontally */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   text-align: center;
-  z-index: 10; /* Ensure the caption appears above the image */
+  z-index: 10; 
   border-radius: 1vw;
   
 }
@@ -610,7 +632,7 @@ animation: fading 2s ease-in-out ;
 }
 
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -618,7 +640,7 @@ animation: fading 2s ease-in-out ;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%); /* Center number text horizontally */
+  transform: translateX(-50%); 
 }
 
 
@@ -776,14 +798,14 @@ margin-top:1vw;
 
 
  .divider{
-   width: 90%; /* Set the width to 90% */
-   height: 1px; /* Set the height of the underline */
-   background-color: #ddd; /* Light gray color for the underline */
-   margin: 0  auto; /* Centers the underline horizontally and adds spacing */
-   display: block; /* Make sure it's a block element */
+   width: 90%;
+   height: 1px; 
+   background-color: #ddd; 
+   margin: 0  auto; 
+   display: block; 
 }
 
-/* Section Styling */
+
 .Section_Travel_packages {
   padding: 4vw 4.5vw;
 }
@@ -807,49 +829,48 @@ margin-top:1vw;
   
 }
 
-/* Container for the entire gallery */
+
 .gallery-container {
   margin-top: 3vw;
 
-  overflow-x: auto; /* Enables horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Enables scroll snapping horizontally */
-  -webkit-overflow-scrolling: touch; /* Ensures smooth scrolling on mobile devices */
-  cursor: pointer; /* Change cursor to pointer when not dragging */
-  scrollbar-width: none; /* Firefox: Hides the scrollbar */
-  -ms-overflow-style: none; /* Internet Explorer and Edge: Hides the scrollbar */
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; 
+  cursor: pointer; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
   position: relative;
-  scroll-behavior: smooth; /* Smooth scrolling effect */
+  scroll-behavior: smooth; 
   
   
 }
 
-/* Items Layout */
 .items {
   display: flex;
-  flex-wrap: nowrap; /* Ensures no wrapping */
+  flex-wrap: nowrap; 
   justify-content: flex-start;
-  padding: 20px 0; /* Padding for spacing */
+  padding: 20px 0;
   width: 100%;
 }
 
-/* Individual Card Styling */
+
 .item {
   position: relative;
-  width: 430px; /* Card width */
+  width: 430px; 
 
 
   flex-shrink: 0; /* Prevent items from shrinking */
-  border-radius: 12px; /* Rounded corners for the card */
-  overflow: hidden; /* Ensure content doesn't overflow */
-  background-color: #fff; /* Card background */
-  transition: transform 0.3s ease-in-out; /* Hover effect */
-  background-size: cover; /* Ensure the background image covers the card */
-  background-position: center center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  height: 500px; /* Card height */
+  border-radius: 12px; 
+  overflow: hidden; 
+  background-color: #fff; 
+  transition: transform 0.3s ease-in-out; 
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  height: 500px; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Align button and title to the bottom */
+  justify-content: flex-end; 
  
  margin: 1vw;
 }
@@ -906,9 +927,9 @@ margin-top:1vw;
   transition: 0.3s;
 }
 
-/* Hover effect on each card */
+
 .item:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); 
 }
 
 /* Hover effect to reveal overlay */

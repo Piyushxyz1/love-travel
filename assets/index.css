@@ -237,7 +237,7 @@ display: inline-block;
 background-color:#f2f2f2;
 
 
-font-weight: 900;
+font-weight: 700;
 
 
 
@@ -365,8 +365,10 @@ header .book {
   
   text-decoration: none;
   
-  font-size: 22px;
+  font-size: 20px;
   padding: 8px;
+  font-weight: 600px;
+  color:#405749;
   
 }
 .off-screen-menu.active {
@@ -470,13 +472,21 @@ margin-right: 0.5vw;
   padding-bottom: 8px; 
 }
 
-.sub-menu a {
+.off-screen-menu  .sub-menu  li a {
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color:#405749;
 
   display: block;
 }
 
 
+.off-screen-menu  .sub-menu  li  svg{
+
+
+
+}
 
 
 .book_section{

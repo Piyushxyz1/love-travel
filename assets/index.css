@@ -75,14 +75,14 @@ h1, h2, h3,h4{
     justify-content: space-between;
     align-items: center;
     padding: 0.5vw 0.5vw;
-    margin-top: 0; /* Remove margin to prevent spacing issues */
+    margin-top: 0; 
     width: 100%;
     background:#f2f2f2;
 
     
 
 
-    position: fixed; /* Keeps .main-navbar at the top during scrolling */
+    position: fixed; 
     
     z-index: 999;
     top:0px;
@@ -347,6 +347,15 @@ a:hover {
 
 
 
+.off-screen-menu .sub-menu2{
+
+
+  display: block;
+ 
+
+  
+}
+
 
 .off-screen-menu ul  li {
 
@@ -455,6 +464,10 @@ margin-right: 0.5vw;
   list-style: none;
     transition: height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
 }
+
+
+
+
 
 
 .menu-item.active .sub-menu {

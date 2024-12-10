@@ -422,7 +422,7 @@ const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");
 
 hamMenu.addEventListener("click", () => {
-  // Check if the screen width is 900px or smaller
+ 
   if (window.innerWidth <= 900) {
     hamMenu.classList.toggle("active");
     offScreenMenu.classList.toggle("active");
@@ -435,16 +435,26 @@ hamMenu.addEventListener("click", () => {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
-  const menuItem = document.querySelector('.menu-item'); // Select the Hotels menu item
-  const subMenu = menuItem.querySelector('.sub-menu');   // Select the sub-menu under Hotels
-  
-  menuItem.addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default action (if any)
+  // Get all menu items with sub-menus
+  const menuItems = document.querySelectorAll('.menu-item'); 
 
-    // Toggle the active class to show/hide the sub-menu
-    menuItem.classList.toggle('active');
+  menuItems.forEach(function(menuItem) {
+    // Get the sub-menu within each menu item
+    const subMenu = menuItem.querySelector('.sub-menu'); 
+
+    // Add event listener to each menu item
+    menuItem.addEventListener('click', function (event) {
+      // Prevent the default action of the link
+      event.preventDefault();
+
+      // Toggle the 'active' class on the menu item
+      menuItem.classList.toggle('active');
+
+      // If the sub-menu exists, toggle its visibility based on the active class
+      if (subMenu) {
+        subMenu.style.display = menuItem.classList.contains('active') ? 'block' : 'none';
+      }
+    });
   });
 });

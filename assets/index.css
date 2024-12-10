@@ -367,7 +367,7 @@ header .book {
   
   font-size: 20px;
   padding: 8px;
-  font-weight: 600px;
+  font-weight: 800;
   color:#405749;
   
 }
@@ -390,10 +390,25 @@ header .book {
 
 
 
+.drop-list .menu-item .menu-link{
+
+
+  display: flex;
+
+  align-items: center;
+}
 
 
 
 
+
+.drop-list .menu-item  span{
+
+
+ font-size: 20px;
+ font-weight: 800;
+ 
+}
 
 
 
@@ -481,12 +496,6 @@ margin-right: 0.5vw;
   display: block;
 }
 
-
-.off-screen-menu  .sub-menu  li  svg{
-
-
-
-}
 
 
 .book_section{

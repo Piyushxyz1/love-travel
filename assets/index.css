@@ -334,19 +334,25 @@ header .book {
   max-height: 0;
   overflow: hidden;
   display: block;
-  animation: sub 2s forwards;
+  animation: sub 1.5s forwards;
+
 }
 
 @keyframes sub {
   0% {
     max-height: 0;
+    opacity: 0;
   }
-  100% {
-    max-height: 500px; /* Adjust this value based on the content */
-  }
-}
+
 
   
+  100% {
+    max-height: 500px; /* Adjust this value based on the content */
+    opacity: 1;
+  }
+
+
+}
 
 
 

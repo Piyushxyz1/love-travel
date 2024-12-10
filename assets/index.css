@@ -301,7 +301,7 @@ header .book {
 /* off-screen-menu */
 .off-screen-menu {
   display: none;
-  background-color:  #fff;
+  background-color:#fff;
   min-height: 300px;
   width: 100%;
   max-width: 450px;
@@ -370,7 +370,7 @@ header .book {
   
   text-decoration: none;
   
-  font-size: 20px;
+  font-size: 16px;
   padding: 8px;
   font-weight: 800;
   color:#405749;
@@ -410,7 +410,7 @@ header .book {
 .drop-list .menu-item  span{
 
 
- font-size: 20px;
+ font-size: 16px;
  font-weight: 800;
  
 }
@@ -494,8 +494,8 @@ margin-right: 0.5vw;
 
 .off-screen-menu  .sub-menu  li a {
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   color:#405749;
 
   display: block;

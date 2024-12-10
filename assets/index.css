@@ -314,8 +314,11 @@ header .book {
  
   text-align: left;
  
-  transition: .3s ease;
+  transition: .8s ease;
 }
+
+
+
 
 
 .off-screen-menu .drop-list {

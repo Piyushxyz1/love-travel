@@ -131,7 +131,7 @@ list-style: none;
         padding: 0 2px;
       
        
-        transition: 0.4s;
+        
       
 
     }
@@ -334,7 +334,7 @@ header .book {
 .menu-item .sub-menu {
   max-height: 0;          /* Hidden by default */
   overflow: hidden;       /* Hide overflowing content */
-  transition: max-height 0.8s ease-out;  /* Smooth transition for expansion */
+  transition: max-height 0.5s ease-out;  /* Smooth transition for expansion */
   display: block;
 }
 
@@ -345,12 +345,6 @@ header .book {
 
 
 
-.off-screen-menu ul  li {
-
-
-  margin:10px;
-  
-}
 
 .off-screen-menu ul li a {
 
@@ -460,15 +454,6 @@ margin-right: 0.5vw;
 
 
 
-
-.sub-menu {
-  height: 0;
-  padding-top: 0;     
-  padding-bottom: 0;  
-  overflow: hidden;   
-  list-style: none;
-    transition: height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out;
-}
 
 
 

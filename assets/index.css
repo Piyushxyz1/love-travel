@@ -2436,9 +2436,9 @@ text-align: center;
     }
     
     .travel_blog_grid_left p {
-      font-weight: 400;
-      font-size: max(12px,1.2vw);
-   line-height: max(21px, 2vw);
+  font-weight: 400;
+      font-size: max(15px,1.3vw);
+      line-height: max(21px, 2vw);
       margin-bottom: 1vw;
       color: #000000;
     }
@@ -2508,10 +2508,11 @@ text-align: center;
     }
     
     .blog_post p {
-      font-size: max(12px,1.2vw);
-   line-height: max(21px, 2vw); 
+      font-size: max(15px,1.3vw);
+      line-height: max(21px, 2vw);
       margin-bottom: 1vw;
       color: #000000;
+      font-weight: 400;
     }
     
     .travel_blog_grid_left button {

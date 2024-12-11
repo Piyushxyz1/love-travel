@@ -1525,8 +1525,8 @@ filter: brightness(0.8);
 
 .section_hotels_resorts h1{
 
-
-   font-size:  max(50px,4vw) ;
+  font-size: max(30px,4vw);
+ 
    font-weight: 900;
    text-align: center;
    color:#405749;

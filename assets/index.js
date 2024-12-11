@@ -432,9 +432,6 @@ hamMenu.addEventListener("click", () => {
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   // Get all menu items with sub-menus
   const menuItems = document.querySelectorAll('.menu-item'); 
@@ -451,10 +448,18 @@ document.addEventListener('DOMContentLoaded', function () {
       // Toggle the 'active' class on the menu item
       menuItem.classList.toggle('active');
 
-      // If the sub-menu exists, toggle its visibility based on the active class
+      // If the sub-menu exists, toggle its visibility with animation using max-height
       if (subMenu) {
-        subMenu.style.display = menuItem.classList.contains('active') ? 'block' : 'none';
+        // Check if the menu item has the 'active' class
+        if (menuItem.classList.contains('active')) {
+          // Set the submenu to its natural height (max-height for animation)
+          subMenu.style.maxHeight = subMenu.scrollHeight + 'px'; // Set to actual height
+        } else {
+          // Collapse the submenu
+          subMenu.style.maxHeight = '0'; // Animate collapse
+        }
       }
     });
   });
 });
+

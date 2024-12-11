@@ -7,17 +7,29 @@
   
   
 
-  <link rel = "stylesheet"  href  = "assets/styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+<!-- Slick Slider JS -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel = "stylesheet"  href  = "assets/styles.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+
 </head>
 <body>
-
 <!-- Hero Section -->
 <section class="hero_section">
-    <div class="video-background">
-        <video autoplay muted loop id="hero_video">
-            <source src="assets/videos/african-safari-4k-scenic-wildlife-relaxation-film-1080-publer.io.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="image-background">
+        <img src="assets/images/tiger2_0iten.jpeg" style="filter: brightness(0.5);" alt="Hero Image" id="hero_image">
     </div>
     <div class="hero_content">
         <h1>Explore The World with Our Itineraries</h1>
@@ -26,86 +38,134 @@
     </div>
 </section>
 
+
 <!-- Itinerary Details Section -->
 <section class="itinerary_section">
-    <div class="itinerary_day">
-        <h2>Day 1: Arrival & City Tour</h2>
-        <p>On the first day, you'll arrive at your destination and get a tour of the city’s best spots. Enjoy a mix of historical sites and modern attractions.</p>
-        <ul>
-            <li>Arrival at the airport</li>
-            <li>City tour - Visit museums, parks, and landmarks</li>
-            <li>Lunch at a local restaurant</li>
-        </ul>
-        <div class="itinerary_images">
-            <img src="assets/images/pexels-saptashwa-mandal-656231969-19834893-min.jpg" alt="City Tour" class="itinerary_image">
-            <img src="assets/images/pexels-iurii-laimin-78973777-14570767.jpg" alt="City View" class="itinerary_image">
+
+    <div class = "Itinerary_heading">
+        <h1>Wildlife Itineraries</h1>
+        <p>The varied geo-climatic conditions of India support a wide variety of vegetation ranging from arid deciduous forests of Rajasthan to the indian wildlife sanctuaries, wildlife sanctuaries of india, national parks in india, kaziranga national park tourTropical Evergreen forests of Northeast India. This varied habitat supports a diverse range of wildlife unique to the respective forest type The game parks suggested below seek to achieve a twofold objective. First, they represent all the diverse forest kinds of India with the respective game they offer. Second, we have stressed on highlighting the big 4 of India - The Asian one horned Rhino, The Elephant, The Gaur (World's largest Ox) & The Tiger.Finally, each of the reserves listed below are very rich in bird life and billed to be a bird watchers paradise</p>
+    </div>
+    
+
+
+   
+
+</section>
+<section class="section_locations">
+    <div class="location-cards-container">
+
+        
+            <div class="location-card">
+                <div class="image-container">
+                    <img src="assets/images/i-parallax-03-package-01-min.jpeg" alt="Location 1">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Location 1</h3>
+                </div>
+            </div>
+        
+
+      
+            <div class="location-card">
+                <div class="image-container">
+                    <img src="assets/images/i-parallax-04-package-02-min.jpeg" alt="Location 2">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Location 2</h3>
+                </div>
+            </div>
+       
+        
+            <div class="location-card">
+                <div class="image-container">
+                    <img src="assets/images/pexels-ana-williamson-311043040-13541646 - Copy.jpg" alt="Location 3">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Location 3</h3>
+                </div>
+            </div>
+      
+
+            <div class="location-card">
+                <div class="image-container">
+                    <img src="assets/images/i-parallax-04-package-02.jpeg" alt="Location 4">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Location 4</h3>
+                </div>
+            </div>
+    
+
+       
+            <div class="location-card">
+                <div class="image-container">
+                    <img src="assets/images/i-parallax-04-package-02.jpeg" alt="Location 5">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Location 5</h3>
+                </div>
+            </div>
+      
+
+    </div>
+</section>
+
+<section class="section_itinerary_activities">
+    <!-- Day 1 -->
+    <div class="itinerary-day">
+        <!-- Left Side: Day 1 Text -->
+        <div class="itinerary-text">
+            <h1>Wildlife Safari Itinerary</h1>
+            <h2>Day 1: Arrival and Introduction</h2>
+            <p>Arrive at the National Park where you'll be welcomed by our expert guides. After a quick briefing, we will start with an introductory safari ride to explore the park and its animals.</p>
+        </div>
+
+        <!-- Right Side: Day 1 Image -->
+        <div class="itinerary-image">
+            <img src="https://via.placeholder.com/600x400?text=Day+1+Safari+Intro" alt="Wildlife Safari Day 1">
         </div>
     </div>
 
-    <div class="itinerary_day">
-        <h2>Day 2: Adventure Day</h2>
-        <p>Today, you'll head to the mountains for a day of adventure. Whether you're hiking or ziplining, there's plenty of action to keep you on your toes.</p>
-        <ul>
-            <li>Breakfast at the hotel</li>
-            <li>Hiking through scenic trails</li>
-            <li>Lunch at a mountain cabin</li>
-            <li>Ziplining adventure</li>
-        </ul>
-        <div class="itinerary_images">
-            <img src="assets/images/pexels-f-fezari-326720894-29421651.jpg" alt="Adventure" class="itinerary_image">
-            <img src="assets/images/pexels-laracc-29438524.jpg" alt="Ziplining" class="itinerary_image">
+    <!-- Day 2 -->
+    <div class="itinerary-day">
+        <!-- Left Side: Day 2 Text -->
+        <div class="itinerary-text">
+            <h2>Day 2: Full-Day Safari</h2>
+            <p>On day two, we head deeper into the park for a full-day safari. Expect to see elephants, tigers, and other incredible creatures in their natural habitats.</p>
+        </div>
+
+        <!-- Right Side: Day 2 Image -->
+        <div class="itinerary-image">
+            <img src="https://via.placeholder.com/600x400?text=Day+2+Safari+Adventure" alt="Wildlife Safari Day 2">
         </div>
     </div>
 
-    <div class="itinerary_day">
-        <h2>Day 3: Cultural Exploration</h2>
-        <p>On Day 3, dive into the local culture. From food tours to visiting historical sites, you'll get a deep look at the region’s rich history.</p>
-        <ul>
-            <li>Visit local museums and galleries</li>
-            <li>Lunch at a traditional restaurant</li>
-            <li>Evening cultural show and dinner</li>
-        </ul>
-        <div class="itinerary_images">
-            <img src="assets/images/pexels-pixabay-53464.jpg" alt="Culture" class="itinerary_image">
-            <img src="assets/images/pexels-valeriiamiller-2560510.jpg" alt="Cultural Dinner" class="itinerary_image">
+    <!-- Day 3 -->
+    <div class="itinerary-day">
+        <!-- Left Side: Day 3 Text -->
+        <div class="itinerary-text">
+            <h2>Day 3: Visit to the Nature Reserve</h2>
+            <p>We will visit a nearby nature reserve, where we’ll explore conservation efforts and learn about the park’s unique ecosystem. You will also have time for a nature walk with a local guide.</p>
         </div>
-    </div>
 
-    <div class="itinerary_day">
-        <h2>Day 4: Relaxation and Spa</h2>
-        <p>After a few action-packed days, it's time to relax. Enjoy a day at the spa, unwind by the pool, and indulge in some well-deserved leisure time.</p>
-        <ul>
-            <li>Morning yoga session by the beach</li>
-            <li>Spa treatments and massages</li>
-            <li>Poolside lunch</li>
-            <li>Evening sunset view</li>
-        </ul>
-        <div class="itinerary_images">
-            <img src="assets/images/pexels-eberhardgross-29356642.jpg" alt="Spa" class="itinerary_image">
-            <img src="assets/images/pexels-eberhardgross-29356642.jpg" alt="Relaxing Pool" class="itinerary_image">
-        </div>
-    </div>
-
-    <div class="itinerary_day">
-        <h2>Day 5: Departure</h2>
-        <p>On the last day, you'll check out of your hotel and make your way to the airport for your flight back home. Until next time!</p>
-        <ul>
-            <li>Breakfast at the hotel</li>
-            <li>Check-out and transfer to the airport</li>
-            <li>Flight back home</li>
-        </ul>
-        <div class="itinerary_images">
-            <img src="assets/images/airport_1.jpg" alt="Airport" class="itinerary_image">
+        <!-- Right Side: Day 3 Image -->
+        <div class="itinerary-image">
+            <img src="https://via.placeholder.com/600x400?text=Day+3+Nature+Reserve" alt="Wildlife Safari Day 3">
         </div>
     </div>
 </section>
 
-<!-- Booking Section -->
-<section class="booking_section">
-    <h2>Book Your Trip Now!</h2>
-    <p>Ready to go? Don’t miss out on the adventure of a lifetime.</p>
-    <button class="cta_button">Book Now</button>
-</section>
 
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src = "assets/indexx.js"></script>
 </body>
 </html>
+

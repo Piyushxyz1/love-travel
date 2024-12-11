@@ -1,181 +1,283 @@
+*{
+
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+ 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    user-select: none;  /* Disable text selection */
+    -webkit-user-select: none;  /* Disable text selection for Safari */
+    -moz-user-select: none;  /* For older Firefox versions */
+    -ms-user-select: none;  /* For Internet Explorer */
+    
+
+
+
+
+  font-family: "Nunito Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+
+ 
+}
+
+
+
+
+h1, h2, h3,h4{
+    text-rendering: optimizeLegibility;
+  }
+
+
 /* Hero Section */
 .hero_section {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    overflow: hidden; /* Prevent video from overflowing the container */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensures content doesn't overflow */
 }
 
-/* Video Background */
-.video-background {
+/* Image Background Styling */
+.image-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Ensure it covers the entire section */
-    overflow: hidden;
+    height: 100%;
+    overflow: hidden; /* Prevents any part of the image from overflowing */
 }
 
-#hero_video {
+.image-background img {
     width: 100%;
-    height: 100%; /* Make sure it covers the full height of the section */
-    object-fit: cover; /* Ensure the video maintains its aspect ratio */
-    opacity: 0.8; /* Adjust opacity for better text visibility */
-    object-position: center ;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the full section */
+    object-position: center; /* Centers the image */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* Hero Content (Text and Button) */
+/* Hero Content */
 .hero_content {
-    position: relative;
-    z-index: 1; /* Ensure this content appears on top of the video */
-    padding: 20px;
-    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center content */
+    text-align: center;
+    color: #fff;
 }
 
 .hero_content h1 {
     font-size: 3rem;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .hero_content p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
 }
 
 .cta_button {
-    padding: 12px 30px;
-    background-color: #ff6f61;
+    background-color: #ff7f50;
     color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .cta_button:hover {
-    background-color: #e05b4f;
+    background-color: #ff5722;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero_content h1 {
-        font-size: 2rem;
-    }
 
-    .hero_content p {
-        font-size: 1rem;
-    }
+.itinerary_section{
+    
+padding:3.5vw 4.5vw;
 
-    .cta_button {
-        width: 100%;
-        font-size: 1rem;
-    }
 }
 
-/* Itinerary Section */
-.itinerary_section {
-    padding: 60px 20px;
+.section_itinerary_activities{
+
+    padding:3.5vw 4.5vw;
+
 }
 
-.itinerary_day {
-    margin-bottom: 60px;
+.Itinerary_heading h1{
+
+    text-align: center;
+    font-size: max(25px,4vw);
+    font-weight: 900;
+    color:#405749;
 }
 
-.itinerary_day h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+
+
+.Itinerary_heading p{
+
+    text-align: center;
+    font-size: max(18px,1.3vw);
+    line-height: max(21px, 2vw);
+    font-weight: 400;
+    color:#000000;
+}
+
+
+
+
+
+
+
+/* General Styles for the Section */
+.section_locations {
+    padding: 3.5vw 4.5vw;
+}
+
+/* Container to Align the Cards */
+.location-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for Each Card */
+.location-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;  /* Increased card width */
+    height: 500px;  /* Maintain the height */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    padding-bottom: 20px; /* Add padding to the bottom for better spacing */
+}
+
+/* Image Container to Cover 90% of the Card Height */
+.image-container {
+    width: 100%;
+    height: 90%; /* Make the image container take up 90% of the card height */
+    overflow: hidden;
+}
+
+.location-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the full area */
+    object-position: center; /* Center the image */
+    transition: transform 0.3s ease;
+}
+
+/* Title Styled inside Card */
+.card-content {
+    padding: 15px;
+    background: #fff;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
     color: #333;
+    line-height: 1.2; /* Adjust line-height for better spacing */
 }
 
-.itinerary_day p {
+/* Hover Effects for Cards */
+.location-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.location-card:hover img {
+    transform: scale(1.05); /* Zoom in the image on hover */
+}
+
+
+/* Section for the itinerary activities */
+.section_itinerary_activities {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Each day's container */
+.itinerary-day {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    align-items: center;  /* Vertically align the text and image */
+}
+
+/* Left side text */
+.itinerary-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left; /* Ensure the text is aligned to the left */
+}
+
+.itinerary-text h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.itinerary-text h2 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.itinerary-text p {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    line-height: 1.5;
     color: #555;
 }
 
-.itinerary_day ul {
-    list-style: none;
-    padding-left: 20px;
+/* Right side image */
+.itinerary-image {
+    flex: 1;
+    padding: 10px;
 }
 
-.itinerary_day ul li {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-/* Itinerary Images */
-.itinerary_images {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.itinerary_image {
-    width: 45%;
-    margin: 0 auto;
+.itinerary-image img {
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Booking Section */
-.booking_section {
-    padding: 60px 20px;
-    text-align: center;
-    background-color: #007bff;
-    color: white;
-}
-
-.booking_section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.booking_section p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-}
-
-.booking_section .cta_button {
-    padding: 12px 30px;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.booking_section .cta_button:hover {
-    background-color: #e05b4f;
-}
-
-/* Responsive Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .itinerary_section {
-        padding: 40px 10px;
+    .itinerary-day {
+        flex-direction: column; /* Stack the text and image vertically on smaller screens */
+        align-items: center;
     }
 
-    .itinerary_images {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .itinerary_image {
+    .itinerary-text, .itinerary-image {
+        flex: none;
         width: 100%;
     }
 
-    .cta_button {
-        width: 100%;
-        font-size: 1rem;
+    .itinerary-text {
+        padding: 15px;
+    }
+
+    .itinerary-image {
+        padding: 15px;
     }
 }

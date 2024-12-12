@@ -40,3 +40,45 @@ $('.location-cards-container').slick({
   });
   
   
+
+
+
+    // Form validation function
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        // Full Name validation
+        var fullName = document.getElementById('fullName').value;
+        if (fullName.trim() === '') {
+            alert("Full Name is required.");
+            event.preventDefault();
+            return false;
+        }
+
+        // Email validation
+        var email = document.getElementById('email').value;
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return false;
+        }
+
+        // Phone Number validation
+        var phone = document.getElementById('phone').value;
+        var phonePattern = /^[0-9]{10}$/;
+        if (!phonePattern.test(phone)) {
+            alert("Phone number must be 10 digits long.");
+            event.preventDefault();
+            return false;
+        }
+
+        // Message validation
+        var message = document.getElementById('message').value;
+        if (message.trim() === '') {
+            alert("Message is required.");
+            event.preventDefault();
+            return false;
+        }
+
+        // If all validations pass, allow form submission
+        return true;
+    });

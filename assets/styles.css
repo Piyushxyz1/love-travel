@@ -41,7 +41,7 @@ h1, h2, h3,h4{
 .hero_section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 500px; /* Full viewport height */
     overflow: hidden; /* Ensures content doesn't overflow */
 }
 
@@ -99,6 +99,178 @@ h1, h2, h3,h4{
 .cta_button:hover {
     background-color: #ff5722;
 }
+
+
+
+
+.sectiongrid_container{
+
+
+    padding:3.5vw 4.5vw;
+
+
+
+
+}
+
+
+
+
+
+/* New container grid layout (before the main grid) */
+.new-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left section twice the size of the right */
+    gap: 10px;
+    max-width: 1200px; /* Limit the maximum width of the grid */
+    margin: 20px auto; /* Center the grid horizontally */
+  
+    max-height: 400px;
+  
+  }
+  
+  /* Style for grid items */
+  .item {
+  
+    border-radius: 8px; /* Optional: Rounded corners */
+  
+    text-align: left;
+  }
+
+
+
+
+  .content-left h2{
+
+color:#405749;
+font-size: max(30px,4vw);
+font-weight: 900;
+
+  }
+  
+  /* Left section (text + icons with labels) */
+  .new-container .left-section {
+    display: flex; /* Enable flexbox */
+    flex-direction: row; /* Align elements horizontally */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center vertically */
+    gap: 20px; /* Space between items */
+  }
+  
+  .new-container .left-section span {
+    font-size: 1.5rem;
+  }
+  
+  .new-container .icons {
+    display: flex;
+    gap: 15px; /* Space between each icon-item */
+  }
+  
+  .new-container .icon-item {
+    display: flex;
+    align-items: center; /* Align items horizontally */
+    gap: 10px; /* Space between icon and text */
+  }
+  
+  .new-container .icons img {
+    width: 30px; /* Icon size */
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  .new-container .icon-item span {
+    font-size: max(17px,1.3vw);
+    font-weight: 600;
+  }
+  
+  
+  /* Right section (empty) */
+  .new-container .right-section {
+    background-color: transparent; /* No content, just empty */
+  }
+  
+  /* Style for the images in the main grid */
+  img {
+    width: 100%; /* Makes images responsive and fills the container */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for images */
+   
+  }
+  
+  /* Main grid container layout */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Left section is twice the size of the right */
+    gap: 20px;
+    
+    margin: 0 auto;
+   
+   
+  
+  }
+  
+  /* Make the grid responsive */
+  @media (max-width: 768px) {
+    .container, .new-container {
+      grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+  }
+  
+
+
+
+.section_trip_overview{
+
+
+    padding:3.5vw 4.5vw;
+}
+
+
+
+.overview_grid_container{
+
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+align-items: center;
+
+
+
+
+
+}
+
+
+.overview_grid_left h2{
+
+    font-weight: 800;
+    font-size: max(25px,4vw);
+    color:#405749;
+}
+
+
+
+.overview_grid_left p {
+
+
+font-size: max(17px,1.3vw);
+
+
+}
+
+
+
+.overview_grid_right img {
+
+
+    margin-top:60px;
+
+
+
+    
+}
+
 
 
 .itinerary_section{

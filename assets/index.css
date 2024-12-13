@@ -3003,8 +3003,8 @@ width:100%;
   }
 
   .footer_social_icons img {
-      width: 26px; /* Reduce size of social icons */
-      height: 26px; /* Reduce size of social icons */
+      width: 22px; /* Reduce size of social icons */
+      height: 22px; /* Reduce size of social icons */
       
   }
 
@@ -3025,6 +3025,13 @@ text-align: left;
   .footer-column ul li {
     font-size: 15px; /* Reduce font size for smaller screens */
     text-align: left;
+}
+
+
+
+.footer-column ul li a {
+  font-size: 15px; /* Reduce font size for smaller screens */
+  text-align: left;
 }
 
 }

@@ -2628,20 +2628,21 @@ align-items: center;
   bottom: 0;    /* Adjust based on where you want it */
   left: 50%;     /* Adjust based on where you want it */
   transform: translate(-50%,-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+
+  
   border: none;
   border-radius: 50%;
-  padding: 10px;
+  padding: 20px;
   display: none;   /* Hidden by default */
   cursor: pointer;
   transition: opacity 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background:  rgba(0, 0, 0, 0.5);
+  z-index: 10;
 }
 
 .scroll-to-top-btn img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Show the button on mobile screens (max-width: 900px) */

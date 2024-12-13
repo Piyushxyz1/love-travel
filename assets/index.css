@@ -1881,8 +1881,7 @@ align-items: center;
 
    display: flex;
    justify-content: space-between;
-   align-items: center;
-
+  
 }
 
 
@@ -1958,9 +1957,9 @@ align-items: center;
 
 
 
-   border-radius: 10px;
+ 
    width: 100%;
-   height:100%;
+   height:800px;
    object-fit: cover;
 }
 
@@ -2028,9 +2027,9 @@ text-align: left;
 .Corbett_details_right  img {
 
 
-   border-radius: 10px;
+  
    width: 100%;
-   height: 100%;
+   height: 800px;
    object-fit: cover;
 }
 

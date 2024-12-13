@@ -2998,13 +2998,14 @@ width:100%;
 
   /* Adjust Social Icons */
   .footer_social_icons {
-      justify-content: center; /* Center-align social icons */
-      gap: 10px; /* Adjust spacing between icons */
+      text-align: left; /* Center-align social icons */
+      gap: 15px; /* Adjust spacing between icons */
   }
 
   .footer_social_icons img {
-      width: 25px; /* Reduce size of social icons */
-      height: 25px; /* Reduce size of social icons */
+      width: 26px; /* Reduce size of social icons */
+      height: 26px; /* Reduce size of social icons */
+      
   }
 
   /* Adjust Contact Info Text */

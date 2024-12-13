@@ -2970,21 +2970,61 @@ width:100%;
 }
 
 
-.footer{
-
-
-  height:300px;
-}
-
-.footer_social_icons img{
-
-  height:25px;
-  width:25px;
-  margin:1px;
 
 
 
+    /* Footer container: Adjust layout for smaller screens */
+    .footer-container {
+      flex-direction: column; /* Stack the footer columns vertically */
+
+     
+      gap: 15px; /* Adjust the gap between the columns */
+      padding: 20px; /* Adjust padding for better spacing */
   }
+
+  /* Footer Column: Full width on smaller screens */
+  .footer-column {
+      flex: 1 1 100%; /* Ensure each column takes full width */
+      text-align: center; /* Center-align text within columns */
+      margin:0;
+  }
+
+  /* Adjust Footer Heading */
+  .footer-column h1 {
+      font-size: 25px; /* Adjust font size for heading */
+      text-align: left; /* Center-align heading */
+      margin-bottom: 10px; /* Reduce bottom margin */
+  }
+
+  /* Adjust Social Icons */
+  .footer_social_icons {
+      justify-content: center; /* Center-align social icons */
+      gap: 10px; /* Adjust spacing between icons */
+  }
+
+  .footer_social_icons img {
+      width: 25px; /* Reduce size of social icons */
+      height: 25px; /* Reduce size of social icons */
+  }
+
+  /* Adjust Contact Info Text */
+  .footer-column ul {
+      margin-top: 10px; /* Add spacing between list items */
+  }
+
+
+.footer-column h3{
+
+font-size: 22px;
+text-align: left;
+
+
+}
+  
+  .footer-column ul li {
+    font-size: 15px; /* Reduce font size for smaller screens */
+    text-align: left;
+}
 
 }
 

@@ -468,12 +468,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Get the button
+
 var mybutton = document.getElementById("scrollToTopBtn");
 
 // When the user scrolls down 100px from the top, show the button (on mobile screens only)
 window.onscroll = function() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
         // Only add the class if screen width is less than or equal to 900px
         if (window.innerWidth <= 900) {
             mybutton.classList.add("show");

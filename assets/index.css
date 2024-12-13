@@ -2653,6 +2653,8 @@ align-items: center;
 
   .scroll-to-top-btn.show {
       display: block;  /* Show when scrolled down */
+      background:  rgba(0, 0, 0, 0.5);
+      
   }
 }
 

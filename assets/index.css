@@ -13,6 +13,9 @@
     -webkit-user-select: none;  /* Disable text selection for Safari */
     -moz-user-select: none;  /* For older Firefox versions */
     -ms-user-select: none;  /* For Internet Explorer */
+
+    
+
     
 
 
@@ -680,6 +683,7 @@ animation: fading 2s ease-in-out ;
 
    width: 50%;
    height: 100%;
+   
 
   
 }
@@ -1205,15 +1209,6 @@ padding-bottom: 5vw;
 }
 
 
-
- .worldwide-destination{
-background:#fff;
-
-
-
-
-
- }
 
  .destination-sections{
 

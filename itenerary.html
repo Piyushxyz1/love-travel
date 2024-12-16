@@ -112,31 +112,41 @@
 
         <section class="location-section">
             <h2>Popular Locations</h2>
+            <P>The varied geo-climatic conditions of India support a wide variety of vegetation ranging from arid deciduous forests of Rajasthan to the indian wildlife sanctuaries, wildlife sanctuaries of india, national parks in india, kaziranga national park tourTropical Evergreen forests of Northeast India. This varied habitat supports a diverse range of wildlife unique to the respective forest type
+
+                The game parks suggested below seek to achieve a twofold objective. First, they represent all the diverse forest kinds of India with the respective game they offer. Second, we have stressed on highlighting the big 4 of India - The Asian one horned Rhino, The Elephant, The Gaur (World's largest Ox) & The Tiger.
+                
+                Finally, each of the reserves listed below are very rich in bird life and billed to be a bird watchers paradise</P>
             <div class="location-cards">
                 <div class="location-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Location 1">
-                    <h3>Paris</h3>
-                    <p>The City of Lights, famous for its art, culture, and landmarks.</p>
+                    <img src="assets/images/loc1.jpg" alt="Location 1">
+                    <h3>On The Tiger's Trail</h3>
+                    <p> Tour Destination : Delhi, Agra</p>
+                    <p>description----.</p>
                 </div>
                 <div class="location-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Location 2">
-                    <h3>New York</h3>
-                    <p>The city that never sleeps, full of iconic skyscrapers and cultural hubs.</p>
+                    <img src="assets/images/loc2.jpg" alt="Location 2">
+                    <h3>The Call Of The Wilds</h3>
+                    <p>Tour Destination : Delhi, Kanha,</p>
+                    <p>description----</p>
                 </div>
                 <div class="location-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Location 3">
-                    <h3>Tokyo</h3>
-                    <p>Modern technology and rich history come together in Japan's capital.</p>
+                    <img src="assets/images/loc3.jpg" alt="Location 3">
+                    <h3>The Taj & Tigers of India</h3>
+                    <p>tour Destination : Delhi, Jaipur,</p>
+                    <p>description-----</p>
                 </div>
                 <div class="location-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Location 4">
-                    <h3>London</h3>
-                    <p>Historical landmarks and vibrant culture await in the UK's capital.</p>
+                    <img src="assets/images/loc4.jpg" alt="Location 4">
+                    <h3>The Call Of The Wilds</h3>
+                    <p>tour Destination : Delhi, Jaipur,</p>
+                    <p>description-----</p>
                 </div>
                 <div class="location-card">
                     <img src="https://via.placeholder.com/300x200" alt="Location 5">
-                    <h3>Rome</h3>
-                    <p>An ancient city with monuments, museums, and a rich cultural heritage.</p>
+                    <h3>location5</h3>
+                    <p>tour Destination : Delhi, Jaipur,</p>
+                    <p>description-----</p>
                 </div>
             </div>
         </section>
@@ -150,6 +160,7 @@
 
         <!-- Hotel Categories Section -->
         <section class="hotel-category">
+            <h1>Hotels & Accommodation</h1>
             <h2>Standard Hotels</h2>
             <div class="flex-container">
                 <article class="hotel-card">
@@ -171,7 +182,7 @@
                     <p class="hotel-price">$55 / night</p>
                 </article>
                 <article class="hotel-card">
-                    <img src="https://via.placeholder.com/300x200" alt="Standard Hotel">
+                    <img src="assets/images/resort2.jpg" height="400" alt="Standard Hotel">
                     <h3>City Hostel</h3>
                     <p>Perfect for travelers seeking affordability.</p>
                     <p class="hotel-price">$45 / night</p>
@@ -245,34 +256,68 @@
             </div>
         </section>
 
-       
-        <!-- Query Form Section -->
-        <section id="queryForm" class="form-container">
-            <h2>Trip Inquiry Form</h2>
-            <form id="queryForm" onsubmit="return validateForm()">
-                <div>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <div id="nameError" class="error-message"></div>
-                </div>
-                <div>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <div id="emailError" class="error-message"></div>
-                </div>
-                <div>
-                    <input type="text" id="destination" name="destination" placeholder="Desired Trip Destination" required>
-                    <div id="destinationError" class="error-message"></div>
-                </div>
-                <div>
-                    <input type="date" id="departure" name="departure" placeholder="Preferred Departure Date" required>
-                    <div id="departureError" class="error-message"></div>
-                </div>
-                <div>
-                    <textarea id="message" name="message" placeholder="Additional Comments" rows="4" required></textarea>
-                    <div id="messageError" class="error-message"></div>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+       <section class = "section_query_form">
+      
+        <h1>Trip Query Form</h1>
+             <div class = "form">
+               
+            <!-- Left Section: Description -->
+            <div class="description-section">
+                <h2>Interested? join the trip with us.</h2>
+                <p>Fill in the details to book your upcoming wildlife adventure! Whether you're heading out on a safari or exploring nature reserves, we’ll help tailor the perfect trip for you.</p>
+                <p>Choose your preferred dates, accommodations, and other details to make your trip unforgettable. Let's get started!</p>
+            </div>
+        
+            <!-- Right Section: Form -->
+            <div class="form-section">
+                <h2>Trip Details</h2>
+                <form id="wildlifeTripForm" action="submit_form.php" method="POST">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error" id="nameError"></span>
+        
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+        
+                    <label for="tripType">Type of Trip:</label>
+                    <select id="tripType" name="tripType" required>
+                        <option value="">Select Trip Type</option>
+                        <option value="safari">Safari</option>
+                        <option value="natureReserve">Nature Reserve</option>
+                        <option value="birdWatching">Bird Watching</option>
+                        <option value="ecoTour">Eco Tour</option>
+                    </select>
+                    <span class="error" id="tripTypeError"></span>
+        
+                    <label for="preferredDate">Preferred Trip Date:</label>
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                    <span class="error" id="preferredDateError"></span>
+        
+                    <label for="groupSize">Group Size:</label>
+                    <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
+                    <span class="error" id="groupSizeError"></span>
+        
+                    <label for="specialRequests">Special Requests (Optional):</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any dietary restrictions, accessibility needs, or specific preferences?"></textarea>
+        
+                    <label for="accommodation">Accommodation Preference:</label>
+                    <select id="accommodation" name="accommodation" required>
+                        <option value="">Select Accommodation</option>
+                        <option value="luxury">Luxury Lodge</option>
+                        <option value="camping">Camping</option>
+                        <option value="budget">Budget Lodge</option>
+                    </select>
+                    <span class="error" id="accommodationError"></span>
+        
+                    <input type="submit" value="Book My Trip">
+                </form>
+            </div>
+        
+        </div>
+    </section>
+        
+     
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/indexx.js"></script>

@@ -3,9 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #FFFFF0;
+  
+ 
 }
+
+
+
 
 /* Banner Section */
 .banner {
@@ -67,11 +71,12 @@ body {
     align-items: center;
     gap: 20px;
     padding: 20px;
-    background-color: #fff;
+    background-color: #FFFFF0;
     margin-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+
 }
 
 .tour-details img {
@@ -86,6 +91,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.tour-info{
+
+    
 }
 
 .tour-info h2 {
@@ -117,8 +129,9 @@ body {
 /* Location Section */
 .location-section {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+  
     text-align: center;
+    background-color: #FFFFF0;
 }
 
 .location-section h2 {
@@ -128,6 +141,18 @@ body {
     font-weight: 900;
 }
 
+
+.location-section P {
+
+
+    font-size: max(17px,1.3vw);
+    font-weight: 400;
+    color:#000000;
+    line-height: 1.6;
+} 
+
+
+
 .location-cards {
     display: flex;
     justify-content: space-between;
@@ -136,9 +161,9 @@ body {
 }
 
 .location-card {
-    background-color: #fff;
+    background-color: #FFFFF0;
     border-radius: 10px;
-    padding: 15px;
+  
     width: 20%; /* Adjust width to fit 5 cards in a row */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -156,13 +181,13 @@ body {
 
 .location-card h3 {
     font-size: 1.2rem;
-    color: #333;
+
     margin-top: 10px;
 }
 
 .location-card p {
     font-size: 0.9rem;
-    color: #666;
+
     margin-top: 10px;
 }
 
@@ -172,7 +197,7 @@ body {
 }
 
 /* Responsive Styling for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .location-card {
         width: 45%; /* 2 cards per row on smaller screens */
     }
@@ -208,6 +233,14 @@ body {
     margin-bottom: 40px;
 }
 
+
+.hotel-category h1 {
+   text-align: center;
+   font-size: max(25px,4vw);
+   color:#405749;
+   font-weight: 900;
+}
+
 .hotel-category h2 {
     color: #333;
     font-size: 24px;
@@ -224,10 +257,10 @@ body {
 
 /* Hotel cards */
 .hotel-card {
-    background-color: #fff;
+    background-color: #FFFFF0;
     border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     flex: 1 1 22%; /* 4 cards per row */
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -262,6 +295,20 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
+
+@media(max-width: 900px) {
+    .flex-container {
+    
+flex-direction: column;    }
+}
+
+
+
+
+
 /* Itinerary Section */
 .itinerary {
     margin-top: 40px;
@@ -277,16 +324,18 @@ body {
 
 
 .day-planner {
-    background-color: #fff;
+    background-color: #FFFFF0;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .day-planner h3 {
-    color: #50e3c2;
-    font-size: 20px;
+    color: #405749;
+    font-size: max(17px,1.3vw);
+    font-weight: 600;
+
     margin-bottom: 10px;
 }
 
@@ -302,92 +351,112 @@ body {
     border-radius: 5px;
 }
 
-/* Form Section */
-.form-container {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+
+.section_query_form {
+
+
+    padding:3.5vw 0;
 }
 
-.form-container h2 {
-    color: #333;
-    font-size: 24px;
+.section_query_form h1{
+
+
+    font-size: max(20px,3vw);
+    
+
+
+
+}
+
+.form{
+
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.form-section {
+    width: 50%;
+    padding: 20px;
+
+}
+
+.description-section {
+    width: 50%;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+    font-size: max(17px,1.3vw);
+    line-height: 1.6;
+}
+
+
+.description-section h2:first-child{
+
+
+    color:#ff6f61;
+   font-size: max(20px,3vw);
     margin-bottom: 20px;
+    font-weight: 500;
+
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
 }
 
-.form-container input,
-.form-container textarea {
+input, select, textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-.form-container input[type="date"] {
-    padding-left: 10px;
-}
-
-.form-container textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.form-container button {
-    background-color: #4a90e2;
+input[type="submit"] {
+    width: auto;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    transition: background-color 0.3s;
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
-.form-container button:hover {
-    background-color: #357ab7;
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-.error-message {
+.error {
     color: red;
     font-size: 12px;
-    margin-top: 5px;
 }
 
-/* Responsive Styling for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .form-container {
-        padding: 20px;
-    }
 
-    .form-container input,
-    .form-container textarea {
-        font-size: 14px;
-    }
 
-    .form-container button {
-        font-size: 14px;
-    }
+    .form-section{
 
-    .flex-container {
+        padding: none;
+    }
+    .form {
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
-    .hotel-card {
-        flex: 1 1 80%; /* Full width on small screens */
-        margin-bottom: 20px;
+    .form-section, .description-section {
+        width: 100%;
+       
     }
 
-    .container {
-        padding: 10px;
+    .description-section {
+        border-left: none;
     }
 }

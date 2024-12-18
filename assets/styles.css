@@ -1,12 +1,421 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFF0;
-  
- 
+*{
+
+    
+
+
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+       
+     
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    
+        user-select: none;  /* Disable text selection */
+        -webkit-user-select: none;  /* Disable text selection for Safari */
+        -moz-user-select: none;  /* For older Firefox versions */
+        -ms-user-select: none;  /* For Internet Explorer */
+    
+        
+    
+        
+    
+    
+    
+    
+      font-family: "Nunito Sans", serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    
+     
+
+
 }
+
+
+ 
+h1, h2, h3,h4{
+    text-rendering: optimizeLegibility;
+  }
+
+
+
+
+
+
+
+
+
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 0.5vw;
+    margin-top: 0;
+     
+    width: 100%;
+    background:#f2f2f2;
+
+
+    position: fixed; 
+    z-index: 999;
+    top:0px;
+    left:0px;
+
+}   
+
+
+
+.main-icon img{
+
+
+
+   object-fit: cover;
+
+
+
+
+   
+}
+
+
+.main-navbar   ul{
+
+list-style: none;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap:1.5vw;
+   
+    
+    }
+
+
+    .main-navbar ul li a{
+
+      font-size: max(18px,1.3vw);
+      font-weight: 800;
+        color:#405749;
+        padding: 0 2px;
+      
+       
+        
+     }
+
+
+.main-navbar ul li a:hover{
+
+cursor: pointer;
+
+}
+
+
+
+.dropdown {
+   position: relative;
+display: inline-block;
+
+   
+  }
+
+
+   .dropdown-content {
+   display: none;
+   position: absolute;
+   top:45px;
+   left:-60px;
+   transform: translateX(-25px);
+    
+   background:#f2f2f2;
+   min-width: 270px;
+
+     
+   
+
+   }
+
+
+
+   .dropdown:hover .dropdown-content {
+     display: block;
+    
+ 
+   
+   }
+
+
+
+ 
+
+
+   .dropdown-content a {
+     float: none;
+    
+     padding: 6px 8px;
+     text-decoration: none;
+     display: block;
+     text-align: center;
+     font-size: 1.2vw;
+    font-weight: 600;
+    color:#405749;
+
+    }
+   
+
+   .dropdown  {
+     float: left;
+    
+   }
+
+
+   
+
+
+
+   .dropdown  li a{
+
+     text-decoration: none;
+     color: #405749;
+ 
+  
+   }
+  
+
+   
+   .dropdown  li {
+
+  display: flex;
+  align-items: center;
+
+  padding:1vw;
+   
+    }
+ 
+
+   
+
+.dropdown-content a:hover{
+
+background-color:#f2f2f2;
+
+
+font-weight: 700;
+
+
+
+
+
+}
+
+
+
+
+.socials-icon{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ 
+
+
+
+
+/* off-screen-menu */
+.off-screen-menu {
+    display: none;
+    background-color:#fff;
+    min-height: 600px;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 60px;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    
+   
+    text-align: left;
+   
+    transition: .8s ease;
+  }
+  
+  
+  
+  
+  
+  .off-screen-menu .drop-list {
+  
+  
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+    
+  }
+  /* Ensure sub-menu is initially hidden */
+  .menu-item .sub-menu {
+    max-height: 0;          /* Hidden by default */
+    overflow: hidden;       /* Hide overflowing content */
+    transition: max-height 0.5s ease-out;  /* Smooth transition for expansion */
+    display: block;
+  }
+  
+  /* You may still want a fixed height, or you can animate it with max-height. */
+  .menu-item.active .sub-menu {
+    max-height: 300px;      /* Or the maximum height of the submenu when active */
+  }
+  
+  
+  
+  
+  .off-screen-menu ul li a {
+  
+  
+    
+    text-decoration: none;
+    
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 800;
+    color:#405749;
+    
+  }
+  .off-screen-menu.active {
+    right: 0;
+  }
+  
+  
+  
+  .drop-list li:nth-child(2){
+  
+    position: relative;
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  .drop-list .menu-item .menu-link{
+  
+  
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  .drop-list .menu-item  span{
+  
+  
+   font-size: 16px;
+   font-weight: 800;
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .off-screen-menu a {
+    text-decoration: none; 
+    display: block; 
+    padding: 10px 0; 
+    color: white; 
+    border-bottom: 2px solid #ddd; 
+  }
+  
+  /* ham menu */
+  .ham-menu {
+    height: 50px;
+    width: 35px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+    position: relative;
+  }
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #405749;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+  }
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+  .ham-menu.active span {
+    background-color: #405749;
+  }
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .menu-item.active .sub-menu {
+    height: auto; 
+    padding-bottom: 8px; 
+  }
+  
+  .off-screen-menu  .sub-menu  li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color:#405749;
+  
+    display: block;
+  }
+  
+  
+
+    
+ .socials-icon img{
+
+
+    width: 30px;
+    height:30px;
+    margin: 0  0.5vw
+ }
+  
+
 
 
 
@@ -17,34 +426,42 @@ body {
     background-size: cover;
     background-position: center;
     filter: brightness();
-    height: 400px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     color: white;
     text-align: center;
+    padding-top: 8vw;
 }
 
 .banner-content {
     max-width: 800px;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent background with slight darkness for readability */
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent background with slight darkness */
     border-radius: 10px;
+    min-height: 300px;
+    display: flex;                    /* Enable Flexbox */
+    flex-direction: column;            /* Stack children vertically */
+    justify-content: center;          /* Center items vertically within the container */
+    align-items: center;              /* Center items horizontally */
+    padding: 20px;                    /* Optional: add padding for content spacing */
+    text-align: center;               /* Optional: center text horizontally */
 }
 
 .banner h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: max(25px,4vw);
+    margin-top: 10px;
     font-family: 'Arial', sans-serif;
     font-weight: 700;
 }
 
 .banner p {
     font-size: 1.25rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: 'Arial', sans-serif;
     font-weight: 300;
+    color:#fff;
 }
 
 .banner-btn {
@@ -53,9 +470,11 @@ body {
     text-decoration: none;
     padding: 12px 30px;
     border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 400;
     transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+    
 }
 
 .banner-btn:hover {
@@ -65,65 +484,232 @@ body {
 
 /* Tour Section */
 
-
-.tour-details {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.Tour-info-section {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #FFFFF0;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-
+    font-family: Arial, sans-serif;
 }
 
-.tour-details img {
-    width: 80%;
-    height: 400px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.tour-text {
+.Tourinfo_1 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 20px;
 }
 
 
 
-.tour-info{
+.Tourinfo_1 h2{
 
-    
-}
 
-.tour-info h2 {
+
     font-size: max(25px,4vw);
-    text-align: center;
-    margin-bottom: 20px;
-    color:#405749;
-    text-align: left;
     font-weight: 900;
+    color:#405749;
+}
+.Tour_location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.tour-info p {
-    font-size: 1.1rem;
+.Tour_location img {
+    width: 20px;
+    height: 20px;
 }
 
-
-
-@media (max-width:480px) {
-
-
-    .tour-details{
-
-        flex-direction: column;
-    }
+/* Styling for the tour_description container */
+.tour_description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns of equal width */
+    gap: 20px;  /* Space between each item */
+    padding: 20px;
     
+
 }
+
+/* Styling for each item inside the tour_description */
+.tour_description > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the images' size */
+.tour_description > div img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.tour_desc h3{
+
+
+    font-size: max(20px,3vw);
+    font-weight: 600;
+    color:#405749;
+ 
+}
+
+
+.tour_desc p{
+
+
+    font-size: max(15px,1.2vw);
+    line-height: 1.6;
+    font-weight: 400;
+    color:#000000;
+}
+
+
+.tour_desc_expand {
+
+
+
+  display:flex;
+  justify-content:center;
+
+  gap:20px;
+
+
+}
+
+/* Media query to ensure responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .tour_description {
+        grid-template-columns: repeat(2, 1fr);  /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .tour_description {
+        grid-template-columns: 1fr;  /* 1 column on very small screens */
+    }
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Container for the two columns and the form on the right */
+.tour_grid {
+    margin: 4vw 0;
+    display: flex;
+    gap: 20px; /* Space between the columns and the form */
+    justify-content: space-between; /* Ensure items are spaced out correctly */
+}
+
+/* General text styling for p and span */
+.tour_grid p, span {
+   
+    font-size: max(15px,1.2vw);
+    line-height: 1.6;
+    font-weight: 400;
+    color:#000000;
+}
+
+/* Styling for headings (h4) */
+.grid_column_1 h4,
+.grid_column_2 h4 {
+    font-weight: 500;
+    font-size: max(18px, 2vw);
+    color: #4a90e2; /* Keep the color you provided */
+}
+
+/* Adjusted individual column styles for the two columns */
+.grid_column_1, .grid_column_2 {
+    width: 35%; /* Set both columns to take up 35% of the available space */
+}
+
+/* Styling for the "Price Includes" sections */
+.grid_column_1 .price-includes, 
+.grid_column_2 .price-includes {
+    height: 200px;            /* Set a fixed height */
+    overflow-y: auto;         /* Allow scrolling if content exceeds height */
+    padding: 10px 0;          /* Padding for spacing */
+    background-color: #f9f9f9; /* Optional: Background color for better visibility */
+    border-radius: 5px;       /* Rounded corners */
+}
+
+/* Inside the "Price Includes" section */
+.grid_column_1 .price-includes div,
+.grid_column_2 .price-includes div {
+    display: flex;            /* Flexbox to align items horizontally */
+    align-items: center;      /* Vertically align the checkmark and text */
+    gap: 10px;                /* Space between the icon and text */
+    padding: 5px 0;           /* Padding between items */
+}
+
+/* Adjusting font size for checkmarks and items */
+.grid_column_1 .price-includes span,
+.grid_column_2 .price-includes span {
+    font-size: 18px;          /* Font size for the icons */
+}
+
+/* Optional: style for checkmark (✔) or cross (✘) */
+.grid_column_1 .price-includes span:first-child,
+.grid_column_2 .price-includes span:first-child {
+    font-weight: bold;
+    color: green; /* Green for checkmarks */
+}
+
+.grid_column_1 .price-includes span:nth-child(1):not(.green),
+.grid_column_2 .price-includes span:nth-child(1):not(.green) {
+    color: red; /* Red for cross (✘) marks */
+}
+
+/* Styling for the h4 headings */
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling for the p text */
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Styling for the 'Price Includes' items */
+.grid_column_1 div div, .grid_column_2 div div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid_column_1 div div img, .grid_column_2 div div img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Additional Styling for the 'Tourinfo2_wildlife_tour_form' on the right */
+.Tourinfo2_wildlife_tour_form {
+    width: 30%; /* Form takes up 30% of the space */
+    padding-left: 20px; /* Optional: space on the left */
+    padding-right: 20px; /* Optional: space on the right */
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .tour_grid {
+        flex-direction: column;  /* Stack the layout in a column for smaller screens */
+    }
+    .Tourinfo2_wildlife_tour_form {
+        width: 100%; /* Make the form take full width on smaller screens */
+    }
+    .grid_column_1, .grid_column_2 {
+        width: 100%; /* Make columns full width on smaller screens */
+    }
+}
+
 
 
 /* Location Section */
@@ -131,7 +717,7 @@ body {
     padding: 40px 20px;
   
     text-align: center;
-    background-color: #FFFFF0;
+   
 }
 
 .location-section h2 {
@@ -145,10 +731,10 @@ body {
 .location-section P {
 
 
-    font-size: max(17px,1.3vw);
+    font-size: max(15px,1.2vw);
+    line-height: 1.6;
     font-weight: 400;
     color:#000000;
-    line-height: 1.6;
 } 
 
 
@@ -161,10 +747,10 @@ body {
 }
 
 .location-card {
-    background-color: #FFFFF0;
+    background-color: #FFF;
     border-radius: 10px;
-  
-    width: 20%; /* Adjust width to fit 5 cards in a row */
+ 
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
@@ -174,23 +760,26 @@ body {
 
 .location-card img {
     width: 100%;
-    height: 200px;
+    
+    height: 300px;
     border-radius: 8px;
     object-fit: cover;
 }
 
 .location-card h3 {
-    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #ff6f61;
 
     margin-top: 10px;
 }
 
 .location-card p {
-    font-size: 0.9rem;
-
-    margin-top: 10px;
+    font-size:  max(15px,1.2vw);
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 10px;
 }
-
 .location-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -234,18 +823,14 @@ body {
 }
 
 
-.hotel-category h1 {
-   text-align: center;
+.hotel-category h2 {
+  
    font-size: max(25px,4vw);
    color:#405749;
    font-weight: 900;
+   margin-bottom: 20px;
 }
 
-.hotel-category h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
 
 /* Flex container for hotels */
 .flex-container {
@@ -257,13 +842,14 @@ body {
 
 /* Hotel cards */
 .hotel-card {
-    background-color: #FFFFF0;
-    border-radius: 10px;
-  
+  background-color: #FFFFF0;
+  border-radius: 10px;
+  min-width:400px;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 22%; /* 4 cards per row */
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 22%; /* 4 cards per row */
+  text-align: center;
+
+  transition: transform 0.3s, box-shadow 0.3s;
 
 }
 
@@ -275,13 +861,14 @@ body {
 
 .hotel-card h3 {
     color: #ff6f61;
-    font-size: 18px;
-    margin-top: 15px;
+    font-size: max(18px,1.3vw);
+    font-weight: 800;
 }
 
 .hotel-card p {
-    font-size: 14px;
-    color: #666;
+    font-size:  max(15px,1.2vw);
+    font-weight: 400;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -306,93 +893,182 @@ flex-direction: column;    }
 }
 
 
-
-
-
-/* Itinerary Section */
+/* General styles for itinerary section */
 .itinerary {
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
 }
 
 
 
 .itinerary h2 {
+
+
     font-size: max(25px,4vw);
-    color:#405749;
     font-weight: 900;
+    color: #405749;
+    margin-bottom: 20px;
+
 }
+
+
+.itinerary ul li{
+
+
+    font-size: max(15px,1.2vw);
+    font-weight: 400;
+}
+
+
 
 
 .day-planner {
-    background-color: #FFFFF0;
+    position: relative;
+    background-color: #f9f9f9;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
-
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+.day_planner_content{
+
+
+    display: flex;
+    justify-content: space-between;
+}
 .day-planner h3 {
-    color: #405749;
+
+
+    display: inline-block;
+    font-weight: 500;
     font-size: max(17px,1.3vw);
-    font-weight: 600;
 
-    margin-bottom: 10px;
+}
+.dropdown-btn2 {
+    font-size: 24px; /* Ensure font size is large and consistent */
+    color:#fff;
+    font-weight: 400;
+    padding: 10px 10px; /* Add consistent padding around the button */
+    background-color: #405749;
+    border: 1px solid #ccc; /* Optional border for better visibility */
+    border-radius: 5px; /* Optional: rounded corners for the button */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for any changes */
+    text-align: center; /* Ensure the text is centered */
+ 
+    width: 40px; /* Set a fixed width to prevent size change */
+    height: 40px; /* Set a fixed height to maintain consistent size */
+    line-height: 1; /* Ensure the text is vertically centered */
+  
 }
 
-.day-planner ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.day-planner ul li {
-    background-color: #f1f1f1;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
+/* Optional: when the button is active (i.e., when the dropdown is open) */
+.dropdown-btn2.open {
+    transform: rotate(45deg); /* If you want a rotating effect for the "-" */
+    font-weight: bold;
+    color: #ff6347; /* Optional: color change for the active state */
 }
 
 
-.section_query_form {
-
-
-    padding:3.5vw 0;
+/* Hover effect on the button */
+.dropdown-btn2:hover {
+    transform: scale(1.05);
 }
+
+/* Style for the dropdown content */
+.dropdown-content2 li {
+    display: none;  /* Initially hidden */
+    list-style: none;
+    padding:5px;
+    margin:5px;
+ 
+  
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Show the dropdown content with a smooth animation */
+.day-planner.open .dropdown-content2 li{
+    display: block;
+    opacity: 1;
+
+}
+
+
+.day-planner.open .dropdown-btn2 {
+    content: "-";  /* Display minus sign */
+}
+
+
+
+
+
+
+
+
+
+
+.section_query_form{
+
+
+
+    margin: 8vw 0;
+}
+
 
 .section_query_form h1{
 
 
-    font-size: max(20px,3vw);
-    
+  font-size: max(24px,4vw);
+  color:#405749;
 
 
 
 }
+
+
+
 
 .form{
 
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
+
 
 
 
 
 
 .form-section {
-    width: 50%;
-    padding: 20px;
+    width: 40%;
+    
+  
 
+  }
+
+
+
+.description-section{
+
+
+
+  width: 50%;
 }
 
-.description-section {
-    width: 50%;
-    padding: 20px;
-    border-left: 2px solid #ddd;
-    font-size: max(17px,1.3vw);
+.description-section p {
+
+    font-size: max(15px,1.2vw);
     line-height: 1.6;
-}
+    color:#000000;
 
+
+}
 
 .description-section h2:first-child{
 
@@ -400,13 +1076,15 @@ flex-direction: column;    }
     color:#ff6f61;
    font-size: max(20px,3vw);
     margin-bottom: 20px;
-    font-weight: 500;
+    font-weight: 900;
 
 }
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #555;
+    font-size: max(15px,1.2vw);
+    color:#000000;
+
 }
 
 input, select, textarea {
@@ -420,16 +1098,18 @@ input, select, textarea {
 
 input[type="submit"] {
     width: auto;
-    background-color: #4CAF50;
+    background-color: #405749;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+  transform: scale(1.05);
 }
 
 .error {
@@ -460,3 +1140,574 @@ input[type="submit"]:hover {
         border-left: none;
     }
 }
+
+
+
+
+
+
+
+ /* General footer styling */
+ .footer {
+    background:#f2f2f2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #405749;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  
+ 
+    padding-left: 4.5vw;
+    padding-right: 4.5vw;
+ 
+ 
+ 
+   
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+  justify-content: space-between; 
+    
+  gap:2.5vw;
+   
+  margin: 5vw 0;
+  }
+  
+ 
+ 
+  .footer-column{
+ 
+    width: 33.33%;
+    margin:  0 auto;
+    text-align:center;
+  }
+  
+  
+  .footer-column h1 {
+    font-size: max(17px,3vw);
+   
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: #000000;
+  }
+  
+  .footer-column h3 {
+    font-size: max(14px,1.8vw);
+    margin-bottom: 2vw;
+    font-weight: 900;
+    color: #000000;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 2vw;
+    font-size:  max(10px,1vw) ;
+    font-weight: 800;
+  }
+ 
+ 
+ 
+ 
+  
+  .footer-column ul li  a{
+    margin-bottom: 1vw;
+    font-size:  max(10px,1vw) ;
+  }
+  
+  
+  .footer-column ul li a {
+    color: #000000;
+    font-weight: 800;
+    text-decoration:none;
+    padding: 1vw 1vw;
+    background-color: #cb464f;
+    border-radius: 8px;
+    font-size:  max(10px,1vw);
+ 
+   
+ 
+  }
+ 
+ 
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+ 
+ 
+  
+  .socials-icon img:hover {
+    opacity: 0.8;
+  }
+  
+  /* Footer bottom */
+  
+ 
+ 
+     .footer_social_icons img{
+ 
+    height:40px;
+    width:40px;
+    margin:1vw;
+ 
+ 
+ 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  media queries */
+
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+
+
+
+    .main-navbar{
+    
+    
+      padding:5px;
+    }
+    
+    
+    .main-navbar .main_nav_ul li a {
+    
+      display:none;
+      
+      }
+    
+    
+    .main-icon img {
+    
+    
+       width: 100px;
+       
+    
+    }
+    
+    /* Show dropdown menu when hamburger is clicked */
+    .navbar-hamburger.open .dropdown-menu-hamburger {
+       display: block;  /* Show dropdown */
+     }
+    
+    
+    
+     .dropdown-menu-hamburger .nav-links{
+    
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       
+     }
+     /* Hide social media icons on mobile when dropdown is open */
+     .socials-icon .social-icon {
+       display: none;
+     }
+    
+    
+    
+    
+     .dropdown-menu-hamburger .nav-links li {
+       width: 100%;  /* Make each <li> take up the full width of the dropdown */
+     }
+    
+    
+    
+    
+     /* Show hamburger icon in mobile view */
+     .navbar-hamburger {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-end;
+     }
+    
+     .dropdown-menu-hamburger .nav-links li a {
+       display: block;
+       width: 100%;  /* Ensure the links fill the entire width */
+       text-align: center;  /* Center the text */
+     }
+    
+      
+    
+    .dropdown svg {
+    
+    
+       display: none;
+    }
+    
+    
+    
+    
+    
+    
+    .slideimg {
+      filter: brightness(0.7);
+      object-fit: cover;
+      height: 500px; /* Ensure the image covers the full height */
+      width: 100%;  /* Ensure the image covers the full width */
+    }
+    
+    
+    
+    
+    .left-content-section button{
+    
+    
+      padding:1.5vw 1.5vw;
+    
+    }
+    .main-content{
+    
+    
+       display: flex;
+      flex-direction: column;
+    
+      justify-content: center;
+    
+    }
+    
+    
+    
+    .button-link{
+    
+      
+       font-size: max(10px, 3vw); /* Slightly smaller font size on mobile */
+       padding: 10px 20px; 
+          bottom: 12%; /* Further adjust button for smaller screens */
+       font-size: max(12px, 5vw); /* Further reduce font size on very small screens */
+       padding: 8px 16px; /* Even smaller padding for tiny screens */
+       opacity: 1;
+    }
+    
+    .left-content-section{
+    
+    
+       width: 100%;
+    }
+    
+    .left-content-section h1{
+    
+    text-align: center;
+    
+    
+    }
+    .right-content-section{
+    
+    
+       width: 100%;
+       margin-top: 2vw;
+    }
+    
+    
+    
+    .right-content-section img{
+    
+    width:100%;
+    height:50vw;
+    object-fit: cover;
+       
+    }
+    
+    
+    
+    
+    .gallery-container{
+    
+    
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       padding: 0 3vw;
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    .gallery-container .item{
+    
+    
+    
+    height: 60vw;
+    
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    .search-trip{
+    
+    
+       text-align: center;
+    }
+    
+      .adventure-section-travel-container{
+    
+    
+       flex-wrap: wrap;
+      }
+    
+    
+    
+    
+    
+    
+    .destination-sections{
+    
+    
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    
+    }
+    
+    
+    .Corbett_details_left button{
+    
+      padding: 1.5vw 1.5vw;
+    }
+    
+    
+    .Corbett_details_right button {
+    
+      padding:1.5vw;
+    }
+    
+    
+    
+    .destination-section-left{
+    
+    
+       width: 100%;
+    
+    
+    }
+    
+    .destination-section-right {
+    
+    
+       display:none;
+    }
+    
+    
+    
+    .section_wandering_soul{
+    
+    
+       display: flex;
+       flex-direction: column;
+       gap:2vw;
+      
+      
+    }
+    
+    .section_wandering_soul_section_left{
+    
+    
+    
+       width: 100%;
+       
+    }
+    
+    
+    
+    .section_wandering_soul_section_right{
+    
+    
+       width: 100%;
+    }
+    
+    
+      .Corbett_details_main{
+    
+    
+    
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: center;
+    }
+    
+    
+    .Corbett_details_left{
+    
+    
+       width: 100%;
+    }
+    
+    
+    
+    
+    .Corbett_details_right{
+    
+    
+    
+    width:100%;
+    
+    }
+    .Corbett_safari_zones button{
+    
+    
+      padding:1.5vw 1.5vw;
+    }
+    
+    
+    
+    
+    @media (max-width: 768px) {
+      .hotel_ratings {
+         padding: 2vw; 
+       
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    .travel_blog_grid_container{
+    
+    
+    
+       display: flex;
+       flex-direction: column;
+     
+       width: 100%;
+    
+    
+    }
+    
+    
+    
+    
+    
+    
+    .blog_post{
+    
+    
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    
+    }
+    
+    
+    .blog_post img{
+    
+    
+       width: 90vw;
+    }
+    
+    
+    
+    
+    
+        /* Footer container: Adjust layout for smaller screens */
+        .footer-container {
+          flex-direction: column; /* Stack the footer columns vertically */
+    
+         
+          gap: 15px; /* Adjust the gap between the columns */
+         
+      }
+    
+      /* Footer Column: Full width on smaller screens */
+      .footer-column {
+          flex: 1 1 100%; /* Ensure each column takes full width */
+          text-align: center; /* Center-align text within columns */
+          margin:0;
+      }
+    
+      /* Adjust Footer Heading */
+      .footer-column h1 {
+          font-size: 25px; /* Adjust font size for heading */
+          text-align: left; /* Center-align heading */
+          margin-bottom: 10px; /* Reduce bottom margin */
+      }
+    
+      /* Adjust Social Icons */
+      .footer_social_icons {
+          text-align: left; /* Center-align social icons */
+          gap: 15px; /* Adjust spacing between icons */
+      }
+    
+      .footer_social_icons img {
+          width: 22px; /* Reduce size of social icons */
+          height: 22px; /* Reduce size of social icons */
+          
+      }
+    
+      /* Adjust Contact Info Text */
+      .footer-column ul {
+          margin-top: 10px; /* Add spacing between list items */
+      }
+    
+    
+    .footer-column h3{
+    
+    font-size: 22px;
+    text-align: left;
+    
+    
+    }
+      
+      .footer-column ul li {
+        font-size: 15px; /* Reduce font size for smaller screens */
+        text-align: left;
+    }
+    
+    
+    
+    .footer-column ul li a {
+      font-size: 15px; /* Reduce font size for smaller screens */
+      text-align: left;
+    }
+    
+    }
+    
+    
+    
+    

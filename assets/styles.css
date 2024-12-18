@@ -605,9 +605,9 @@ hr {
 
 
   
-  flex-direction: column;
+  display: flex;
   justify-content: center;
-  align-items: center;
+
    gap:20px;
 
 }
@@ -624,8 +624,8 @@ hr {
 .tour_desc_expand img {
 
 
-  width: 100%;
-  height:200px;
+  
+  height:300px;
 }
 
 
@@ -740,6 +740,29 @@ p {
     .grid_column_1, .grid_column_2 {
         width: 100%; /* Make columns full width on smaller screens */
     }
+
+
+
+    
+.tour_desc_expand {
+
+
+
+  
+flex-direction: column;
+  justify-content: center;
+
+   gap:20px;
+
+}
+
+.tour_desc_expand img {
+
+
+  width: 100%;
+}
+
+
 }
 
 
@@ -773,7 +796,7 @@ p {
 
 .location-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -819,9 +842,8 @@ p {
 
 /* Responsive Styling for smaller screens */
 @media (max-width: 900px) {
-    .location-card {
-        width: 45%; /* 2 cards per row on smaller screens */
-    }
+   
+    
 }
 
 @media (max-width: 480px) {
@@ -867,8 +889,8 @@ p {
 /* Flex container for hotels */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  
+    justify-content: space-evenly;
     gap: 20px;
 }
 
@@ -876,9 +898,10 @@ p {
 .hotel-card {
   background-color: #FFFFF0;
   border-radius: 10px;
-  min-width:400px;
+  max-width: 350px;
+
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex: 1 1 22%; /* 4 cards per row */
+
   text-align: center;
 
   transition: transform 0.3s, box-shadow 0.3s;
@@ -922,6 +945,23 @@ p {
     .flex-container {
     
 flex-direction: column;    }
+
+
+.hotel-card {
+
+
+  width: 100%;
+
+  
+}
+
+
+
+.hotel-card img{
+
+
+
+}
 }
 
 

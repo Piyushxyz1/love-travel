@@ -2917,6 +2917,13 @@ height: 60vw;
 
 
 
+.Corbett_details_left img{
+
+
+  height: 300px;
+}
+
+
 
 .Corbett_details_right{
 
@@ -2925,6 +2932,18 @@ height: 60vw;
 width:100%;
 
 }
+
+
+
+.Corbett_details_right img{
+
+
+
+  height: 300px;
+  
+  }
+
+
 .Corbett_safari_zones button{
 
 

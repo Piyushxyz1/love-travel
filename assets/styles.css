@@ -1740,8 +1740,7 @@ input[type="submit"]:hover {
     
       /* Footer Column: Full width on smaller screens */
       .footer-column {
-         width: 100%;
-          text-align: center; /* Center-align text within columns */
+         width: 80%;
           margin:0;
       }
     

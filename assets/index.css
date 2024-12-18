@@ -3007,7 +3007,7 @@ width:100%;
   /* Adjust Footer Heading */
   .footer-column h1 {
     text-align: center; /* Center-align text within columns */
-      font-size: 22px; /* Adjust font size for heading */
+      font-size: 18px; /* Adjust font size for heading */
      
       margin-bottom: 10px; /* Reduce bottom margin */
   }
@@ -3032,7 +3032,7 @@ width:100%;
 
 .footer-column h3{
   text-align: center; /* Center-align text within columns */
-font-size: 22px;
+font-size: 18px;
 
 
 

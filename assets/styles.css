@@ -1664,13 +1664,13 @@ input[type="submit"]:hover {
       /* Adjust Footer Heading */
       .footer-column h1 {
           font-size: 25px; /* Adjust font size for heading */
-          text-align: left; /* Center-align heading */
+          text-align: center; /* Center-align heading */
           margin-bottom: 10px; /* Reduce bottom margin */
       }
     
       /* Adjust Social Icons */
       .footer_social_icons {
-          text-align: left; /* Center-align social icons */
+          text-align: center; /* Center-align social icons */
           gap: 15px; /* Adjust spacing between icons */
       }
     
@@ -1703,7 +1703,7 @@ input[type="submit"]:hover {
     
     .footer-column ul li a {
       font-size: 15px; /* Reduce font size for smaller screens */
-      text-align: left;
+      text-align: center;
     }
     
     }

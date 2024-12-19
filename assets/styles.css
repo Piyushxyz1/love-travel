@@ -15,7 +15,7 @@
         -webkit-user-select: none;  /* Disable text selection for Safari */
         -moz-user-select: none;  /* For older Firefox versions */
         -ms-user-select: none;  /* For Internet Explorer */
-    
+       
         
     
         
@@ -417,69 +417,149 @@ font-weight: 700;
   
 
 
-
-
-
 /* Banner Section */
 .banner {
-    background-image: url('../assets/images/tiger2_0iten.jpeg'); /* Add your banner image URL here */
-    background-size: cover;
-    background-position: center;
-    filter: brightness();
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding-top: 8vw;
+  background-image: url('../assets/images/tiger2_0iten.jpeg'); /* Banner image */
+  background-size: cover;
+  background-position: center;
+
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding-top: 8vw; /* Add padding at the top */
 }
 
 .banner-content {
-    max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent background with slight darkness */
-    border-radius: 10px;
-    min-height: 300px;
-    display: flex;                    /* Enable Flexbox */
-    flex-direction: column;            /* Stack children vertically */
-    justify-content: center;          /* Center items vertically within the container */
-    align-items: center;              /* Center items horizontally */
-    padding: 20px;                    /* Optional: add padding for content spacing */
-    text-align: center;               /* Optional: center text horizontally */
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.6); /* Slight darkness behind content */
+  border-radius: 10px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Padding for spacing */
+  text-align: center;
 }
 
 .banner h1 {
-    font-size: max(25px,4vw);
-    margin-top: 10px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 700;
+  font-size: max(25px, 4vw);
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
 }
 
 .banner p {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 300;
-    color:#fff;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  color: #fff;
 }
 
 .banner-btn {
-    background-color: #ff6f61; /* A warm color for the button */
-    color: white;
-    text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-size: 17px;
-    font-weight: 400;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 20px;
-    
+  background-color: #ff6f61; /* Warm button color */
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
 }
 
 .banner-btn:hover {
-    background-color: #ff4a3c; /* A slightly darker shade on hover */
-    transform: scale(1.05);
+  background-color: #ff4a3c; /* Slightly darker shade on hover */
+  transform: scale(1.05);
+}
+
+/* For mobile devices (480px or smaller) */
+@media (max-width: 480px) {
+  .banner {
+      min-height: 350px; /* Smaller height for mobile screens */
+      padding-top: 12vw; /* More padding for small screens */
+  }
+
+  .banner-content {
+      max-width: 90%; /* Reduce width for mobile */
+      min-height: 200px; /* Adjust content height */
+      padding: 15px; /* Reduce padding for smaller devices */
+  }
+
+  .banner h1 {
+      font-size: 22px; /* Smaller title size */
+  }
+
+  .banner p {
+      font-size: 1rem; /* Smaller paragraph text */
+      margin-bottom: 20px; /* Adjust margin for mobile */
+  }
+
+  .banner-btn {
+      padding: 10px 25px; /* Smaller button size for mobile */
+      font-size: 15px; /* Smaller font size */
+  }
+}
+
+/* For tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .banner {
+      min-height: 400px; /* Adjust height for tablets */
+      padding-top: 10vw; /* Adequate padding for tablets */
+  }
+
+  .banner-content {
+      max-width: 80%; /* Reduce width for tablets */
+      min-height: 250px; /* Adjust content height */
+      padding: 20px; /* Keep some padding */
+  }
+
+  .banner h1 {
+      font-size: 26px; /* Slightly larger title on tablets */
+  }
+
+  .banner p {
+      font-size: 1.125rem; /* Slightly larger text */
+      margin-bottom: 25px;
+  }
+
+  .banner-btn {
+      padding: 12px 28px; /* Adjust button size */
+      font-size: 16px; /* Adjust font size */
+  }
+}
+
+/* For desktop (769px and larger) */
+@media (min-width: 769px) {
+  .banner {
+      min-height: 500px; /* Standard height for larger screens */
+      padding-top: 8vw; /* Consistent padding for desktops */
+  }
+
+  .banner-content {
+      max-width: 800px; /* Max width of content for larger screens */
+      min-height: 300px; /* Minimum height */
+      padding: 20px; /* Maintain padding */
+  }
+
+  .banner h1 {
+      font-size: max(30px, 4vw); /* Larger font size for desktop */
+  }
+
+  .banner p {
+      font-size: 1.25rem; /* Consistent font size for paragraph */
+      margin-bottom: 30px;
+  }
+
+  .banner-btn {
+      padding: 12px 30px; /* Standard padding for desktop */
+      font-size: 17px; /* Standard font size */
+  }
 }
 
 /* Tour Section */
@@ -528,6 +608,18 @@ font-weight: 700;
 
 }
 
+
+
+.tour_description span strong {
+
+  font-weight: 900;
+  color:#4a90e2;
+  
+
+
+
+}
+
 /* Styling for each item inside the tour_description */
 .tour_description > div {
     display: flex;
@@ -555,6 +647,10 @@ font-weight: 700;
     color:#405749;
  
 }
+
+
+
+
 
 
 .tour_desc p{
@@ -769,7 +865,7 @@ flex-direction: column;
 
 /* Location Section */
 .location-section {
-    padding: 40px 20px;
+    padding: 3.5vw 4.5vw;
   
     text-align: center;
    
@@ -866,14 +962,12 @@ flex-direction: column;
 
 
 /* Hotel Section */
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
+
 
 .hotel-category {
     margin-bottom: 40px;
+    padding:3.5vw 4.5vw;
 }
 
 
@@ -883,6 +977,7 @@ flex-direction: column;
    color:#405749;
    font-weight: 900;
    margin-bottom: 20px;
+   text-align: center;
 }
 
 
@@ -890,8 +985,9 @@ flex-direction: column;
 .flex-container {
     display: flex;
   
-    justify-content: space-evenly;
-    gap: 20px;
+    justify-content: center;
+    gap:20px;
+    
 }
 
 /* Hotel cards */
@@ -899,7 +995,7 @@ flex-direction: column;
   background-color: #FFFFF0;
   border-radius: 10px;
   max-width: 350px;
-
+min-height: 400px;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   text-align: center;
@@ -941,27 +1037,25 @@ flex-direction: column;
 
 
 
-@media(max-width: 900px) {
+@media(max-width: 768px) {
     .flex-container {
     
-flex-direction: column;    }
+flex-direction: column; 
+align-items: center; 
+  }
 
 
 .hotel-card {
 
 
   width: 100%;
+  
 
   
 }
 
 
 
-.hotel-card img{
-
-
-
-}
 }
 
 
@@ -1087,7 +1181,8 @@ flex-direction: column;    }
 
 
 
-    margin: 8vw 0;
+  
+    padding:3.5vw 4.5vw;
 }
 
 
@@ -1190,7 +1285,7 @@ input[type="submit"]:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 912px) {
 
 
     .form-section{

@@ -3088,3 +3088,74 @@ font-size: 18px;
 
 
 }
+
+
+
+
+
+
+/* Force styles with !important for the arrows */
+.slick-prev, 
+.slick-next {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black background */
+  color: white !important; /* White color for the arrows */
+  border: none !important; /* Remove border */
+  padding: 10px !important; /* Add padding for better touch/click area */
+  font-size: 30px !important; /* Adjust font size for arrows */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute !important;
+  top: 50% !important; /* Center the arrows vertically */
+  z-index: 10 !important; /* Ensure arrows are above content */
+  transform: translateY(-50%) !important; /* Adjust position */
+  border-radius: 50% !important; /* Round edges for a circular button */
+  outline: none !important; /* Remove outline */
+}
+
+/* Positioning of previous and next arrows */
+.slick-prev {
+  left: 10px !important; /* Position the prev arrow on the left */
+}
+
+.slick-next {
+  right: 10px !important; /* Position the next arrow on the right */
+}
+
+/* Ensure the arrows are visible on white background */
+.slick-prev:before,
+.slick-next:before {
+  color: red !important; /* Set the arrow color to white */
+  font-size: 30px !important; /* Adjust arrow icon size */
+}
+
+/* Adding custom arrows */
+.slick-prev:before {
+  content: '←' !important; /* Left arrow for the "prev" button */
+}
+
+.slick-next:before {
+  content: '→' !important; /* Right arrow for the "next" button */
+}
+
+/* Hover effect for better interactivity */
+.slick-prev:hover, 
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background on hover */
+  cursor: pointer !important; /* Change cursor to pointer on hover */
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media (max-width: 1024px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 24px !important; /* Adjust the font size on tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 20px !important; /* Adjust the font size on mobile */
+  }
+}

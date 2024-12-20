@@ -94,14 +94,15 @@ h1, h2, h3,h4{
 .main-navbar   ul{
 
 list-style: none;
-    display:flex;
-    
-    justify-content: center;
-    align-items: center;
-    gap:1.5vw;
-   
-    
-    }
+display:flex;
+justify-content: center;
+align-items: center;
+gap:1.5vw;
+
+  }
+
+
+
 
 
     .main-navbar ul li a{
@@ -109,11 +110,8 @@ list-style: none;
       font-size: max(18px,1.3vw);
       font-weight: 800;
         color:#405749;
-        padding: 0 2px;
-      
-       
-        
-      
+        padding: 0 2px;  
+        text-decoration: none;
 
     }
 
@@ -130,26 +128,30 @@ cursor: pointer;
 
 .dropdown {
    position: relative;
-display: inline-block;
+display: flex;
+align-items: center;
+padding: 20px 0;
 
    }
+
+
+
 
 
    .dropdown-content {
    display: none;
    position: absolute;
-   top:45px;
+   padding: 10px 10px;
+   
+
+   top:55px;
    left:-60px;
    transform: translateX(-25px);
     
    background:#f2f2f2;
    min-width: 270px;
 
-     
-   
-
-  
-   }
+      }
 
 
 
@@ -173,6 +175,7 @@ display: inline-block;
     
      padding: 6px 8px;
      text-decoration: none;
+     margin: 10px 0;
      display: block;
      text-align: center;
      font-size: 1.2vw;
@@ -218,7 +221,7 @@ display: inline-block;
 background-color:#f2f2f2;
 
 
-font-weight: 700;
+transform: scale(1.02);
 
 
 
@@ -228,9 +231,7 @@ font-weight: 700;
 
 
 
-
-
-header .book {
+ .book {
    padding: 1.5vw 1.5vw;
    font-size: max(10px, 1.3vw);
    font-weight: 900;
@@ -243,7 +244,7 @@ header .book {
 }
 
 @media (max-width: 767px) {
-   header .book {
+    .book {
       padding: 8px 16px; 
       font-size: max(12px, 4vw); 
       margin-top: 2vw; 
@@ -251,7 +252,7 @@ header .book {
 }
 
 @media (max-width: 480px) {
-   header .book {
+   .book {
       padding: 6px 12px;
       margin-top: 1.5vw; 
    }
@@ -267,12 +268,6 @@ header .book {
 
 
 
-
-.banner_section{
-
-
-   position: relative;
-}
 
 
 
@@ -393,6 +388,19 @@ header .book {
   border-bottom: 2px solid #ddd; 
 }
 
+
+/* social icons with hamburger mwnu*/
+
+.social-hamburger-icon{
+
+
+  display: flex;
+}
+
+
+
+
+
 /* ham menu */
 .ham-menu {
   height: 50px;
@@ -477,7 +485,7 @@ margin-right: 0.5vw;
    text-align: center;
 }
 
- header .book:hover{
+ .book:hover{
 background-color: #c98080;
 
 cursor: pointer;
@@ -514,17 +522,17 @@ cursor: pointer;
 
 
  
-    
 
- .h-logo{
 
-    margin: 0px 0px 0px 0px;
-    padding: 20px 20px 20px 20px;
-    background-color: #CC976C;
-    border-radius: 100% 100% 100% 100%;
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 
- }   
+
+ 
+.banner_section{
+
+
+  position: relative;
+}
+
 
 .slideshow-container {
   position: relative;
@@ -688,7 +696,7 @@ animation: fading 2s ease-in-out ;
 
    .left-content-section p{
       font-size: max(15px,1.3vw);
-      line-height: max(21px, 2vw);
+      line-height: 1.6;
         color:#000000;
         font-weight: 400;
        
@@ -811,8 +819,9 @@ margin-top:1vw;
 
 .Travel-packages p {
   font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw); 
+   line-height: 1.6; 
    color:#000000;
+   font-weight: 400;
   
 }
 
@@ -1170,21 +1179,6 @@ font-weight: 900;
 
 
 
-.Vacation-section{
-
-    
-background: linear-gradient(rgb(236, 219, 192), rgba(234, 214, 186, 0.842)), 
-                    url('../assets/images/bg-01.jpg');
-background-size: cover;
-background-position: center;
-
-
-
-background-repeat: no-repeat;
-min-height:500px ;
-padding-bottom: 5vw;
-
-}
 
 
 
@@ -1228,6 +1222,7 @@ align-items: last baseline;
    
  
    font-size: max(18px,1.2vw);
+   line-height: 1.6;
 
 
 
@@ -1497,7 +1492,7 @@ filter: brightness(0.8);
 
 .section_hotels_resorts p{
    font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw); /* 1.4 to 1.6 times font size */
+   line-height: 1.6; /* 1.4 to 1.6 times font size */
  
    color:#000000;
    font-weight: 400;
@@ -3093,69 +3088,3 @@ font-size: 18px;
 
 
 
-
-/* Force styles with !important for the arrows */
-.slick-prev, 
-.slick-next {
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black background */
-  color: white !important; /* White color for the arrows */
-  border: none !important; /* Remove border */
-  padding: 10px !important; /* Add padding for better touch/click area */
-  font-size: 30px !important; /* Adjust font size for arrows */
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  position: absolute !important;
-  top: 50% !important; /* Center the arrows vertically */
-  z-index: 10 !important; /* Ensure arrows are above content */
-  transform: translateY(-50%) !important; /* Adjust position */
-  border-radius: 50% !important; /* Round edges for a circular button */
-  outline: none !important; /* Remove outline */
-}
-
-/* Positioning of previous and next arrows */
-.slick-prev {
-  left: 10px !important; /* Position the prev arrow on the left */
-}
-
-.slick-next {
-  right: 10px !important; /* Position the next arrow on the right */
-}
-
-/* Ensure the arrows are visible on white background */
-.slick-prev:before,
-.slick-next:before {
-  color: red !important; /* Set the arrow color to white */
-  font-size: 30px !important; /* Adjust arrow icon size */
-}
-
-/* Adding custom arrows */
-.slick-prev:before {
-  content: '←' !important; /* Left arrow for the "prev" button */
-}
-
-.slick-next:before {
-  content: '→' !important; /* Right arrow for the "next" button */
-}
-
-/* Hover effect for better interactivity */
-.slick-prev:hover, 
-.slick-next:hover {
-  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background on hover */
-  cursor: pointer !important; /* Change cursor to pointer on hover */
-}
-
-/* Responsive adjustments for smaller screen sizes */
-@media (max-width: 1024px) {
-  .slick-prev,
-  .slick-next {
-    font-size: 24px !important; /* Adjust the font size on tablet */
-  }
-}
-
-@media (max-width: 480px) {
-  .slick-prev,
-  .slick-next {
-    font-size: 20px !important; /* Adjust the font size on mobile */
-  }
-}

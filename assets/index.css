@@ -544,8 +544,16 @@ overflow: hidden;
 
 .mySlides {
   display: none;
+  opacity: 0;
+  transition: opacity 3s ease-out
 
 }
+
+.mySlides.show {
+  display: block; /* Show the current slide */
+  opacity: 1; /* Fade it in */
+}
+
 
 
 .slideimg {

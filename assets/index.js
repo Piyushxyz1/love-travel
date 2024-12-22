@@ -1,27 +1,29 @@
-
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
+// Automatically change slide every 5 seconds (5000 milliseconds)
+setInterval(function() {
+    plusSlides(1); // Go to the next slide automatically
+}, 4000); // 5000ms = 5 seconds
+
+// Function to go to the next or previous slide
 function plusSlides(n) {
   showDivs(slideIndex += n);
 }
 
+// Function to display the current slide
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
 
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+  if (n > x.length) {slideIndex = 1} // Loop back to the first slide
+  if (n < 1) {slideIndex = x.length}; // Loop to the last slide
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+    x[i].classList.remove('show'); // Remove the "show" class to hide the slide
   }
   
-  x[slideIndex-1].style.display = "block";
+  x[slideIndex-1].classList.add('show'); // Add "show" class to the current slide to fade it in
 }
-
-
-
 
 
 

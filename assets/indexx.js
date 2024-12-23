@@ -66,66 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-$(document).ready(function() {
-  // Initialize the Slick carousel
-  $('.location-cards').slick({
-    dots: false,
-    arrows: true, // Enable arrow navigation
-    prevArrow: '<button type="button" class="slick-prev"></button>',  // Default button for "prev"
-    nextArrow: '<button type="button" class="slick-next"></button>',  // Default button for "next"
-    infinite: false,
-    speed: 300,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: false,
-        }
-      },
-      {
-        breakpoint: 884,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
 
-  // Apply CSS for Slick arrows using JavaScript
-  $('.slick-prev, .slick-next').css({
-    'background-color': 'rgba(0,0,0,0.5)',  // Remove background color
-    'color': '',  // Set the arrow color (text color) to black (you can change this to white or any color)
-    'border': 'none',  // Remove border
-    'padding': '10px',  // Padding for a larger clickable area
-    'font-size': '100px',  // Increase the size of the arrows (make them bigger)
-    'display': 'flex',  // Use flexbox to center the content
-    'justify-content': 'center',  // Center horizontally
-    'align-items': 'center',  // Center vertically
-    'position': 'absolute',  // Position them absolutely within the carousel
-    'top': '50%',  // Center vertically in the middle of the carousel
-    'transform': 'translateY(-50%)',  // Adjust for exact centering
-    'z-index': '1000',  // Ensure the arrows appear on top
-    'border-radius': '50%',  // Make the buttons circular (optional)
-    'cursor': 'pointer',  // Change the cursor to pointer on hover
-  });
 
-  // Position the prev and next arrows correctly
-  $('.slick-prev').css('left', '10px');  // Position the prev button to the left
-  $('.slick-next').css('right', '10px');  // Position the next button to the right
-});
 
 // JavaScript for form validation
 

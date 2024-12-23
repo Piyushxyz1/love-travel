@@ -266,8 +266,13 @@ Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised
 
 <!-- Itinerary Section -->
 <section class="itinerary">
+  <div class = "itinerary_headings">
     <h2>Travel Itinerary</h2>
+    
+  </div>
+<div class=" day_planner_items">
 
+  <div class=" day_planner_cards">
     <!-- Day 1 -->
     <div class="day-planner">
         <div class = "day_planner_content">
@@ -375,7 +380,51 @@ Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised
     
        
     </div>
-</section>
+
+  </div>
+  
+  <div class="form-section">
+    <div class = "itinerary_form_heading"><h2>Interested? </h2>
+      <span> Fill the Form and join the trip with us</span>
+    </div>
+  
+    <form id="wildlifeTripForm" action="submit_form.php" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+        <span class="error" id="nameError"></span>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="tripType">Type of Trip:</label>
+        <select id="tripType" name="tripType" required>
+            <option value="">Select Trip Type</option>
+            <option value="safari">Safari</option>
+            <option value="natureReserve">Nature Reserve</option>
+            <option value="birdWatching">Bird Watching</option>
+            <option value="ecoTour">Eco Tour</option>
+        </select>
+        <span class="error" id="tripTypeError"></span>
+
+        <label for="preferredDate">Preferred Trip Date:</label>
+        <input type="date" id="preferredDate" name="preferredDate" required>
+        <span class="error" id="preferredDateError"></span>
+
+        <label for="groupSize">Group Size:</label>
+        <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
+        <span class="error" id="groupSizeError"></span>
+
+        
+
+       
+
+        <input type="submit" value="Book My Trip">
+    </form>
+</div>
+  </div>
+  </section>
+
 
 
 
@@ -475,50 +524,7 @@ Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised
             </div>
         
             <!-- Right Section: Form -->
-            <div class="form-section">
-                <h2>Trip Details</h2>
-                <form id="wildlifeTripForm" action="submit_form.php" method="POST">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                    <span class="error" id="nameError"></span>
-        
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                    <span class="error" id="emailError"></span>
-        
-                    <label for="tripType">Type of Trip:</label>
-                    <select id="tripType" name="tripType" required>
-                        <option value="">Select Trip Type</option>
-                        <option value="safari">Safari</option>
-                        <option value="natureReserve">Nature Reserve</option>
-                        <option value="birdWatching">Bird Watching</option>
-                        <option value="ecoTour">Eco Tour</option>
-                    </select>
-                    <span class="error" id="tripTypeError"></span>
-        
-                    <label for="preferredDate">Preferred Trip Date:</label>
-                    <input type="date" id="preferredDate" name="preferredDate" required>
-                    <span class="error" id="preferredDateError"></span>
-        
-                    <label for="groupSize">Group Size:</label>
-                    <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
-                    <span class="error" id="groupSizeError"></span>
-        
-                    <label for="specialRequests">Special Requests (Optional):</label>
-                    <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any dietary restrictions, accessibility needs, or specific preferences?"></textarea>
-        
-                    <label for="accommodation">Accommodation Preference:</label>
-                    <select id="accommodation" name="accommodation" required>
-                        <option value="">Select Accommodation</option>
-                        <option value="luxury">Luxury Lodge</option>
-                        <option value="camping">Camping</option>
-                        <option value="budget">Budget Lodge</option>
-                    </select>
-                    <span class="error" id="accommodationError"></span>
-        
-                    <input type="submit" value="Book My Trip">
-                </form>
-            </div>
+            
         
         </div>
     </section>

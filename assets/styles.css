@@ -565,9 +565,9 @@ font-weight: 700;
 /* Tour Section */
 
 .Tour-info-section {
-    max-width: 1200px;
+   
     margin: 0 auto;
-    padding: 20px;
+    padding:3.5vw 4.5vw;
     font-family: Arial, sans-serif;
 }
 
@@ -1061,13 +1061,19 @@ align-items: center;
 
 /* General styles for itinerary section */
 .itinerary {
-    max-width: 1200px;
+   
     margin: 0 auto;
-    padding: 20px;
+    padding: 3.5vw 4.5vw;
     font-family: Arial, sans-serif;
 }
 
+.itinerary_headings{
 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .itinerary h2 {
 
@@ -1076,9 +1082,45 @@ align-items: center;
     font-weight: 900;
     color: #405749;
     margin-bottom: 20px;
+    width: 65%;
 
 }
 
+
+
+.itinerary_form_heading{
+
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  line-height: 0;
+  
+
+}
+
+
+.itinerary_form_heading h2 {
+
+
+  font-size: max(22px,2.5vw);
+  font-weight: 900;
+  color: #cb464f;
+  margin-bottom: 20px;
+
+
+}
+
+
+.itinerary_form_heading span{
+
+
+  font-size: 20px;
+  font-weight: 800;
+  color:#000000
+}
 
 .itinerary ul li{
 
@@ -1088,8 +1130,24 @@ align-items: center;
 }
 
 
+.day_planner_items{
+
+display: flex;
+justify-content: space-between;
+
+gap:20px;
+
+}
 
 
+
+
+.day_planner_cards{
+
+
+width: 65%;
+
+}
 .day-planner {
     position: relative;
     background-color: #f9f9f9;
@@ -1172,7 +1230,13 @@ align-items: center;
 
 
 
+.form-section{
 
+
+  width: 30%;
+  margin: 0 auto;
+
+}
 
 
 
@@ -1186,47 +1250,13 @@ align-items: center;
 }
 
 
-.section_query_form h1{
-
-
-  font-size: max(24px,4vw);
-  color:#405749;
-
-
-
-}
-
-
-
-
-.form{
-
-
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 
 
 
 
 
-.form-section {
-    width: 40%;
-    
-  
 
-  }
-
-
-
-.description-section{
-
-
-
-  width: 50%;
-}
 
 .description-section p {
 
@@ -1248,9 +1278,10 @@ align-items: center;
 }
 label {
     display: block;
-    margin: 10px 0 5px;
-    font-size: max(15px,1.2vw);
+    margin: 0px ;
+    font-size: max(12px,1vw);
     color:#000000;
+    font-weight: 500;
 
 }
 
@@ -1260,7 +1291,7 @@ input, select, textarea {
     margin: 8px 0 20px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: max(12px,1vw);
 }
 
 input[type="submit"] {
@@ -1287,6 +1318,17 @@ input[type="submit"]:hover {
 /* Responsive Design */
 @media (max-width: 912px) {
 
+  .itinerary .day_planner_cards{
+
+
+    width: 100%;
+  }
+
+  .itinerary .day_planner_items{
+
+  
+    flex-direction: column;
+  }
 
     .form-section{
 

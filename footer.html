@@ -40,3 +40,162 @@
     </div>
   </footer>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Tour Information Section -->
+   <section class = "Tour-info-section">
+
+    <div class="Tour_heading">
+      <h1>Description</h1>
+      <p>Planning a trip can be stressful and exciting at the same time and the question which always arises in the mind of travellers is “Where to stay?” Amidst the deep forests, hotels and resorts in Corbett National Park offer exceptional hospitality services as one of the country's most well-known wildlife locations. The unique and soothing accommodation options in Corbett enable travellers to spend their vacation with utmost comfort. One can choose from a wide range of stays, whether it can be a luxury hotel or a budget stay resort in Corbett National Park. These hotels and resorts provide everything one can ask for, from roomy cottages to comfortable rooms, an outdoor swimming pool, and observation decks.
+    
+        The greatest facilities and first-rated services can be found in Corbett's top luxury hotels and resorts, ensuring that the trip to the national park remains enjoyable for the travellers. Additionally, one will have a closer connection to nature and adventures and will be more prepared to explore the environment around them.</p>
+    </div>
+    
+    
+    <div class=" Tour-slide-img">
+    
+    <div class="slider-for">
+    
+      <img src = "assets/images/i-parallax-03-package-01-min.jpeg" alt = "img1"/>
+      <img src = "assets/images/i-parallax-04-package-02-min.jpeg" alt = "img2"/>
+      <img src = "assets/images/i-parallax-05-package-03-min.jpeg" alt = "img3"/>
+      <img src = "assets/images/i-parallax-05-package-03.jpeg" alt = "img4"/>
+    
+    
+    
+    </div>
+    
+    <div class="slider-nav">
+    
+      <img src = "assets/images/i-parallax-03-package-01-min.jpeg" alt = "img1"/>
+      <img src = "assets/images/i-parallax-04-package-02-min.jpeg" alt = "img2"/>
+      <img src = "assets/images/i-parallax-05-package-03-min.jpeg" alt = "img3"/>
+      <img src = "assets/images/i-parallax-05-package-03-min.jpeg" alt = "img4"/>
+    
+    
+    
+    </div>
+    
+    </div>
+        
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+/* General Section Styling */
+.Tour-info-section {
+  padding: 3.5vw 4.5vw;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading Styling */
+.Tour_heading h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Tour_heading p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Slider Container Styling */
+.Tour-slide-img {
+  position: relative;
+  margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-for {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.slider-for img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-nav img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 0 5px;
+}
+
+/* Hover Effects for Navigation Images */
+.slider-nav img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Style the Navigation on Active */
+.slider-nav img.active {
+  border: 2px solid #ff6f61;
+  transform: scale(1.05);
+}
+
+/* Optional media queries for responsiveness */
+@media (max-width: 768px) {
+  .Tour_heading h1 {
+    font-size: 28px;
+  }
+
+  .Tour_heading p {
+    font-size: 14px;
+  }
+
+  .slider-nav img {
+    width: 60px;
+    height: 60px;
+  }
+}

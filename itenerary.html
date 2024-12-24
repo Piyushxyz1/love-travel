@@ -389,38 +389,39 @@ Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised
     </div>
   
     <form id="wildlifeTripForm" action="submit_form.php" method="POST">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-        <span class="error" id="nameError"></span>
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
-        <span class="error" id="emailError"></span>
-
-        <label for="tripType">Type of Trip:</label>
-        <select id="tripType" name="tripType" required>
-            <option value="">Select Trip Type</option>
-            <option value="safari">Safari</option>
-            <option value="natureReserve">Nature Reserve</option>
-            <option value="birdWatching">Bird Watching</option>
-            <option value="ecoTour">Eco Tour</option>
-        </select>
-        <span class="error" id="tripTypeError"></span>
-
-        <label for="preferredDate">Preferred Trip Date:</label>
-        <input type="date" id="preferredDate" name="preferredDate" required>
-        <span class="error" id="preferredDateError"></span>
-
-        <label for="groupSize">Group Size:</label>
-        <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
-        <span class="error" id="groupSizeError"></span>
-
-        
-
-       
-
-        <input type="submit" value="Book My Trip">
-    </form>
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required>
+      <span class="error" id="nameError"></span>
+  
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+      <span class="error" id="emailError"></span>
+  
+      <label for="tripType">Type of Trip:</label>
+      <select id="tripType" name="tripType" required>
+          <option value="">Select Trip Type</option>
+          <option value="safari">Safari</option>
+          <option value="natureReserve">Nature Reserve</option>
+          <option value="birdWatching">Bird Watching</option>
+          <option value="ecoTour">Eco Tour</option>
+      </select>
+      <span class="error" id="tripTypeError"></span>
+  
+      <label for="preferredDate">Preferred Trip Date:</label>
+      <input type="date" id="preferredDate" name="preferredDate" required>
+      <span class="error" id="preferredDateError"></span>
+  
+      <label for="groupSize">Group Size:</label>
+      <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
+      <span class="error" id="groupSizeError"></span>
+  
+      <label for="description">Description (Optional):</label>
+      <textarea id="description" name="description" rows="4" cols="50" placeholder="Tell us about any special requests or details regarding your trip."></textarea>
+      <span class="error" id="descriptionError"></span>
+  
+      <input type="submit" value="Book My Trip">
+  </form>
+  
 </div>
   </div>
   </section>
@@ -469,6 +470,12 @@ Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised
                   <p>tour Destination : Delhi, Jaipur,</p>
                   <p>description-----</p>
               </div>
+              <div class="location-card">
+                <img src="assets/images/loc4.jpg" alt="Location 4">
+                <h3>The Call Of The Wilds</h3>
+                <p>tour Destination : Delhi, Jaipur,</p>
+                <p>description-----</p>
+            </div>
             </div>
         </section>
 

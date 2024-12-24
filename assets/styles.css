@@ -642,7 +642,7 @@ font-weight: 700;
 .tour_desc h3{
 
 
-    font-size: max(20px,3vw);
+    font-size: max(22px,3vw);
     font-weight: 600;
     color:#405749;
  
@@ -917,9 +917,9 @@ align-items: center;
 }
 
 
-.hotel-category h2 {
+.hotel-category h6 {
   
-   font-size: max(25px,4vw);
+   font-size: max(20px,2.8vw);
    color:#405749;
    font-weight: 900;
    margin-bottom: 20px;

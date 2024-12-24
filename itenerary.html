@@ -276,7 +276,7 @@
 <!-- Itinerary Section -->
 <section class="itinerary">
 
-    <h2>Travel Itinerary</h2>
+    <h3>Travel Itinerary</h3>
     
 
 <div class=" day_planner_items">
@@ -285,7 +285,7 @@
     <!-- Day 1 -->
     <div class="day-planner">
         <div class = "day_planner_content">
-        <h3>Day 1 - Exploring the City</h3>
+        <span>Day 1 - Exploring the City</span>
         <button class="dropdown-btn2">+</button>
     </div>
         <ul class="dropdown-content2">
@@ -300,7 +300,7 @@
     <!-- Day 2 -->
     <div class="day-planner">
         <div class = "day_planner_content">
-        <h3>Day 2 - Cultural Immersion</h3>
+        <span>Day 2 - Cultural Immersion</span>
         <button class="dropdown-btn2">+</button>
         </div>
         <ul class="dropdown-content2">
@@ -316,7 +316,7 @@
     <div class="day-planner">
        <div class = "day_planner_content">
         
-        <h3>Day 3 - Adventure Time</h3>
+        <span>Day 3 - Adventure Time</span>
         <button class="dropdown-btn2">+</button>
     </div>
         <ul class="dropdown-content2">
@@ -331,7 +331,7 @@
     <!-- Additional Days -->
     <div class="day-planner">
         <div class = "day_planner_content">
-        <h3>Day 4 - Shopping & Relaxation</h3>
+        <span>Day 4 - Shopping & Relaxation</span>
         
         <button class="dropdown-btn2">+</button>
     </div>
@@ -347,7 +347,7 @@
     <div class="day-planner">
 
         <div class = "day_planner_content">
-        <h3>Day 5 - Nature's Wonders</h3>
+        <span>Day 5 - Nature's Wonders</span>
    
         <button class="dropdown-btn2">+</button>
     </div>
@@ -363,7 +363,7 @@
     <div class="day-planner">
         <div class = "day_planner_content">
         
-        <h3>Day 6 - Local Exploration</h3>
+        <span>Day 6 - Local Exploration</span>
         <button class="dropdown-btn2">+</button>
     </div>
         <ul class="dropdown-content2">
@@ -377,7 +377,7 @@
 
     <div class="day-planner">
         <div class = "day_planner_content">
-        <h3>Day 7 - Adventure & Departure</h3>
+        <span>Day 7 - Adventure & Departure</span>
         <button class="dropdown-btn2">+</button>
 
         </div>
@@ -392,46 +392,6 @@
 
   </div>
   
-  <div class="form-section">
-    <div class = "itinerary_form_heading"><h2>Interested? </h2>
-      <span> Fill the Form and join the trip with us</span>
-    </div>
-  
-    <form id="wildlifeTripForm" action="submit_form.php" method="POST">
-      <label for="fullName">Full Name:</label>
-      <input type="text" id="fullName" name="fullName" required>
-      <span class="error" id="nameError"></span>
-  
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-      <span class="error" id="emailError"></span>
-  
-      <label for="tripType">Type of Trip:</label>
-      <select id="tripType" name="tripType" required>
-          <option value="">Select Trip Type</option>
-          <option value="safari">Safari</option>
-          <option value="natureReserve">Nature Reserve</option>
-          <option value="birdWatching">Bird Watching</option>
-          <option value="ecoTour">Eco Tour</option>
-      </select>
-      <span class="error" id="tripTypeError"></span>
-  
-      <label for="preferredDate">Preferred Trip Date:</label>
-      <input type="date" id="preferredDate" name="preferredDate" required>
-      <span class="error" id="preferredDateError"></span>
-  
-      <label for="groupSize">Group Size:</label>
-      <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
-      <span class="error" id="groupSizeError"></span>
-  
-      <label for="description">Description (Optional):</label>
-      <textarea id="description" name="description" rows="4" cols="50" placeholder="Tell us about any special requests or details regarding your trip."></textarea>
-      <span class="error" id="descriptionError"></span>
-  
-      <input type="submit" value="Book My Trip">
-  </form>
-  
-</div>
   </div>
   </section>
 
@@ -439,10 +399,10 @@
 
 
 
-           <!-- Locations Section -->
+      <!-- Locations Section -->
 
-        <section class="location-section">
-            <h2>Popular Locations</h2>
+      <section class="location-section">
+            <h4>Popular Locations</h4>
             <P>The varied geo-climatic conditions of India support a wide variety of vegetation ranging from arid deciduous forests of Rajasthan to the indian wildlife sanctuaries, wildlife sanctuaries of india, national parks in india, kaziranga national park tourTropical Evergreen forests of Northeast India. This varied habitat supports a diverse range of wildlife unique to the respective forest type
 
                 The game parks suggested below seek to achieve a twofold objective. First, they represent all the diverse forest kinds of India with the respective game they offer. Second, we have stressed on highlighting the big 4 of India - The Asian one horned Rhino, The Elephant, The Gaur (World's largest Ox) & The Tiger.
@@ -486,7 +446,7 @@
                 <p>description-----</p>
             </div>
             </div>
-        </section>
+      </section>
 
 
 
@@ -526,7 +486,66 @@
             </div>
         </section>
 
-       
+
+
+
+       <section class = "section_query_form">
+
+        <div class = "query_form_img">
+          <h5>Welcome to the best trip you'll ever had</h5>
+          <p>
+
+            India's Jim Corbett is a favoured tourist destination because of its wildlife and scenic surroundings. If one is looking for lodging in Corbett, one should know that there are several varieties of lodging options available here to accommodate various preferences and budgets. These accommodation options are placed thoughtfully around the park, giving guests an easy access to the wilderness as well as a relaxing and enjoyable stay.
+          </p>
+
+          <img src = "assets/images/grid-image4.jpeg"/>
+        </div>
+
+
+
+
+        <div class="form-section">
+          <div class = "itinerary_form_heading"><h2>Interested? </h2>
+            <span> Fill the Form and join the trip with us</span>
+          </div>
+        
+          <form id="wildlifeTripForm" action="submit_form.php" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <span class="error" id="nameError"></span>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+        
+            <label for="tripType">Type of Trip:</label>
+            <select id="tripType" name="tripType" required>
+                <option value="">Select Trip Type</option>
+                <option value="safari">Safari</option>
+                <option value="natureReserve">Nature Reserve</option>
+                <option value="birdWatching">Bird Watching</option>
+                <option value="ecoTour">Eco Tour</option>
+            </select>
+            <span class="error" id="tripTypeError"></span>
+        
+            <label for="preferredDate">Preferred Trip Date:</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+            <span class="error" id="preferredDateError"></span>
+        
+            <label for="groupSize">Group Size:</label>
+            <input type="number" id="groupSize" name="groupSize" required min="1" max="20">
+            <span class="error" id="groupSizeError"></span>
+        
+            <label for="description">Description (Optional):</label>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="Tell us about any special requests or details regarding your trip."></textarea>
+            <span class="error" id="descriptionError"></span>
+        
+            <input type="submit" value="Book My Trip">
+        </form>
+        
+      </div>
+
+       </section>
         
      
     </main>

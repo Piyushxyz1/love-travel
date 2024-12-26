@@ -402,50 +402,66 @@
       <!-- Locations Section -->
 
       <section class="location-section">
+        
+        
             <h4>Popular Locations</h4>
             <P>The varied geo-climatic conditions of India support a wide variety of vegetation ranging from arid deciduous forests of Rajasthan to the indian wildlife sanctuaries, wildlife sanctuaries of india, national parks in india, kaziranga national park tourTropical Evergreen forests of Northeast India. This varied habitat supports a diverse range of wildlife unique to the respective forest type
 
                 The game parks suggested below seek to achieve a twofold objective. First, they represent all the diverse forest kinds of India with the respective game they offer. Second, we have stressed on highlighting the big 4 of India - The Asian one horned Rhino, The Elephant, The Gaur (World's largest Ox) & The Tiger.
                 
                 Finally, each of the reserves listed below are very rich in bird life and billed to be a bird watchers paradise</P>
-            <div class="location-cards">
-                <div class="location-card">
-                    <img src="assets/images/loc1.jpg" alt="Location 1">
-                    <h3>On The Tiger's Trail</h3>
-                    <p> Tour Destination : Delhi, Agra</p>
-                    <p>description----.</p>
-                </div>
-                <div class="location-card">
-                    <img src="assets/images/loc2.jpg" alt="Location 2">
-                    <h3>The Call Of The Wilds</h3>
-                    <p>Tour Destination : Delhi, Kanha,</p>
-                    <p>description----</p>
-                </div>
-                <div class="location-card">
-                    <img src="assets/images/loc3.jpg" alt="Location 3">
-                    <h3>The Taj & Tigers of India</h3>
-                    <p>tour Destination : Delhi, Jaipur,</p>
-                    <p>description-----</p>
-                </div>
-                <div class="location-card">
-                    <img src="assets/images/loc4.jpg" alt="Location 4">
-                    <h3>The Call Of The Wilds</h3>
-                    <p>tour Destination : Delhi, Jaipur,</p>
-                    <p>description-----</p>
-                </div>
-                <div class="location-card">
-                  <img src="assets/images/loc4.jpg" alt="Location 4">
-                  <h3>The Call Of The Wilds</h3>
-                  <p>tour Destination : Delhi, Jaipur,</p>
-                  <p>description-----</p>
+              
+                <div class="location-cards">
+                  <div class="location-card">
+                      <img src="assets/images/loc1.jpg" alt="Location 1">
+                      <h3>On The Tiger's Trail</h3>
+                      <p>Tour Destination: Agra</p>
+                      <button class="read-more" data-item="1">Read More</button>
+                  </div>
+                  <div class="location-card">
+                      <img src="assets/images/loc2.jpg" alt="Location 2">
+                      <h3>The Call Of The Wilds</h3>
+                      <p>Tour Destination: Delhi, Kanha</p>
+                      <button class="read-more" data-item="2">Read More</button>
+                  </div>
+                  <div class="location-card">
+                      <img src="assets/images/loc3.jpg" alt="Location 3">
+                      <h3>The Taj & Tigers of India</h3>
+                      <p>Tour Destination: Delhi, Jaipur</p>
+                      <button class="read-more" data-item="3">Read More</button>
+                  </div>
+                  <div class="location-card">
+                      <img src="assets/images/loc4.jpg" alt="Location 4">
+                      <h3>The Call Of The Wilds</h3>
+                      <p>Tour Destination: Delhi, Jaipur</p>
+                      <button class="read-more" data-item="4">Read More</button>
+                  </div>
+                  <div class="location-card">
+                      <img src="assets/images/loc4.jpg" alt="Location 4">
+                      <h3>The Call Of The Wilds</h3>
+                      <p>Tour Destination: Delhi, Jaipur</p>
+                      <button class="read-more" data-item="5">Read More</button>
+                  </div>
+                  <div class="location-card">
+                      <img src="assets/images/loc4.jpg" alt="Location 4">
+                      <h3>The Call Of The Wilds</h3>
+                      <p>Tour Destination: Delhi, Jaipur</p>
+                      <button class="read-more" data-item="6">Read More</button>
+                  </div>
               </div>
-              <div class="location-card">
-                <img src="assets/images/loc4.jpg" alt="Location 4">
-                <h3>The Call Of The Wilds</h3>
-                <p>tour Destination : Delhi, Jaipur,</p>
-                <p>description-----</p>
-            </div>
-            </div>
+              
+              <!-- Modal for showing item description -->
+              <div class="modal" id="modal">
+                  <div class="modal-content">
+                      <span class="close-btn" id="close-btn">&times;</span> <!-- Cross Icon -->
+                      
+                      <img id="modal-image" src="" alt="Item Image" class="modal-image">
+
+                      <h2>Item Title</h2>
+                      <p class="item-description">This is the description of the item that appears when you click "Read More".</p>
+                  </div>
+              </div>
+              
       </section>
 
 
@@ -469,18 +485,21 @@
                     <h3>standard Hotels</h3>
                     <p>Exclusive experience with premium services.</p>
                     <p class="hotel-price">$300 / night</p>
+                    <button>Checkout</button>
                 </article>
                 <article class="hotel-card">
                     <img src="assets/images/pexels-pixabay-53464.jpg" height="400px" width="300px" alt="Luxury Hotel">
                     <h3>Deluxe Hotels</h3>
                     <p>Luxury at its finest with breathtaking views.</p>
                     <p class="hotel-price">$400 / night</p>
+                    <button>Checkout</button>
                 </article>
                 <article class="hotel-card">
                     <img src="assets/images/pexels-darrell-fraser-1187740-2259226.jpg" height="400px" width="300px" alt="Luxury Hotel">
                     <h3>Luxury Hotels</h3>
                     <p>Experience premium amenities with ocean views.</p>
                     <p class="hotel-price">$350 / night</p>
+                    <button>Checkout</button>
                 </article>
               
             </div>

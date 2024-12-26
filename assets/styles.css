@@ -905,9 +905,9 @@ hr {
 
 .modal-content {
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 8px;
-  width: 80%;
+  width: 85%;
   text-align: center;
   position: relative; /* Ensure close button is inside the modal */
 }
@@ -934,7 +934,7 @@ font-weight: 900;
   .modal-image {
     width: 100%;
     max-height: 300px;
-   
+    margin-top: 20px;
     border-radius: 8px;
     object-fit: cover;
     margin-bottom: 20px; /* Space between image and title */
@@ -946,17 +946,18 @@ font-weight: 900;
 /* Close Button (Cross Icon) */
 .close-btn {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 5px;
   font-size: 30px;
   cursor: pointer;
-  color: #333; /* Color of the cross icon */
+  color: #000000; /* Color of the cross icon */
   font-weight: bold;
 }
 
 /* Close button hover effect */
 .close-btn:hover {
   color: #ff0000; /* Change color on hover */
+  transform: scale(1.05);
 }
 
 /* Responsive Styling for smaller screens */

@@ -417,6 +417,8 @@ font-weight: 700;
   
 
 
+
+
 /* Banner Section */
 .banner {
   background-image: url('../assets/images/tiger2_0iten.jpeg'); /* Banner image */
@@ -430,7 +432,7 @@ font-weight: 700;
   position: relative;
   color: white;
   text-align: center;
-  padding-top: 8vw; /* Add padding at the top */
+ 
 }
 
 .banner-content {
@@ -462,7 +464,7 @@ font-weight: 700;
 }
 
 .banner-btn {
-  background-color: #ff6f61; /* Warm button color */
+  background-color: #ff6f61; 
   color: white;
   text-decoration: none;
   padding: 12px 30px;
@@ -474,21 +476,27 @@ font-weight: 700;
 }
 
 .banner-btn:hover {
-  background-color: #ff4a3c; /* Slightly darker shade on hover */
+
   transform: scale(1.05);
 }
 
-/* For mobile devices (480px or smaller) */
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   .banner {
-      min-height: 350px; /* Smaller height for mobile screens */
-      padding-top: 12vw; /* More padding for small screens */
+      min-height: 350px; 
+      padding-top: 12vw; 
   }
 
   .banner-content {
-      max-width: 90%; /* Reduce width for mobile */
-      min-height: 200px; /* Adjust content height */
-      padding: 15px; /* Reduce padding for smaller devices */
+      max-width: 90%;
+      min-height: 200px; 
+      padding: 15px; 
   }
 
   .banner h1 {
@@ -561,6 +569,75 @@ font-weight: 700;
       font-size: 17px; /* Standard font size */
   }
 }
+
+
+
+
+
+
+
+/* Bread-crumb Section */
+
+.nav-breadcrumb ul li {
+
+
+
+  list-style: none;
+  padding: 20px 10px;
+
+}
+
+
+
+.nav-breadcrumb {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+
+}
+
+.nav-breadcrumb ul {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.nav-breadcrumb li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: 400;
+  font-size: max(15px,1.2vw);
+}
+
+.nav-breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+/* Separator styling */
+.nav-breadcrumb li span {
+  color: #333; /* Lighter color for the separator */
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Active breadcrumb (current page) */
+.nav-breadcrumb li:last-child a {
+  color: #333;
+  font-weight: bold;
+  pointer-events: none; 
+}
+
+
+@media  (max-width:768px) {
+
+  .nav-breadcrumb{
+
+    display:none;
+  }
+  
+}
+ 
+
 
 /* Tour Section */
 

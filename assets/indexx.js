@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
 // JavaScript for form validation
 
 function validateForm() {

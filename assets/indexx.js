@@ -220,3 +220,29 @@ window.addEventListener("click", function(event) {
         modal.style.display = "none";
     }
 });
+
+
+
+
+
+
+const closeButton2 = document.getElementById("close-btn");
+
+
+function openoverlay() {
+  document.body.classList.add('modal-content-open'); // disable scroll
+}
+
+function closeOverlay() {
+   document.body.classList.remove('modal-content-open'); // Re-enable scroll
+}
+
+// Loop through all the elements with the class 'read-more' and add the event listener to each
+const readMoreButtonss = document.getElementsByClassName('read-more');
+for (let button of readMoreButtonss) {
+   button.addEventListener('click', openoverlay);
+}
+
+closeButton2.addEventListener('click', closeOverlay);
+
+

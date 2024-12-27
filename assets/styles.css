@@ -996,6 +996,8 @@ hr {
   width: 85%;
   text-align: center;
   position: relative; /* Ensure close button is inside the modal */
+  transition: opacity 0.3s ease;
+ 
 }
 .modal-content h2{
 
@@ -1046,6 +1048,16 @@ font-weight: 900;
   transform: scale(1.05);
 }
 
+
+
+
+body.modal-content-open{
+overflow: hidden;
+
+}
+
+
+
 /* Responsive Styling for smaller screens */
 @media (max-width: 768px) {
   .location-cards {
@@ -1053,6 +1065,17 @@ font-weight: 900;
   }
   .location-card {
       width: 100%; /* 1 card per row on very small screens */
+  }
+
+  .modal{
+
+
+
+height:90%;
+
+
+
+
   }
 }
 

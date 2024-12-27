@@ -206,43 +206,23 @@ readMoreButtons.forEach(button => {
 
         // Show the modal
         modal.style.display = "flex";
+        
+  document.body.classList.add("modal-open"); // Disable body scroll
     });
 });
 
 // Close the modal when the user clicks on the close button (cross icon)
 closeButton.addEventListener("click", function() {
     modal.style.display = "none";
+    document.body.classList.remove("modal-open"); // Enable body scroll
 });
 
 // Close the modal if the user clicks outside the modal content
 window.addEventListener("click", function(event) {
     if (event.target === modal) {
         modal.style.display = "none";
+        document.body.classList.remove("modal-open"); // Enable body scroll
     }
 });
-
-
-
-
-
-
-const closeButton2 = document.getElementById("close-btn");
-
-
-function openoverlay() {
-  document.body.classList.add('modal-content-open'); // disable scroll
-}
-
-function closeOverlay() {
-   document.body.classList.remove('modal-content-open'); // Re-enable scroll
-}
-
-// Loop through all the elements with the class 'read-more' and add the event listener to each
-const readMoreButtonss = document.getElementsByClassName('read-more');
-for (let button of readMoreButtonss) {
-   button.addEventListener('click', openoverlay);
-}
-
-closeButton2.addEventListener('click', closeOverlay);
 
 

@@ -102,15 +102,19 @@ gap:1.5vw;
   }
 
 
+  .main-navbar ul li{
 
+
+    padding: 12px 0;
+  }
 
 
     .main-navbar ul li a{
 
-      font-size: max(18px,1.3vw);
-      font-weight: 800;
-        color:#405749;
-        padding: 0 2px;  
+      font-size: max(15px,1.2vw);
+      font-weight: 500;
+        color:#000000;
+        padding: 12px 10px;  
         text-decoration: none;
 
     }
@@ -119,6 +123,8 @@ gap:1.5vw;
 .main-navbar ul li a:hover{
 
 cursor: pointer;
+
+
 
 
 
@@ -141,14 +147,11 @@ padding: 20px 0;
    .dropdown-content {
    display: none;
    position: absolute;
-   padding: 10px 10px;
-   
-
+   padding: 10px 0 ;
    top:55px;
    left:-60px;
    transform: translateX(-25px);
-    
-   background:#f2f2f2;
+    background:#f2f2f2;
    min-width: 270px;
 
       }
@@ -169,19 +172,18 @@ padding: 20px 0;
 
  
 
-
    .dropdown-content a {
-     float: none;
-    
-     padding: 6px 8px;
-     text-decoration: none;
-     margin: 10px 0;
-     display: block;
-     text-align: center;
-     font-size: 1.2vw;
-     font-weight: 600;
-    color:#405749;
-    }
+    display: block; /* ensures the link behaves as a block element */
+    padding: 12px 8px; /* add padding */
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #000000;
+    transition: 0.4s ease-in-out;
+}
+
    
 
    .dropdown  {
@@ -194,34 +196,16 @@ padding: 20px 0;
 
 
 
-   .dropdown  li a{
-
-     text-decoration: none;
-     color: #405749;
- 
-  
-   }
-  
-
-   
-   .dropdown  li {
-
-      display: flex;
-      align-items: center;
-
-      padding:1vw;
-   
-    }
- 
 
    
 
 .dropdown-content a:hover{
 
-background-color:#f2f2f2;
+background-color:#5ca13e;
+color:#fff;
 
 
-transform: scale(1.02);
+
 
 
 
@@ -465,35 +449,6 @@ margin-right: 0.5vw;
 
 
 
-.book_section{
-
-
-
-   position: absolute;
-   bottom:  10%;
-   left:25%;
-   right:25%;
- 
-
-
-}
-
-
-.book_section{
-
-
-   text-align: center;
-}
-
- .book:hover{
-background-color: #c98080;
-
-cursor: pointer;
- }
-
-
-
-
 
 
 
@@ -514,6 +469,9 @@ cursor: pointer;
 
 
  
+
+
+
 
 
 
@@ -649,27 +607,49 @@ animation: fading 2s ease-in-out ;
 
 
  .main-content{
-
-
-
     display: flex;
-    
     justify-content: space-between;
-   
-
     padding-left: 4.5vw;
     padding-right: 4.5vw;
     padding-top: 3.5vw;
     padding-bottom: 3.5vw;
     margin: 3vw 0;
-  
-
-
-
-
-    
 
  }
+
+
+
+
+ 
+
+.book_section{
+
+
+
+  position: absolute;
+  bottom:  10%;
+  left:25%;
+  right:25%;
+
+
+
+}
+
+
+.book_section{
+
+
+  text-align: center;
+}
+
+.book:hover{
+background-color: #c98080;
+
+cursor: pointer;
+}
+
+
+
 
 
 .left-content-section{

@@ -91,7 +91,7 @@ h1, h2, h3,h4{
 }
 
 
-.main-navbar   ul{
+.main-navbar .main_nav_ul{
 
 list-style: none;
 display:flex;
@@ -102,19 +102,18 @@ gap:1.5vw;
   }
 
 
-  .main-navbar ul li{
+  li {
 
 
-    padding: 12px 0;
+    list-style: none;
   }
 
-
-    .main-navbar ul li a{
+  .main-navbar .main_nav_ul li a{
 
       font-size: max(15px,1.2vw);
       font-weight: 500;
         color:#000000;
-        padding: 12px 10px;  
+         
         text-decoration: none;
 
     }
@@ -199,7 +198,7 @@ padding: 20px 0;
 
    
 
-.dropdown-content a:hover{
+.dropdown-content li a:hover{
 
 background-color:#5ca13e;
 color:#fff;

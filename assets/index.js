@@ -419,6 +419,10 @@ document.getElementById("read-more-btn3").addEventListener("click", function() {
     btn.textContent = "Read More";
   }
 });
+
+
+
+
 // Hamburger Menu Toggle (For Mobile Screens)
 const hamMenu = document.querySelector(".ham-menu");
 const offScreenMenu = document.querySelector(".off-screen-menu");

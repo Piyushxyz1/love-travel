@@ -858,7 +858,7 @@ margin-top:1vw;
   background-color: #fff; 
   transition: transform 0.3s ease-in-out; 
   background-size: cover; 
-  background-position: center center; 
+  background-position:center; 
   background-repeat: no-repeat; 
   height: 500px; 
   display: flex;
@@ -917,7 +917,7 @@ margin-top:1vw;
   transition: background-color 0.3s ease, transform 0.3s ease;
   opacity: 0; /* Hidden initially */
   transform: translateX(-50%) translateY(20px); /* Slight offset */
-  transition: 0.3s;
+  transition: 0.3s  ease-in-out;
 }
 
 
@@ -926,9 +926,6 @@ margin-top:1vw;
 }
 
 /* Hover effect to reveal overlay */
-.item:hover .overlay {
-  opacity: 1; /* Show overlay with text */
-}
 
 /* Hover effect for the title */
 .item:hover .item-title {
@@ -1136,31 +1133,19 @@ font-weight: 900;
 
 
 .travel_packages_navigate_arrows2{
-
-
-
-   text-align: center;
-
+  text-align: center;
+   
+}
    
    
    
-   
-   
-   
-   
-   }
-   
-   
-   
-   .left-arrow2{
+.left-arrow2{
    margin-right: 3vw;
    color:#000000;
     padding:0.5vw;
    font-weight: 900;
    font-size: max(20px,4vw);
    cursor: pointer;
-   
-   
    
    }
    

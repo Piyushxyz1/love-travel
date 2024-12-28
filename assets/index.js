@@ -437,8 +437,6 @@ hamMenu.addEventListener("click", () => {
 
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
   // Get all menu items with sub-menus
   const menuItems = document.querySelectorAll('.menu-item'); 
 
@@ -447,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const subMenu = menuItem.querySelector('.sub-menu'); 
 
     // Add event listener to each menu item
-    menuItem.addEventListener('click', function (event) {
+    menuItem.addEventListener('click', function(event) {
       // Prevent the default action of the link
       event.preventDefault();
 
@@ -467,7 +465,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-});
 
 
 
@@ -479,9 +476,9 @@ var mybutton = document.getElementById("scrollToTopBtn");
 
 // When the user scrolls down 100px from the top, show the button (on mobile screens only)
 window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         // Only add the class if screen width is less than or equal to 900px
-        if (window.innerWidth <= 900) {
+        if (window.innerWidth <= 480) {
             mybutton.classList.add("show");
         }
     } else {

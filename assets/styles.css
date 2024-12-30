@@ -855,7 +855,9 @@ hr {
 
 /* Right Section (Images) */
 .Tour-slide-img {
+ 
   flex: 1;
+ 
   max-width: 50%;
   margin-left: 20px;
   position: relative;
@@ -870,6 +872,7 @@ hr {
 }
 
 .slider-for img {
+  margin-top: 48px;
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -932,6 +935,12 @@ hr {
 
 
 
+/* location section */
+
+
+
+
+
 .location-section{
 
 
@@ -984,7 +993,7 @@ hr {
 .location-card {
   background-color: #FFF;
   border-radius: 10px;
-  max-width: 400px;
+  width: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
@@ -1116,7 +1125,7 @@ overflow: hidden;
       grid-template-columns: 1fr;
   }
   .location-card {
-      width: 100%; /* 1 card per row on very small screens */
+      max-width: 100%; /* 1 card per row on very small screens */
   }
 
   .modal-content{
@@ -1132,29 +1141,6 @@ width: 80%;
   }
 }
 
-
-
-/* Responsive Styling for smaller screens */
-@media (max-width: 900px) {
-   
-    
-}
-
-@media (max-width: 768px) {
-
-
-.location-cards{
-
-  
-  grid-template-columns: 1fr;
-  justify-content: center;
-align-items: center;
-
-}
-    .location-card {
-        width: 100%; /* 1 card per row on very small screens */
-    }
-}
 
 
 
@@ -1195,12 +1181,11 @@ align-items: center;
 .hotel-card {
 
   border-radius: 10px;
-  max-width: 400px;
-min-height: 300px;
+  width: 100%; 
+  height:auto;
  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   text-align: center;
-
   transition: transform 0.3s, box-shadow 0.3s;
 
 }
@@ -1261,7 +1246,7 @@ align-items: center;
 .hotel-card {
 
 
-  width: 100%;
+  max-width: 100%;
   
 
   

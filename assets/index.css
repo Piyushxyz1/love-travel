@@ -97,7 +97,7 @@ list-style: none;
 display:flex;
 justify-content: center;
 align-items: center;
-gap:1.5vw;
+gap:3vw;
 
   }
 
@@ -213,18 +213,6 @@ color:#fff;
 }
 
 
-
- .book {
-   padding: 1.5vw 1.5vw;
-   font-size: max(10px, 1.3vw);
-   font-weight: 900;
-   color: #fff;
-   text-decoration: none;
-   margin-top: 3vw; 
-   background-color: #d4000d;
-   border-radius: 50px;
-   transition: 0.3s ease-in;
-}
 
 @media (max-width: 767px) {
     .book {
@@ -646,9 +634,31 @@ animation: fading 2s ease-in-out ;
   text-align: center;
 }
 
-.book:hover{
-background-color: #c98080;
 
+
+
+
+
+.book {
+  padding: 1.5vw 1.5vw;
+  font-size: max(10px, 1.3vw);
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 3vw; 
+  background-color: #d4000d;
+  border-radius: 50px;
+  transition: 0.2s linear;
+  display: inline-block;
+  
+}
+
+
+
+
+.book:hover{
+
+transform: scale(1.05);
 cursor: pointer;
 }
 
@@ -659,8 +669,8 @@ cursor: pointer;
 .left-content-section{
 
 
-   width: 50%;
-   height: 100%;
+width: 50%;
+ 
    
 
   
@@ -669,19 +679,14 @@ cursor: pointer;
 
 
  .left-content-section h1{
-  
-   
     
-    color:#405749;
-   font-size: max(30px,4vw);
-   font-weight: 900;
+  color:#405749;
+  font-size: max(30px,4vw);
+  font-weight: 900;
    margin-bottom: 2vw;
    line-height: 1;
  
-
-
-    
-     }
+ }
 
 
 
@@ -689,8 +694,8 @@ cursor: pointer;
    .left-content-section p{
       font-size: max(15px,1.3vw);
       line-height: 1.6;
-        color:#000000;
-        font-weight: 400;
+      color:#000000;
+      font-weight: 400;
        
    
         
@@ -1865,6 +1870,16 @@ align-items: center;
 
 
   padding: 1vw 1vw;
+  border-radius: 5px;
+  background-color: rgb(232, 183, 91) ;
+  font-weight: 900;
+  font-size: max(15px, 1vw);
+
+
+
+
+
+  padding: 1vw 1vw;                                  
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;

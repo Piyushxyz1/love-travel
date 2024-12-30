@@ -639,53 +639,52 @@ margin-right: 0.5vw;
 
 /* Bread-crumb Section */
 
-.nav-breadcrumb ul li {
-
-
-
-  list-style: none;
-  padding: 20px 10px;
-
-}
 
 
 
 .nav-breadcrumb {
   font-family: Arial, sans-serif;
   font-size: 15px;
-
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.2), rgba(240, 248, 255, 0.3)),
+  linear-gradient(-45deg, rgba(255, 240, 245, 0.2), rgba(255, 250, 250, 0.25));
+  background-blend-mode: lighten; /* Lightens the blend for a soft effect */;
 }
 
 .nav-breadcrumb ul {
   display: flex;
   align-items: center;
+  }
+
+
+.nav-breadcrumb ul li {
+list-style: none;
+padding: 20px 10px;
+
 }
 
-
-
 .nav-breadcrumb li a {
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: 400;
-  font-size: max(15px,1.2vw);
+text-decoration: none;
+color: #007BFF;
+font-weight: 400;
+font-size: max(15px,1.2vw);
 }
 
 .nav-breadcrumb li a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Separator styling */
 .nav-breadcrumb li span {
-  color: #333; /* Lighter color for the separator */
-  font-size: 20px;
-  font-weight: 400;
+color: #000000; /* Lighter color for the separator */
+font-size: 20px;
+font-weight: 400;
 }
 
 /* Active breadcrumb (current page) */
 .nav-breadcrumb li:last-child a {
-  color: #333;
-  font-weight: bold;
-  pointer-events: none; 
+color: #333;
+font-weight: bold;
+pointer-events: none; 
 }
 
 
@@ -743,8 +742,7 @@ margin-right: 0.5vw;
     gap: 20px;  /* Space between each item */
     padding: 20px;
     
-
-}
+   }
 
 
 
@@ -753,9 +751,6 @@ margin-right: 0.5vw;
   font-weight: 900;
   color:#4a90e2;
   
-
-
-
 }
 
 /* Styling for each item inside the tour_description */
@@ -833,7 +828,7 @@ hr {
 /* Left Section (Heading and Description) */
 .Tour-heading-container {
   flex: 1;
-  max-width: 50%;
+  max-width:50%;
   padding-right: 20px;
 }
 
@@ -874,7 +869,6 @@ hr {
 .slider-for img {
   margin-top: 48px;
   width: 100%;
-  height: auto;
   object-fit: cover;
   border-radius: 10px;
  
@@ -921,6 +915,7 @@ hr {
   .Tour-slide-img {
     max-width: 100%;
     margin-left: 0;
+    height: auto;
   }
 
   .slider-for img:first-child {

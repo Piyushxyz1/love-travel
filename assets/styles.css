@@ -145,46 +145,43 @@ padding: 20px 0;
 
 
 
+
    .dropdown-content {
-   display: none;
-   position: absolute;
-   padding: 10px 0 ;
-   top:55px;
-   left:-60px;
-   transform: translateX(-25px);
-    background:#f2f2f2;
-   min-width: 270px;
-
-      }
-
-
-
-   .dropdown:hover .dropdown-content {
+    display: none;
+    position: absolute;
+    padding:   7px 0 ;
+    top:55px;
+    left:-60px;
+    transform: translateX(-25px);
+   background:#f2f2f2;
+    width: 250px;
+ 
+     }
+ 
+ 
+ 
+    .dropdown:hover .dropdown-content { 
+     
      display: block;
-    
+ 
+    }
+ 
+ 
  
   
-     
-
-     
-   }
-
-
-
  
-
-   .dropdown-content a {
-    display: block; /* ensures the link behaves as a block element */
-    padding: 12px 8px; /* add padding */
-    text-decoration: none;
-    margin: 10px 0;
-    text-align: center;
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #000000;
-    transition: 0.4s ease-in-out;
-}
-
+    .dropdown-content a {
+     display: block; /* ensures the link behaves as a block element */
+     padding: 10px 8px; /* add padding */
+     text-decoration: none;
+     margin: 10px 0;
+     text-align: center;
+     font-size: 1.2vw;
+     font-weight: 600;
+     color: #000000;
+     transition: 0.2ms ease-in;
+ }
+ 
    
 
    .dropdown  {
@@ -948,14 +945,10 @@ hr {
 
 
 .location-section h4{
-
-
   color:#405749;
   font-size: max(22px,3vw);
   text-align: center;
   font-weight: 900;
-
-
 
 }
 
@@ -1114,8 +1107,36 @@ overflow: hidden;
 
 
 
+
 /* Responsive Styling for smaller screens */
 @media (max-width: 768px) {
+  .location-cards {
+      grid-template-columns: 1fr 1fr;
+  }
+  .location-card {
+      max-width: 100%; /* 1 card per row on very small screens */
+  }
+
+  .modal-content{
+
+
+position: fixed;
+top:20px;
+width: 80%;
+
+
+
+
+  }
+}
+
+
+
+
+
+
+/* Responsive Styling for smaller screens */
+@media (max-width:540px) {
   .location-cards {
       grid-template-columns: 1fr;
   }
@@ -1231,6 +1252,27 @@ margin:10px;
 
 
 @media(max-width: 768px) {
+  .flex-container {
+  grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center; 
+}
+
+
+.hotel-card {
+
+
+max-width: 100%;
+
+
+
+}
+
+
+
+}
+
+@media(max-width: 540px) {
     .flex-container {
     grid-template-columns: 1fr;
 justify-content: center;

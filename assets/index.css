@@ -146,7 +146,7 @@ padding: 20px 0;
    .dropdown-content {
    display: none;
    position: absolute;
-   padding: 10px 0 ;
+   padding:   7px 0 ;
    top:55px;
    left:-60px;
    transform: translateX(-25px);
@@ -157,14 +157,10 @@ padding: 20px 0;
 
 
 
-   .dropdown:hover .dropdown-content {
-     display: block;
+   .dropdown:hover .dropdown-content { 
     
- 
-  
-     
+    display: block;
 
-     
    }
 
 
@@ -173,14 +169,14 @@ padding: 20px 0;
 
    .dropdown-content a {
     display: block; /* ensures the link behaves as a block element */
-    padding: 12px 8px; /* add padding */
+    padding: 10px 8px; /* add padding */
     text-decoration: none;
     margin: 10px 0;
     text-align: center;
     font-size: 1.2vw;
     font-weight: 600;
     color: #000000;
-    transition: 0.4s ease-in-out;
+    transition: 0.2ms ease-in;
 }
 
    
@@ -200,12 +196,8 @@ padding: 20px 0;
 
 .dropdown-content li a:hover{
 
-background-color:#5ca13e;
-color:#fff;
-
-
-
-
+  background-color:#5ca13e;
+  color:#fff;
 
 
 
@@ -258,7 +250,6 @@ color:#fff;
   display: flex;
   flex-direction: column;
   
- 
   text-align: left;
  
   transition: .8s ease;
@@ -269,12 +260,9 @@ color:#fff;
 
 
 .off-screen-menu .drop-list {
-
-
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
+ display: block;
+ margin-top: 20px;
+ margin-bottom: 20px;
   
 }
 /* Ensure sub-menu is initially hidden */

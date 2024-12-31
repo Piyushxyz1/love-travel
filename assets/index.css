@@ -1269,7 +1269,7 @@ filter: brightness(0.8);
    display: flex;
    justify-content: flex-start;  /* Align cards to the left */
    align-items: center;
-   margin-right: 1vw;
+
    overflow-x: auto;  /* Enable horizontal scrolling */
    padding-top: 3vw;
    padding-left: 4.5vw;
@@ -1297,7 +1297,7 @@ filter: brightness(0.8);
    position: relative;
    flex-shrink: 0;  /* Prevent cards from shrinking */
    transition: transform 0.5s ease, opacity 0.3s ease;  /* Smooth transitions */
-   padding: 1vw;
+   margin-right: 1vw;
    opacity: 0.9;
  }
  
@@ -1385,7 +1385,7 @@ filter: brightness(0.8);
    }
  
    .destination-cards .card-lists {
-     width: 90%;  /* Full width of the container for small screens */
+     width: 100%;  /* Full width of the container for small screens */
      height: 300px;
      margin-bottom: 20px;  /* Add spacing between cards */
    }
@@ -1481,7 +1481,7 @@ filter: brightness(0.8);
 
 .hotels_array {
    display: flex;
-   justify-content: space-between;  
+   justify-content: flex-start;  
    align-items: center;
 
    overflow-x: auto;  /* Enable horizontal scrolling */
@@ -1499,11 +1499,11 @@ filter: brightness(0.8);
    overflow: hidden;  
    position: relative;
    margin-bottom: 30px;
-   width: 300px;  
+   width: 350px;  
    position: relative;
-   height:500px;
+
    transition: 0.3s;
- margin: 1vw;
+ margin-right: 1vw;
  
    
 }

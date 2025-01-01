@@ -751,7 +751,7 @@ pointer-events: none;
 
 
 
-.tour_desc h3{
+.tour_desc h2{
 
 
     font-size: max(22px,3vw);
@@ -800,7 +800,7 @@ hr {
 .Tour-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -811,7 +811,7 @@ hr {
   padding-right: 20px;
 }
 
-.Tour_heading h1 {
+.Tour_heading h2 {
   font-size: max(20px,3vw);
   font-weight: 900;
   color: #405749;
@@ -926,9 +926,9 @@ hr {
 
 
 
-.location-section h4{
+.location-section h2{
   color:#405749;
-  font-size: max(22px,3vw);
+  font-size: max(25px,4vw);
   text-align: center;
   font-weight: 900;
 
@@ -939,12 +939,12 @@ hr {
 
 
 
-.location-section p{
+.location-section p:nth-child(2){
 
 
   color:#000000;
   font-size: max(15px,1.2vw);
-  text-align: center;
+  text-align: justify;
   line-height: 1.6;
   font-weight: 400;
   margin-bottom: 30px;
@@ -1158,9 +1158,9 @@ width: 80%;
 }
 
 
-.hotel-category h6 {
+.hotel-category h2 {
   
-   font-size: max(20px,2.8vw);
+   font-size: max(25px,4vw);
    color:#405749;
    font-weight: 900;
    margin-bottom: 20px;
@@ -1292,7 +1292,7 @@ align-items: center;
   align-items: center;
 }
 
-.itinerary h3 {
+.itinerary h2 {
 
 
     font-size: max(22px,3vw);
@@ -1313,7 +1313,7 @@ align-items: center;
 }
 
 
-.itinerary_form_heading h2 {
+.itinerary_form_heading h3 {
 
 
   font-size: max(22px,2.5vw);
@@ -1464,7 +1464,7 @@ width: 100%;
   height: 100%;
 }
 
-.query_form_img h5 {
+.query_form_img h2 {
   font-weight: 900;
   font-size: max(22px, 2.5vw);
   margin-bottom: 10px;
@@ -1479,6 +1479,7 @@ width: 100%;
   font-size: max(15px,1.2vw);
   line-height: 1.6;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .form-section form {
   padding: 25px; /* Space inside the form */
@@ -1624,7 +1625,7 @@ input[type="submit"]:hover {
   }
   
   
-  .footer-column h1 {
+  .footer-column h3:first-child {
     font-size: max(17px,3vw);
    
     font-weight: 900;
@@ -1646,7 +1647,7 @@ input[type="submit"]:hover {
   }
   
   .footer-column ul li {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     font-size:  max(10px,1vw) ;
     font-weight: 800;
   }
@@ -1656,13 +1657,17 @@ input[type="submit"]:hover {
  
   
   .footer-column ul li  a{
-    margin-bottom: 1vw;
-    font-size:  max(10px,1vw) ;
+  
+    font-size:  max(10px,1vw);
+    color: inherit;  /* No blue color */  
+    text-decoration: none;  /* No underline */
+    font-weight: 400;
   }
   
   
-  .footer-column ul li a {
-    color: #000000;
+  .footer-column ul .mail_id  {
+    color: #fff;
+    display: inline-block;
     font-weight: 800;
     text-decoration:none;
     padding: 1vw 1vw;
@@ -1674,6 +1679,8 @@ input[type="submit"]:hover {
  
   }
  
+ 
+  
  
   
   .footer-column a:hover {

@@ -613,7 +613,7 @@ animation: fading 2s ease-in-out ;
 
 .book {
   padding: 16px 20px;
-  font-size: max(10px, 1.3vw);
+  font-size: max(15px, 1.2vw);
   font-weight: 900;
   color: #fff;
   text-decoration: none;
@@ -664,11 +664,12 @@ width: 50%;
 
 
    .left-content-section p{
-      font-size: max(15px,1.3vw);
-      line-height: 1.6;
-      color:#000000;
-      font-weight: 400;
-      width: 100%;
+    font-size: max(15px,1.2vw);
+    color: #000000;
+    line-height: 1.6;
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 40px;
        
    
         
@@ -794,10 +795,12 @@ margin-top:1vw;
 }
 
 .Travel-packages p {
-  font-size: max(15px,1.3vw);
-   line-height: 1.6; 
-   color:#000000;
-   font-weight: 400;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
   
 }
 
@@ -822,7 +825,7 @@ margin-top:1vw;
   flex-wrap: nowrap; 
   justify-content: flex-start;
   padding: 20px 0;
-  width: 100%;
+
 }
 
 
@@ -1178,14 +1181,12 @@ align-items: last baseline;
 
  .destination-section-left p:first-child{
 
-
-
-   font-family: "Cedarville Cursive", cursive;
-   font-weight: 400;
-   
- 
-   font-size: max(18px,1.2vw);
-   line-height: 1.6;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 
 
 
@@ -1212,11 +1213,12 @@ align-items: last baseline;
 
 .destination-section-left p:last-child{
 
-
-   font-weight: 400;
-   color: #000000;
-   padding-top:2vw;
-   font-size: max(15px,1.3vw);
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
  .destination-section-right{
@@ -1864,12 +1866,12 @@ align-items: center;
 
 
 .Corbett_details_left p{
-   font-size: max(15px,1.3vw);
-   line-height: 1.6; 
- 
-   color:#000000;
-   font-weight: 400;
-   margin-bottom: 2vw;  
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
   
 
 }
@@ -1932,12 +1934,12 @@ text-align: left;
 
 .Corbett_details_right p{
 
-   font-size: max(15px,1.3vw);
-   line-height: 1.6;
- 
-   color:#000000;
-   font-weight: 400;
-   margin-bottom: 2vw;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 
 
 }
@@ -1994,11 +1996,12 @@ justify-content: center;
 
 
 .Corbett_safari_zones p{
-   font-size: max(15px,1.3vw);
-   line-height: 1.6; 
- color:#000000;
-font-weight: 400;
-margin-bottom: 2vw;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 
 }
 
@@ -2044,12 +2047,12 @@ margin-bottom: 2vw;
  
 
  .safari_booking p{
-   font-size: max(15px,1.3vw);
-   line-height:1.6; 
- 
-   color:#000000;
-   font-weight: 400;
-   margin-bottom: 2vw;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 
  }
 
@@ -2095,16 +2098,12 @@ margin-bottom: 2vw;
 
 .section_wandering_soul_section_left :first-child{
 
-
-   
-   font-family: "Cedarville Cursive", cursive;
-   font-weight: 400;
-   font-style: normal;
-   font-size:max(10px,1vw);
-   color:#000000;
-   margin-bottom:1vw ;
-  
-
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 
    
 
@@ -2126,13 +2125,12 @@ margin-bottom:1vw ;
 
 
 .section_wandering_soul_section_left :nth-child(3){
-
-
-   font-weight: 400;
-   font-size: max(15px,1.3vw);
-   line-height:1.6; 
-  color:#000000;
-   margin-bottom:1vw ;
+  font-size: max(15px,1.2vw);
+  color: #000000;
+  line-height: 1.6;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
 
@@ -2339,11 +2337,12 @@ text-align: center;
     }
     
     .travel_blog_grid_left p {
-  font-weight: 400;
-      font-size: max(15px,1.3vw);
-      line-height: max(21px, 2vw);
-      margin-bottom: 1vw;
+      font-size: max(15px,1.2vw);
       color: #000000;
+      line-height: 1.6;
+      text-align: justify;
+      font-weight: 400;
+      margin-bottom: 40px;
     }
     
     .travel_blog_grid_left h3 {
@@ -2411,11 +2410,12 @@ text-align: center;
     }
     
     .blog_post p {
-      font-size: max(15px,1.3vw);
-      line-height: max(21px, 2vw);
-      margin-bottom: 1vw;
+      font-size: max(15px,1.2vw);
       color: #000000;
+      line-height: 1.6;
+      text-align: justify;
       font-weight: 400;
+      margin-bottom: 40px;
     }
     
     .travel_blog_grid_left button {
@@ -2433,125 +2433,129 @@ text-align: center;
 
 
  
+
  /* General footer styling */
-.footer {
-   background:#f2f2f2;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   color: #405749;
- display: flex;
+ .footer {
+  background:#f2f2f2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #405749;
+display: flex;
 justify-content: center;
 align-items: center;
+
+
+  padding-left: 4.5vw;
+  padding-right: 4.5vw;
+
+
+
  
+  font-family: Arial, sans-serif;
+}
 
-   padding-left: 4.5vw;
-   padding-right: 4.5vw;
-
-
-
+.footer-container {
+  display: flex;
+justify-content: space-between; 
   
-   font-family: Arial, sans-serif;
- }
+gap:2.5vw;
  
- .footer-container {
-   display: flex;
-   justify-content: space-between; 
-   
-   gap:2.5vw;
-  
+margin: 5vw 0;
+}
 
 
-   margin: 5vw 0;
- }
+
+.footer-column{
+
+  width: 33.33%;
+  margin:  0 auto;
+  text-align:center;
+}
+
+
+.footer-column h3:first-child {
+  font-size: max(17px,3vw);
  
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #000000;
+}
 
+.footer-column h3 {
+  font-size: max(14px,1.8vw);
+  margin-bottom: 2vw;
+  font-weight: 900;
+  color: #000000;
+}
 
- .footer-column{
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-   width: 33.33%;
-   margin:  0 auto;
-   text-align:center;
- }
- 
- 
- .footer-column h1 {
-   font-size: max(17px,3vw);
-  
-   font-weight: 900;
-   margin-bottom: 1rem;
-   color: #000000;
- }
- 
- .footer-column h3 {
-   font-size: max(14px,1.8vw);
-   margin-bottom: 2vw;
-   font-weight: 900;
-   color: #000000;
- }
- 
- .footer-column ul {
-   list-style-type: none;
-   padding: 0;
-   margin: 0;
- }
- 
- .footer-column ul li {
-   margin-bottom: 2vw;
-   font-size:  max(10px,1vw) ;
-   font-weight: 800;
- }
+.footer-column ul li {
+  margin-bottom: 1vw;
+  font-size:  max(10px,1vw) ;
+  font-weight: 800;
+}
 
 
 
 
- 
- .footer-column ul li  a{
-   margin-bottom: 1vw;
-   font-size:  max(10px,1vw) ;
- }
- 
- 
- .footer-column ul li a {
-   color: #000000;
-   font-weight: 800;
-   text-decoration:none;
-   padding: 1vw 1vw;
-   background-color: #cb464f;
-   border-radius: 8px;
-   font-size:  max(10px,1vw);
 
-  
+.footer-column ul li  a{
 
- }
+  font-size:  max(10px,1vw);
+  color: inherit;  /* No blue color */  
+  text-decoration: none;  /* No underline */
+  font-weight: 400;
+}
 
+
+.footer-column ul .mail_id  {
+  color: #fff;
+  display: inline-block;
+  font-weight: 800;
+  text-decoration:none;
+  padding: 1vw 1vw;
+  background-color: #cb464f;
+  border-radius: 8px;
+  font-size:  max(10px,1vw);
 
  
- .footer-column a:hover {
-   text-decoration: underline;
- }
- 
 
-
- 
- .socials-icon img:hover {
-   opacity: 0.8;
- }
- 
- /* Footer bottom */
- 
-
-
-    .footer_social_icons img{
-
-   height:40px;
-   width:40px;
-   margin:1vw;
+}
 
 
 
-   }
 
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.socials-icon img:hover {
+  opacity: 0.8;
+}
+
+/* Footer bottom */
+
+
+
+   .footer_social_icons img{
+
+  height:40px;
+  width:40px;
+  margin:1vw;
+
+
+
+  }
 
 
    /* Style for Scroll to Top Button */

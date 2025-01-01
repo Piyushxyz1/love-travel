@@ -98,24 +98,23 @@ list-style: none;
 display:flex;
 justify-content: center;
 align-items: center;
-gap:1.5vw;
+gap:3vw;
 
   }
 
-li{
+
+  li {
 
 
+    list-style: none;
+  }
 
-  list-style: none;
-}
-
-
-    .main-navbar .main_nav_ul li a{
+  .main-navbar .main_nav_ul li a{
 
       font-size: max(15px,1.2vw);
       font-weight: 500;
         color:#000000;
-       
+         
         text-decoration: none;
 
     }
@@ -145,43 +144,42 @@ padding: 20px 0;
 
 
 
-
    .dropdown-content {
-    display: none;
-    position: absolute;
-    padding:   7px 0 ;
-    top:55px;
-    left:-60px;
-    transform: translateX(-25px);
-   background:#f2f2f2;
-    width: 250px;
- 
-     }
- 
- 
- 
-    .dropdown:hover .dropdown-content { 
-     
-     display: block;
- 
+   display: none;
+   position: absolute;
+   padding:   7px 0 ;
+   top:55px;
+   left:-60px;
+   transform: translateX(-25px);
+  background:#f2f2f2;
+   width: 250px;
+
     }
+
+
+
+   .dropdown:hover .dropdown-content { 
+    
+    display: block;
+
+   }
+
+
+
  
- 
- 
-  
- 
-    .dropdown-content a {
-     display: block; /* ensures the link behaves as a block element */
-     padding: 10px 8px; /* add padding */
-     text-decoration: none;
-     margin: 10px 0;
-     text-align: center;
-     font-size: 1.2vw;
-     font-weight: 600;
-     color: #000000;
-     transition: 0.2ms ease-in;
- }
- 
+
+   .dropdown-content a {
+    display: block; /* ensures the link behaves as a block element */
+    padding: 10px 8px; /* add padding */
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #000000;
+    transition: 0.2ms ease-in;
+}
+
    
 
    .dropdown  {
@@ -199,12 +197,8 @@ padding: 20px 0;
 
 .dropdown-content li a:hover{
 
-background-color:#5ca13e;
-color:#fff;
-
-
-
-
+  background-color:#5ca13e;
+  color:#fff;
 
 
 
@@ -212,18 +206,6 @@ color:#fff;
 }
 
 
-
- .book {
-   padding: 1.5vw 1.5vw;
-   font-size: max(10px, 1.3vw);
-   font-weight: 900;
-   color: #fff;
-   text-decoration: none;
-   margin-top: 3vw; 
-   background-color: #d4000d;
-   border-radius: 50px;
-   transition: 0.3s ease-in;
-}
 
 @media (max-width: 767px) {
     .book {
@@ -269,7 +251,6 @@ color:#fff;
   display: flex;
   flex-direction: column;
   
- 
   text-align: left;
  
   transition: .8s ease;
@@ -280,12 +261,9 @@ color:#fff;
 
 
 .off-screen-menu .drop-list {
-
-
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
+ display: block;
+ margin-top: 20px;
+ margin-bottom: 20px;
   
 }
 /* Ensure sub-menu is initially hidden */
@@ -466,6 +444,7 @@ margin-right: 0.5vw;
 
 
 
+ 
 
 
 
@@ -478,6 +457,9 @@ margin-right: 0.5vw;
 
 
 /* Banner Section */
+
+
+
 .banner {
   background-image: url('../assets/images/tiger2_0iten.jpeg'); /* Banner image */
   background-size: cover;

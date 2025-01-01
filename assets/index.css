@@ -786,8 +786,8 @@ margin-top:1vw;
   text-align: center;
 }
 
-.Travel-packages h1 {
-  font-size: max(50px, 4vw);
+.Travel-packages h2 {
+  font-size: max(25px, 4vw);
   font-weight: 900;
   color: #405749;
   line-height: 1;
@@ -1192,11 +1192,11 @@ align-items: last baseline;
 
  }
 
- .destination-section-left h1{
+ .destination-section-left h2{
 
 
 
-   font-size: 4vw;
+   font-size: max(25px,4vw);
    font-weight: 900;
    padding-top:2vw;
    padding-bottom: 0.5vw;
@@ -1441,9 +1441,9 @@ filter: brightness(0.8);
    padding:3vw 4.5vw;
 }
 
-.section_hotels_resorts h1{
+.section_hotels_resorts h2{
 
-  font-size: max(30px,4vw);
+  font-size: max(25px,4vw);
  
    font-weight: 900;
    text-align: center;
@@ -1526,7 +1526,7 @@ margin-top: 3vw;
 }
 
 
-.hotel_categories h1{
+.hotel_categories h3{
 
    
    font-size: max(25px,3vw);
@@ -1983,7 +1983,7 @@ justify-content: center;
 }
 
 
-.Corbett_safari_zones h3{
+.Corbett_safari_zones h2{
 
 
    font-size: max(25px,3vw);
@@ -2111,11 +2111,11 @@ justify-content: center;
 
 
 
-.section_wandering_soul_section_left h1{
+.section_wandering_soul_section_left h2{
 
     
 color:#405749;
-font-size: 4vw;
+font-size:max(25px,4vw) ;
 font-weight: 900;
 margin-bottom:1vw ;
 
@@ -2282,10 +2282,10 @@ text-align: center;
 
    }
 
-   .roaming_tales_blogs h1{
+   .roaming_tales_blogs h2{
 
 
-      font-size: max(50px,4vw);
+      font-size: max(25px,4vw);
       font-weight: 900;
       margin-bottom: 1vw;
       color:#405749;

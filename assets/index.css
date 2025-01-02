@@ -1571,7 +1571,7 @@ margin-top: 2vw;
 
   .hotels_array .slick-prev {
 
-    left: 44%;
+    left: 42%;
   }
 
   .hotels_array .slick-next {
@@ -1596,7 +1596,7 @@ margin-top: 2vw;
 
   .hotels_array .slick-next {
  
-    right: 46%;
+    right: 48%;
     transform: translateX(50%);
   }
 

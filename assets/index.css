@@ -756,7 +756,7 @@ margin-top:1vw;
  .right-content-section img{
 
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height:auto;
     border-radius: 10px;
 
@@ -779,7 +779,7 @@ margin-top:1vw;
 
 
 .Section_Travel_packages {
-  padding: 4vw 4.5vw;
+  padding: 3.5vw 4.5vw;
 }
 
 .Travel-packages {
@@ -806,48 +806,48 @@ margin-top:1vw;
 
 
 .gallery-container {
-  margin-top: 3vw;
-
-  overflow-x: auto; 
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; 
-  cursor: pointer; 
-  scrollbar-width: none; 
-  -ms-overflow-style: none;
-  position: relative;
-  scroll-behavior: smooth; 
-  
-  
-}
-
-.items {
   display: flex;
-  flex-wrap: nowrap; 
-  justify-content: flex-start;
-  padding: 20px 0;
-
+  justify-content: flex-start;  /* Align cards to the left */
+  align-items: center;
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+  -ms-overflow-style: none;  /* For Internet Explorer */
+  scrollbar-width: none;  /* For Firefox */
+  cursor: pointer; /* Default cursor to indicate scroll */
+  
+  
 }
 
+.gallery-container .gallery-cards{
+
+
+  width: 450px;
+
+  height: 400px;
+  margin: 10px;
+
+}
 
 .item {
   position: relative;
-  width: 430px; 
-
-
-  flex-shrink: 0; /* Prevent items from shrinking */
-  border-radius: 12px; 
+width: 100%;
+flex-shrink: 0; /* Prevent items from shrinking */
+  border-radius: 10px; 
   overflow: hidden; 
   background-color: #fff; 
   transition: transform 0.3s ease-in-out; 
   background-size: cover; 
   background-position:center; 
-  background-repeat: no-repeat; 
-  height: 500px; 
+  background-repeat: no-repeat;
+  height: 100%; 
+ 
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
+
  
- margin: 1vw;
+ 
+
 }
 
 /* Overlay for better text visibility */
@@ -864,6 +864,7 @@ margin-top:1vw;
   align-items: center;
   padding: 10px;
   transition: opacity 0.3s ease-in-out;
+  
 }
 
 /* Title Styling */
@@ -920,165 +921,17 @@ margin-top:1vw;
   transform: translateX(-50%) translateY(-30px); /* Move the button up */
 }
 
-/* Media Queries for responsiveness */
 
-/* Large screens (laptops, desktops) */
-@media (max-width: 1400px) {
-  .Section_Travel_packages {
-    padding: 3vw 3.5vw;
-  }
-
-  .Travel-packages h1 {
-    font-size: max(45px, 3.8vw);
-  }
-
- 
-
-  .item {
-    width: 31%;
-   
-    height: 450px;
-  }
-
-  .item-title {
-    font-size: max(18px, 2vw);
-  }
-
-  .button-link {
-    font-size: max(14px, 1.8vw);
-    padding: 10px 20px;
-  }
-}
-
-
-
-
-@media (max-width: 912px) {
-  .Section_Travel_packages {
-    padding: 4vw 4.5vw;
-  }
-
-  .Travel-packages h1 {
-    font-size: max(40px, 5vw);
-  }
-
-  .Travel-packages p {
-    font-size: max(13px, 1.4vw);
-  }
-
-  .gallery-container {
-    margin-top: 5vw;
-  }
-
-
-
-  
-
-  .item {
-    width: 49%;
-  
-    height: 400px;
-  }
-
-  .item-title {
-    font-size: max(16px, 2.5vw);
-  }
-
-  .button-link {
-    font-size: max(14px, 2vw);
-    padding: 10px 25px;
-  }
-}
-
-
-/* Medium screens (tablets, small laptops) */
-@media (max-width: 768px) {
-  .Section_Travel_packages {
-    padding: 4vw 4.5vw;
-  }
-
-  .Travel-packages h1 {
-    font-size: max(40px, 5vw);
-  }
-
-  .Travel-packages p {
-    font-size: max(13px, 1.4vw);
-  }
-
-  .gallery-container {
-    margin-top: 5vw;
-  }
-
-
-
-  
-
-  .item {
-    width: 50%;
-  
-    height: 400px;
-  }
-
-  .item-title {
-    font-size: max(16px, 2.5vw);
-  }
-
-  .button-link {
-    font-size: max(14px, 2vw);
-    padding: 10px 25px;
-  }
-}
-
-/* Small screens (smartphones, mobile devices) */
-@media (max-width: 480px) {
-  
-
-  .Travel-packages h1 {
-    font-size: max(30px, 6vw);
-  }
-
-
-  .gallery-container {
-    margin-top: 6vw;
-  }
-
-
-
-  .item {
-
-width: 100%;
-height: 400px;
-
-
-  }
-
-  .item-title {
-    font-size: max(14px, 3.5vw);
-  }
-
-  .button-link {
-    font-size: max(12px, 3vw);
-    padding: 8px 18px;
-  }
-}
 
 
 
 
 .travel_packages_navigate_arrows{
-
-
-
-text-align: center;
-margin-top:2vw ;
-
-
-
-
-
-
-
+  text-align: center;
+   
 }
+
+
 
 
 
@@ -1144,18 +997,20 @@ font-weight: 900;
    }
 
 
+   .worldwide-destination{
 
+    padding:3.5vw 4.5vw;
+
+   }
 
 
 
  .destination-sections{
 
-
-
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 3.5vw 4.5vw;
+   
      /* Add gap between the cards */
  }
 
@@ -1255,11 +1110,7 @@ filter: brightness(0.8);
    display: flex;
    justify-content: flex-start;  /* Align cards to the left */
    align-items: center;
-
    overflow-x: auto;  /* Enable horizontal scrolling */
-   padding-top: 3vw;
-   padding-left: 4.5vw;
-   padding-right: 4.5vw;
    scroll-behavior: smooth; /* Optional: smooth scrolling */
    -ms-overflow-style: none;  /* For Internet Explorer */
    scrollbar-width: none;  /* For Firefox */
@@ -1283,7 +1134,7 @@ filter: brightness(0.8);
    position: relative;
    flex-shrink: 0;  /* Prevent cards from shrinking */
    transition: transform 0.5s ease, opacity 0.3s ease;  /* Smooth transitions */
-   margin-right: 1vw;
+   margin: 10px;
    opacity: 0.9;
  }
  
@@ -1349,53 +1200,7 @@ filter: brightness(0.8);
    background-color: #a3000a;  /* Darker red on hover */
  }
  
- /* Media Queries for responsiveness */
- @media (max-width: 1200px) {
-   .destination-cards {
-     padding-left: 3vw;
-     padding-right: 3vw;
-   }
  
-   .destination-cards .card-lists {
-     width: 350px;  /* Slightly smaller cards on medium screens */
-     height: 350px;
-   }
- }
- 
- @media (max-width: 768px) {
-   .destination-cards {
-     flex-direction: column;
-     padding-top: 4vw;
-     padding-left: 3vw;
-     padding-right: 3vw;
-   }
- 
-   .destination-cards .card-lists {
-     width: 100%;  /* Full width of the container for small screens */
-     height: 300px;
-     margin-bottom: 20px;  /* Add spacing between cards */
-   }
- 
-   .destination-cards .card-lists h2, .destination-cards .card-lists p {
-     font-size: 2vw;  /* Adjust font size */
-   }
- }
- 
- @media (max-width: 480px) {
-   .destination-cards .card-lists {
-     width: 100%;  /* Full width for the cards on very small screens */
-     height: 250px;  /* Reduce the height of the cards */
-   }
- 
-   .destination-cards .card-lists h2, .destination-cards .card-lists p {
-     font-size: 3vw;  /* Further adjust font size for very small screens */
-   }
- 
-   .destination-cards .card-lists button {
-     font-size: 4vw;  /* Adjust button size */
-     padding: 10px 20px;
-   }
- }
 
  
  .card-lists:hover{
@@ -1485,7 +1290,7 @@ filter: brightness(0.8);
    overflow: hidden;  
    position: relative;
    margin-bottom: 30px;
-   width: 350px;  
+   width: 400px;  
    position: relative;
    transition: 0.3s;
    padding:1vw;
@@ -2746,37 +2551,6 @@ object-fit: cover;
    
 }
 
-
-
-
-.gallery-container{
-
-
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   padding: 0 3vw;
-
-
-
-
-
-}
-
-
-
-.gallery-container .item{
-
-
-
-height: 60vw;
-
-
-
-
-
-
-}
 
 
 

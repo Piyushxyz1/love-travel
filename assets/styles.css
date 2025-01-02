@@ -1178,43 +1178,42 @@ width: 80%;
 /* Hotel cards */
 .hotel-card {
 
-  border-radius: 10px;
-  width: 100%; 
-  height:auto;
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+border-radius: 10px;
+width: 100%; 
+height:auto;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
 
 }
 
 .hotel-card img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .hotel-card h3 {
-    color: #ff6f61;
-    font-size: max(18px,1.3vw);
-    font-weight: 800;
+  color: #ff6f61;
+  font-size: max(18px,1.3vw);
+  font-weight: 800;
 }
 
 .hotel-card p {
-    font-size:  max(17px,1.2vw);
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 10px;
+  font-size:  max(17px,1.2vw);
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
 .hotel-price {
-    color: #4a90e2;
-    font-weight: bold;
+  color: #4a90e2;
+  font-weight: bold;
 }
 
 .hotel-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 

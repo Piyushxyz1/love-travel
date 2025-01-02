@@ -175,8 +175,7 @@ $('.destination-cards').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true,
-        dots: true
+       
       }
     },
     {
@@ -236,150 +235,68 @@ rightArrow2.addEventListener('click', () => {
 
 
 
+
+
+// const hotelsandresorts = document.querySelector('.hotels_array div');
+// const leftArrow3 = document.querySelector('.left-arrow3');
+// const rightArrow3 = document.querySelector('.right-arrow3');
+
+
+// leftArrow3.addEventListener('click', () => {
+//   hotelsandresorts.scrollBy({
+//     left: -355, 
+//     behavior: 'smooth', 
+//   });
+// });
+
+// rightArrow3.addEventListener('click', () => {
+//   hotelsandresorts.scrollBy({
+//     left: 355, 
+//     behavior: 'smooth', 
+//   });
+// });
+
+
+
+
+
+
+
+
+
+// const hotelsandresorts2 = document.querySelector('.hotels_array2 div');
+// const leftArrow4 = document.querySelector('.left-arrow4');
+// const rightArrow4 = document.querySelector('.right-arrow4');
+
+
+// leftArrow4.addEventListener('click', () => {
+//   hotelsandresorts2.scrollBy({
+//     left: -355, 
+//     behavior: 'smooth', 
+//   });
+// });
+
+// rightArrow4.addEventListener('click', () => {
+//   hotelsandresorts2.scrollBy({
+//     left: 355, 
+//     behavior: 'smooth', 
+//   });
+// });
+
+
+
+
+
+
+
 $('.hotels_array').slick({
   dots: false,
   infinite: false,
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-				
-
-
-
-
-const hotelsandresorts = document.querySelector('.hotels_array div');
-const leftArrow3 = document.querySelector('.left-arrow3');
-const rightArrow3 = document.querySelector('.right-arrow3');
-
-
-leftArrow3.addEventListener('click', () => {
-  hotelsandresorts.scrollBy({
-    left: -355, 
-    behavior: 'smooth', 
-  });
-});
-
-rightArrow3.addEventListener('click', () => {
-  hotelsandresorts.scrollBy({
-    left: 355, 
-    behavior: 'smooth', 
-  });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-$('.hotels_array2').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-				
-
-
-
-
-const hotelsandresorts2 = document.querySelector('.hotels_array2 div');
-const leftArrow4 = document.querySelector('.left-arrow4');
-const rightArrow4 = document.querySelector('.right-arrow4');
-
-
-leftArrow4.addEventListener('click', () => {
-  hotelsandresorts2.scrollBy({
-    left: -355, 
-    behavior: 'smooth', 
-  });
-});
-
-rightArrow4.addEventListener('click', () => {
-  hotelsandresorts2.scrollBy({
-    left: 355, 
-    behavior: 'smooth', 
-  });
-});
-
-
-
-
-
-
-
-$('.hotels_array3').slick({
-  dots: false,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  arrow:true,
-  prevArrow: $('.custom-arrows .slick-prev'),
-  nextArrow: $('.custom-arrows .slick-next'),
+  prevArrow:'<span class="slick-prev"><i class="fa-solid fa-arrow-left"></i></span>',
+ nextArrow: '<span class="slick-next"><i class="fa-solid fa-arrow-right"></i></span>',
 
   responsive: [
     {
@@ -414,24 +331,24 @@ $('.hotels_array3').slick({
 
 
 
-const hotelsandresorts3 = document.querySelector('.hotels_array3 div');
-const leftArrow5 = document.querySelector('.left-arrow5');
-const rightArrow5 = document.querySelector('.right-arrow5');
+// const hotelsandresorts3 = document.querySelector('.hotels_array3 div');
+// const leftArrow5 = document.querySelector('.left-arrow5');
+// const rightArrow5 = document.querySelector('.right-arrow5');
 
 
-leftArrow5.addEventListener('click', () => {
-  hotelsandresorts3.scrollBy({
-    left: -355, 
-    behavior: 'smooth', 
-  });
-});
+// leftArrow5.addEventListener('click', () => {
+//   hotelsandresorts3.scrollBy({
+//     left: -355, 
+//     behavior: 'smooth', 
+//   });
+// });
 
-rightArrow5.addEventListener('click', () => {
-  hotelsandresorts3.scrollBy({
-    left: 355, 
-    behavior: 'smooth', 
-  });
-});
+// rightArrow5.addEventListener('click', () => {
+//   hotelsandresorts3.scrollBy({
+//     left: 355, 
+//     behavior: 'smooth', 
+//   });
+// });
 
 
 

@@ -1326,7 +1326,7 @@ filter: brightness(0.8);
 .hotel_categories{
 
 
-margin-top: 3vw;
+margin-top: 2vw;
 
 }
 
@@ -1337,7 +1337,7 @@ margin-top: 3vw;
    font-size: max(25px,3vw);
    font-weight: 900;
    color:#405749;
-   margin-bottom:1vw;
+ 
    text-align: left;
 }
 
@@ -1417,180 +1417,199 @@ margin-top: 3vw;
 
 
 
-.hotels_array2 {
+
+
+
+.hotels_array {
   display: flex;
   justify-content: space-between;  
   align-items: center;
+  height: 620px;
+  position: relative;
 
-  overflow-x: auto;  /* Enable horizontal scrolling */
-  padding-top: 2vw;  /* Increased top padding */
 
-  scroll-behavior: smooth; /* Optional: smooth scrolling */
-  -ms-overflow-style: none;  /* For Internet Explorer */
-  scrollbar-width: none;  /* For Firefox */
-  cursor: pointer; /* Default cursor to indicate scroll */
+
+  
+}
+
+.hotels_array .slick-arrow{
+  color:#000000;
+  font-size: 16px;
+  
+  }
+.hotels_array .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+  }
+
+
+  .hotels_array .slick-prev{
+  position: absolute;
+  top: 85%;
+  z-index: 10;
+  left: 45%;
+  transform: translateX(50%);
+}
+
+.hotels_array .slick-next{
+  position: absolute;
+  top: 85%;
+  right: 47%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.hotels_array .slick-prev:hover{
+  color: #000;
+}
+.hotels_array .slick-next:hover{
+  color: #000;
+}
+
+.slick-next:before, .slick-prev:before{
+  display: none;
 }
 
 
 
 
+/* General styling for the slick arrows */
+.hotels_array .slick-arrow{
+  color: #000000;
+  font-size: 16px;
+}
+
+.hotels_array .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+}
 
 
-.hotels_array3 {
-  display: flex;
-  justify-content: space-between;  
-  align-items: center;
 
-  overflow-x: auto;  /* Enable horizontal scrolling */
-  padding-top: 2vw;  /* Increased top padding */
+/* Hover effect for arrows */
+.hotels_array .slick-prev:hover,
+.hotels_array .slick-next:hover{
+  color: #000;
+}
 
-  scroll-behavior: smooth; /* Optional: smooth scrolling */
-  -ms-overflow-style: none;  /* For Internet Explorer */
-  scrollbar-width: none;  /* For Firefox */
-  cursor: pointer; /* Default cursor to indicate scroll */
+/* Removing the default arrows */
+.slick-next:before, .slick-prev:before{
+  display: none;
+}
+
+/* Responsive adjustments for different screen sizes */
+
+/* For small screens (mobile) */
+
+
+
+@media  (max-width:540px) {
+
+  
+.hotels_array{
+
+  height:550px;
+}
+  
+  .hotels_array .slick-prev {
+
+  left:38%;
+  }
+
+
+
+  .hotels_array .slick-next {
+
+ right:38%;
+  }
+
+  .hotels_array .slick-arrow i {
+    padding: 12px;
+  }
+
+  
+}
+
+@media (min-width:540px) and (max-width:768px) {
+
+
+  .hotels_array{
+
+
+    height:580px;
+  }
+
+  
+  .hotels_array .slick-prev {
+    top: 85%;
+    left:41%;
+  }
+
+
+
+  .hotels_array .slick-next {
+    top: 85%;
+    right: 41%;
+  }
+
+  .hotels_array .slick-arrow i {
+    padding: 12px;
+  }
+
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .hotels_array{
+
+
+    height:600px;
+  }
+
+  .hotels_array .slick-prev {
+
+    left: 44%;
+  }
+
+  .hotels_array .slick-next {
+ 
+    right: 44%;
+  }
+
+  .hotels_array .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
+  }
 }
 
 
 
 
+@media  (min-width:1024px)  and (max-width:1280px) {
+  .hotels_array .slick-prev {
 
-
-
-.travel_packages_navigate_arrows5{
-
-
-
-  text-align: center;
-  margin-top:2vw ;
-  
-  
-  
-  
-  
-  
-  
+    left: 46%;
+    transform: translateX(-50%);
   }
-  
-  
-  
-  .left-arrow5{
-  margin-right: 3vw;
-  color:#000000;
-   padding:0.5vw;
-  font-weight: 900;
-  font-size: max(20px,4vw);
-  cursor: pointer;
-  
-  
-  
+
+  .hotels_array .slick-next {
+ 
+    right: 46%;
+    transform: translateX(50%);
   }
-  
-  
-  
-  .right-arrow5{
-  color:#000000;
-  padding:0.5vw;
-  font-size: max(20px,4vw);
-  cursor: pointer;
-  font-weight: 900;
-  
-  
+
+  .hotels_array .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
   }
+
   
-  
-  
-  
-
-
-
-.travel_packages_navigate_arrows3{
-
-
-
-   text-align: center;
-   margin-top:2vw ;
-   
-   
-   
-   
-   
-   
-   
-   }
-   
-   
-   
-   .left-arrow3{
-   margin-right: 3vw;
-   color:#000000;
-    padding:0.5vw;
-   font-weight: 900;
-   font-size: max(20px,4vw);
-   cursor: pointer;
-   
-   
-   
-   }
-   
-   
-   
-   .right-arrow3{
-   color:#000000;
-   padding:0.5vw;
-   font-size: max(20px,4vw);
-   cursor: pointer;
-   font-weight: 900;
-   
-   
-   }
-   
+}
 
 
 
 
-
-   
-.travel_packages_navigate_arrows4{
-
-
-
-  text-align: center;
-  margin-top:2vw ;
-  
-  
-  
-  
-  
-  
-  
-  }
-  
-  
-  
-  .left-arrow4{
-  margin-right: 3vw;
-  color:#000000;
-   padding:0.5vw;
-  font-weight: 900;
-  font-size: max(20px,4vw);
-  cursor: pointer;
-  
-  
-  
-  }
-  
-  
-  
-  .right-arrow4{
-  color:#000000;
-  padding:0.5vw;
-  font-size: max(20px,4vw);
-  cursor: pointer;
-  font-weight: 900;
-  
-  
-  }
-  
 
 
 

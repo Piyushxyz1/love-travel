@@ -377,6 +377,10 @@ $('.hotels_array3').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  arrow:true,
+  prevArrow: $('.custom-arrows .slick-prev'),
+  nextArrow: $('.custom-arrows .slick-next'),
+
   responsive: [
     {
       breakpoint: 1024,

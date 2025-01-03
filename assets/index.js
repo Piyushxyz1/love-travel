@@ -102,6 +102,8 @@ $('.gallery-container').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  prevArrow:'<span class="slick-prev"><i class="fa-solid fa-arrow-left"></i></span>',
+  nextArrow: '<span class="slick-next"><i class="fa-solid fa-arrow-right"></i></span>',
   responsive: [
     {
       breakpoint: 1024,
@@ -142,24 +144,6 @@ $('.gallery-container').slick({
 
 
 
-const galleryContainer = document.querySelector('.gallery-container div');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
-
-leftArrow.addEventListener('click', () => {
-  galleryContainer.scrollBy({
-    left: -355, 
-    behavior: 'smooth', 
-  });
-});
-
-rightArrow.addEventListener('click', () => {
-  galleryContainer.scrollBy({
-    left:355,  
-    behavior: 'smooth', 
-  });
-});
-
 
 
 
@@ -169,6 +153,8 @@ $('.destination-cards').slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
+  prevArrow:'<span class="slick-prev"><i class="fa-solid fa-arrow-left"></i></span>',
+  nextArrow: '<span class="slick-next"><i class="fa-solid fa-arrow-right"></i></span>',
   responsive: [
     {
       breakpoint: 1024,
@@ -203,27 +189,6 @@ $('.destination-cards').slick({
 
 
 
-
-
-
-
-const destinationcards = document.querySelector('.destination-cards div');
-const leftArrow2 = document.querySelector('.left-arrow2');
-const rightArrow2 = document.querySelector('.right-arrow2');
-
-leftArrow2.addEventListener('click', () => {
-  destinationcards.scrollBy({
-    left: -355,  
-    behavior: 'smooth', 
-  });
-});
-
-rightArrow2.addEventListener('click', () => {
-  destinationcards.scrollBy({
-    left: 355, 
-    behavior: 'smooth', 
-  });
-});
 
 
 

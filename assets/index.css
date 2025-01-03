@@ -814,6 +814,7 @@ margin-top:1vw;
   -ms-overflow-style: none;  /* For Internet Explorer */
   scrollbar-width: none;  /* For Firefox */
   cursor: pointer; /* Default cursor to indicate scroll */
+  padding-bottom: 100px;
   
   
 }
@@ -821,17 +822,16 @@ margin-top:1vw;
 .gallery-container .gallery-cards{
 
 
-  width: 450px;
+  width: 400px;
 
-  height: 400px;
+height: 400px;
   margin: 10px;
+
 
 }
 
 .item {
   position: relative;
-width: 100%;
-flex-shrink: 0; /* Prevent items from shrinking */
   border-radius: 10px; 
   overflow: hidden; 
   background-color: #fff; 
@@ -839,8 +839,8 @@ flex-shrink: 0; /* Prevent items from shrinking */
   background-size: cover; 
   background-position:center; 
   background-repeat: no-repeat;
-  height: 100%; 
- 
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; 
@@ -923,41 +923,171 @@ flex-shrink: 0; /* Prevent items from shrinking */
 
 
 
+.gallery-container .slick-arrow{
+  color:#000000;
+  font-size: 16px;
+  
+  }
+  .gallery-container .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+  }
+
+
+  .gallery-container .slick-prev{
+  position: absolute;
+  top: 88%;
+  z-index: 10;
+  left: 45%;
+  transform: translateX(50%);
+}
+
+.gallery-container .slick-next{
+  position: absolute;
+  top: 88%;
+  right: 47%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.gallery-container .slick-prev:hover{
+  color: #000;
+}
+.gallery-container .slick-next:hover{
+  color: #000;
+}
+
+.slick-next:before, .slick-prev:before{
+  display: none;
+}
 
 
 
-.travel_packages_navigate_arrows{
-  text-align: center;
-   
+
+/* General styling for the slick arrows */
+.gallery-container .slick-arrow{
+  color: #000000;
+  font-size: 16px;
+}
+
+.gallery-container .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+
+
+/* Hover effect for arrows */
+.gallery-container .slick-prev:hover,
+.gallery-container .slick-next:hover{
+  color: #000;
+}
+
+/* Removing the default arrows */
+.slick-next:before, .slick-prev:before{
+  display: none;
+}
+
+/* Responsive adjustments for different screen sizes */
+
+/* For small screens (mobile) */
+
+
+
+@media  (max-width:540px) {
+
+  
+  
+  .gallery-container .slick-prev {
+
+  left:36%;
+  }
+
+
+
+  .gallery-container .slick-next {
+
+ right:39%;
+  }
+
+  .gallery-container .slick-arrow i {
+    padding: 12px;
+  }
+
+  
+}
+
+@media (min-width:540px) and (max-width:768px) {
+
+
+
+  
+  .gallery-container .slick-prev {
+    top: 85%;
+    left:41%;
+  }
+
+
+
+  .gallery-container .slick-next {
+    top: 85%;
+    right: 41%;
+  }
+
+  .gallery-container .slick-arrow i {
+    padding: 12px;
+  }
+
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  .gallery-container .slick-prev {
+
+    left: 42%;
+  }
+
+  .gallery-container .slick-next {
+ 
+    right: 44%;
+  }
+
+  .gallery-container .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
+  }
+}
+
+
+
+
+@media  (min-width:1024px)  and (max-width:1280px) {
+  .gallery-container .slick-prev {
+
+    left: 46%;
+    transform: translateX(-50%);
+  }
+
+  .gallery-container .slick-next {
+ 
+    right: 48%;
+    transform: translateX(50%);
+  }
+
+  .gallery-container .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
+  }
+
+  
 }
 
 
 
 
 
-.left-arrow{
-margin-right: 3vw;
-color:#000000;
- padding:0.5vw;
-font-weight: 900;
-font-size: max(20px,4vw);
-cursor: pointer;
-
-
-
-}
-
-
-
-.right-arrow{
-color:#000000;
-padding:0.5vw;
-font-size: max(20px,4vw);
-cursor: pointer;
-font-weight: 900;
-
-
-}
 
 
 
@@ -967,34 +1097,21 @@ font-weight: 900;
 
 
 
-.travel_packages_navigate_arrows2{
-  text-align: center;
-   
-}
-   
-   
-   
-.left-arrow2{
-   margin-right: 3vw;
-   color:#000000;
-    padding:0.5vw;
-   font-weight: 900;
-   font-size: max(20px,4vw);
-   cursor: pointer;
-   
-   }
-   
-   
-   
-   .right-arrow2{
-   color:#000000;
-   padding:0.5vw;
-   font-size: max(20px,4vw);
-   cursor: pointer;
-   font-weight: 900;
-   
-   
-   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    .worldwide-destination{
@@ -1115,8 +1232,202 @@ filter: brightness(0.8);
    -ms-overflow-style: none;  /* For Internet Explorer */
    scrollbar-width: none;  /* For Firefox */
    cursor: pointer; /* Default cursor to indicate scroll */
+   padding-bottom:100px ;
  }
  
+
+
+
+
+
+
+
+
+
+ .destination-cards  .slick-arrow{
+  color:#000000;
+  font-size: 16px;
+  
+  }
+  .destination-cards    .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+  }
+
+
+  .destination-cards  .slick-prev{
+  position: absolute;
+  top: 88%;
+  z-index: 10;
+  left: 45%;
+  transform: translateX(50%);
+}
+
+.destination-cards .slick-next{
+  position: absolute;
+  top: 88%;
+  right: 47%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+.destination-cards .slick-prev:hover{
+  color: #000;
+}
+.destination-cards  .slick-next:hover{
+  color: #000;
+}
+
+
+
+
+
+/* General styling for the slick arrows */
+.destination-cards .slick-arrow{
+  color: #000000;
+  font-size: 16px;
+}
+
+.destination-cards  .slick-arrow i{
+  border: 1px solid #cb464f;
+  padding: 16px;
+  border-radius: 100%;
+}
+
+
+
+/* Hover effect for arrows */
+.destination-cards  .slick-prev:hover,
+.destination-cards  .slick-next:hover{
+  color: #000;
+}
+
+/* Removing the default arrows */
+.slick-next:before, .slick-prev:before{
+  display: none;
+}
+
+/* Responsive adjustments for different screen sizes */
+
+/* For small screens (mobile) */
+
+
+
+@media  (max-width:540px) {
+
+
+  
+  .destination-cards  .slick-prev {
+
+  left:36%;
+  }
+
+
+  .destination-cards  .slick-next {
+
+ right:39%;
+  }
+
+  .destination-cards .slick-arrow i {
+    padding: 12px;
+  }
+
+  
+}
+
+@media (min-width:540px) and (max-width:768px) {
+
+
+
+  
+  .destination-cards  .slick-prev {
+    top: 85%;
+    left:39%;
+  }
+
+
+
+  .destination-cards  .slick-next {
+    top: 85%;
+    right: 43%;
+  }
+
+  .destination-cards .slick-arrow i {
+    padding: 12px;
+  }
+
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  .destination-cards .slick-prev {
+
+    left: 42%;
+  }
+
+  .destination-cards .slick-next {
+ 
+    right: 44%;
+  }
+
+  .destination-cards  .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
+  }
+}
+
+
+
+
+@media  (min-width:1024px)  and (max-width:1280px) {
+  .destination-cards  .slick-prev {
+
+    left: 46%;
+    transform: translateX(-50%);
+  }
+
+  .destination-cards   .slick-next {
+ 
+    right: 48%;
+    transform: translateX(50%);
+  }
+
+  .destination-cards .slick-arrow i {
+    padding: 14px; /* Slightly smaller for tablets */
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* Hide scrollbar in WebKit browsers (Chrome, Safari, etc.) */
  .destination-cards::-webkit-scrollbar {
    display: none;
@@ -1208,30 +1519,8 @@ filter: brightness(0.8);
 
    transform: scale(1.05);
  }
-.travel_packages_navigate_arrows2{
-
-   text-align: center;
-   margin:5vw 0;
-}
 
 
-.left-arrow2{
-
-   font-size: 4vw;
-   font-weight: 900;
-   color:#000000;
-   margin-right: 3vw;
-}
-
-
-.right-arrow2{
-
-
-   font-size: 4vw;
-   font-weight: 900;
-   color:#000000;
-
-}
 
 
 
@@ -1274,13 +1563,13 @@ filter: brightness(0.8);
    display: flex;
    justify-content: flex-start;  
    align-items: center;
-
-   overflow-x: auto;  /* Enable horizontal scrolling */
-   padding-top: 2vw; 
-   scroll-behavior: smooth; 
+   padding-top: 20px; 
+   cursor: pointer; 
    -ms-overflow-style: none;  /* For Internet Explorer */
    scrollbar-width: none;  /* For Firefox */
-   cursor: pointer; 
+   padding-bottom:100px;
+ 
+
 }
 
 /* Styling for each hotel card */
@@ -1289,11 +1578,13 @@ filter: brightness(0.8);
    border-radius: 12px;
    overflow: hidden;  
    position: relative;
-   margin-bottom: 30px;
+  margin: 10px;
    width: 400px;  
-   position: relative;
-   transition: 0.3s;
-   padding:1vw;
+  height:400px;
+  position: relative;
+  transition: 0.3s;
+
+
  
    
 }
@@ -1416,22 +1707,6 @@ margin-top: 2vw;
 
 
 
-
-
-
-
-.hotels_array {
-  display: flex;
-  justify-content: space-between;  
-  align-items: center;
-  height: 620px;
-  position: relative;
-
-
-
-  
-}
-
 .hotels_array .slick-arrow{
   color:#000000;
   font-size: 16px;
@@ -1446,7 +1721,7 @@ margin-top: 2vw;
 
   .hotels_array .slick-prev{
   position: absolute;
-  top: 85%;
+  top: 88%;
   z-index: 10;
   left: 45%;
   transform: translateX(50%);
@@ -1454,7 +1729,7 @@ margin-top: 2vw;
 
 .hotels_array .slick-next{
   position: absolute;
-  top: 85%;
+  top: 88%;
   right: 47%;
   z-index: 10;
   transform: translateX(-50%);
@@ -1508,21 +1783,17 @@ margin-top: 2vw;
 @media  (max-width:540px) {
 
   
-.hotels_array{
-
-  height:550px;
-}
   
   .hotels_array .slick-prev {
 
-  left:38%;
+  left:36%;
   }
 
 
 
   .hotels_array .slick-next {
 
- right:38%;
+ right:39%;
   }
 
   .hotels_array .slick-arrow i {
@@ -1535,23 +1806,18 @@ margin-top: 2vw;
 @media (min-width:540px) and (max-width:768px) {
 
 
-  .hotels_array{
-
-
-    height:580px;
-  }
 
   
   .hotels_array .slick-prev {
     top: 85%;
-    left:41%;
+    left:39%;
   }
 
 
 
   .hotels_array .slick-next {
     top: 85%;
-    right: 41%;
+    right: 43%;
   }
 
   .hotels_array .slick-arrow i {
@@ -1563,11 +1829,7 @@ margin-top: 2vw;
 /* For medium screens (tablets) */
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .hotels_array{
-
-
-    height:600px;
-  }
+  
 
   .hotels_array .slick-prev {
 

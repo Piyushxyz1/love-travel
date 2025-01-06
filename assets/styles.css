@@ -846,7 +846,7 @@ hr {
 }
 
 .slider-for img {
-  margin-top: 48px;
+
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -2160,3 +2160,42 @@ input[type="submit"]:hover {
   left: 0 !important;
   z-index: 9;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+
+  
+
+  .main-icon img {
+    width: 130px;
+  }
+  
+  .social-hamburger-icon img{
+  width: 20px;
+  height:20px;
+  
+    
+  }
+  
+  .ham-menu span{
+  
+  width: 30px;
+  height: 4px;
+  
+  }
+  }
+  

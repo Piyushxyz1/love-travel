@@ -54,6 +54,7 @@ h1, h2, h3,h4{
 .main-icon img{
 
  object-fit: cover;
+ margin-left: 0.5vw;
   
 }
 
@@ -281,28 +282,28 @@ display: flex;
 
 /* ham menu */
 .ham-menu {
-height: 50px;
-width: 35px;
-margin-left: 0.5vw;
-margin-right: 0.5vw;
+height:50px;
+width:35px;
+margin-left:0.5vw;
+margin-right:0.5vw;
 position: relative;
 }
 
 .ham-menu span {
-height: 5px;
-width: 100%;
+height:5px;
+width:100%;
 background-color: #405749;
 border-radius: 25px;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-transition: .3s ease;
-};
+position:absolute;
+left:50%;
+top:50%;
+transform:translate(-50%, -50%);
+transition:0.3s ease;
+}
 
 .ham-menu span:nth-child(1) {
   top: 25%;
-};
+}
 .ham-menu span:nth-child(3) {
   top: 75%;
 }
@@ -603,7 +604,7 @@ width: 50%;
 
 
 .left-content-section button {
-padding: 1vw 1vw;
+padding: 10px 10px;
 border-radius: 5px;
 background-color: rgb(232, 183, 91) ;
 font-weight: 900;
@@ -704,6 +705,7 @@ display:inline;
   scrollbar-width: none;  /* For Firefox */
   cursor: pointer; /* Default cursor to indicate scroll */
   padding-bottom: 100px;
+  position: relative;
   
 }
 
@@ -816,18 +818,18 @@ display:inline;
 
   .gallery-container .slick-prev{
   position: absolute;
-  top: 88%;
+  top: 87%;
   z-index: 10;
-  left: 45%;
-  transform: translateX(50%);
+  left: 47%;
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .gallery-container .slick-next{
   position: absolute;
-  top: 88%;
+  top: 87%;
   right: 47%;
   z-index: 10;
-  transform: translateX(-50%);
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .gallery-container .slick-prev:hover{
@@ -880,14 +882,14 @@ display:inline;
   
   
   .gallery-container .slick-prev {
-  left:36%;
+  left:37%;
   }
 
 
 
   .gallery-container .slick-next {
- right:39%;
-  };
+ right:41%;
+  }
 
 
   .gallery-container .slick-arrow i {
@@ -925,12 +927,12 @@ display:inline;
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .gallery-container .slick-prev {
-    left: 42%;
+    left: 45%;
   }
 
   .gallery-container .slick-next {
  
-    right: 44%;
+    right: 45%;
   }
 
   .gallery-container .slick-arrow i {
@@ -1083,6 +1085,7 @@ clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
    scrollbar-width: none;  /* For Firefox */
    cursor: pointer; /* Default cursor to indicate scroll */
    padding-bottom:100px ;
+   position: relative;
  }
  
 
@@ -1108,18 +1111,18 @@ clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 
   .destination-cards  .slick-prev{
   position: absolute;
-  top: 88%;
+  top: 87%;
   z-index: 10;
-  left: 45%;
-  transform: translateX(50%);
+  left: 47%;
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .destination-cards .slick-next{
   position: absolute;
-  top: 88%;
+  top: 87%;
   right: 47%;
   z-index: 10;
-  transform: translateX(-50%);
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .destination-cards .slick-prev:hover{
@@ -1170,13 +1173,12 @@ clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   
   .destination-cards  .slick-prev {
 
-  left:36%;
+  left:37%;
   }
 
 
   .destination-cards  .slick-next {
-
- right:39%;
+ right:41%;
   }
 
   .destination-cards .slick-arrow i {
@@ -1215,12 +1217,12 @@ clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 
   .destination-cards .slick-prev {
 
-    left: 42%;
+    left: 45%;
   }
 
   .destination-cards .slick-next {
  
-    right: 44%;
+    right: 45%;
   }
 
   .destination-cards  .slick-arrow i {
@@ -1412,21 +1414,24 @@ clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
    -ms-overflow-style: none;  /* For Internet Explorer */
    scrollbar-width: none;  /* For Firefox */
    padding-bottom:100px;
+   position: relative;
  
 
 }
 
 /* Styling for each hotel card */
 .hotel_card {
-   background-color: white;
-   border-radius: 12px;
-   overflow: hidden;  
-   position: relative;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;  
   margin: 10px;
-   width: 400px;  
+  width: 400px;  
   height:400px;
   position: relative;
-  transition: 0.3s; 
+  transition: 0.3s ease; 
+
+
+
 }
 
 
@@ -1470,8 +1475,7 @@ margin-top: 2vw;
 
 /* Hotel name styling */
 .hotel_name {
-  
-  font-weight: 800;
+  font-weight:600;
   margin:0.5vw;
   color: #000000;
   text-transform: capitalize;
@@ -1481,7 +1485,7 @@ margin-top: 2vw;
 .hotel_description {
   color: #000000;
   text-align: center;
-  font-size: max(15px,1.3vw);
+  font-size: max(15px,1.2vw);
   font-weight: 400;
 }
 
@@ -1489,10 +1493,11 @@ margin-top: 2vw;
 .hotel_ratings {
   background: rgb(232, 183, 91);
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   padding: 0.5vw; 
   text-align: left;
   border-radius: 50%;
+  margin:0.5vw;
 }
 
 
@@ -1500,15 +1505,17 @@ margin-top: 2vw;
 
 
 .hotel_pricings{
- font-weight: 800;
-  color: #54595F;
+font-weight: 500;
+color: #54595F;
+font-size: max(12px,1.1vw);
+margin:0.5vw;
 }
 
 .hotel_info{
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin:0.5vw;
+
 }
 
 /* Button styling */
@@ -1542,18 +1549,18 @@ margin:0.5vw;
 
   .hotels_array .slick-prev{
   position: absolute;
-  top: 88%;
+  top: 87%;
   z-index: 10;
-  left: 45%;
-  transform: translateX(50%);
+  left: 47%;
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .hotels_array .slick-next{
   position: absolute;
-  top: 88%;
+  top: 87%;
   right: 47%;
   z-index: 10;
-  transform: translateX(-50%);
+  transform: translateY(-50%); /* Ensure true vertical centering */
 }
 
 .hotels_array .slick-prev:hover{
@@ -1605,14 +1612,14 @@ margin:0.5vw;
 
   .hotels_array .slick-prev {
 
-  left:36%;
+  left:37%;
   }
 
 
 
   .hotels_array .slick-next {
 
- right:37%;
+ right:41%;
   }
 
   .hotels_array .slick-arrow i {
@@ -1648,12 +1655,12 @@ margin:0.5vw;
   
   .hotels_array .slick-prev {
 
-    left: 42%;
+    left: 45%;
   }
 
   .hotels_array .slick-next {
  
-    right: 44%;
+    right: 45%;
   }
 
   .hotels_array .slick-arrow i {
@@ -1690,7 +1697,7 @@ margin:0.5vw;
 .section_Corbett_details{
 
 
-  padding:3vw 4.5vw;
+  padding:3.5vw 4.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1724,12 +1731,12 @@ margin:0.5vw;
 
 
 .Corbett_details_left button {
-  padding: 1vw 1vw;
+  padding:10px 10px;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
   font-size: max(15px, 1vw);
-  padding: 1vw 1vw;                                  
+                                
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -1737,7 +1744,7 @@ margin:0.5vw;
   color:#fff;
   border: none;
   transition: 0.1s;
-  margin-top:1vw;
+  margin-bottom: 10px;
 }
 
 
@@ -1749,7 +1756,7 @@ margin:0.5vw;
   line-height: 1.6;
   text-align: justify;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 
@@ -1803,14 +1810,14 @@ margin:0.5vw;
   line-height: 1.6;
   text-align: justify;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 
 }
    
 
 .Corbett_details_right button {
-  padding: 1vw 1vw;
+  padding:10px 10px;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -1818,8 +1825,7 @@ margin:0.5vw;
   color:#fff;
   border: none;
   transition: 0.1s;
-  margin-top:1vw;
-  margin-bottom: 2vw;
+  margin-bottom: 10px;
   }
 
 .Corbett_details_right  img {
@@ -1854,7 +1860,7 @@ margin-bottom: 2vw;
   line-height: 1.6;
   text-align: justify;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
 }
 
@@ -1898,13 +1904,12 @@ margin-bottom: 2vw;
   line-height: 1.6;
   text-align: justify;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
  }
 
 
  .book_safari_btn{
-
 
   padding: 10px 10px;
   border-radius: 5px;
@@ -1914,7 +1919,7 @@ margin-bottom: 2vw;
   color:#fff;
   border: none;
   transition: 0.1s;
-  margin-top:2vw;
+  margin-bottom: 10px;
    
  }
 
@@ -1924,7 +1929,7 @@ margin-bottom: 2vw;
 display:flex;
 justify-content: space-between;
 align-items: center;
-padding:4.5vw 4.5vw;
+padding:3.5vw 4.5vw;
 }
 
 
@@ -1935,24 +1940,10 @@ padding:4.5vw 4.5vw;
 
 
 
-.section_wandering_soul_section_left :first-child{
-
-  font-size: max(15px,1.2vw);
-  color: #000000;
-  line-height: 1.6;
-  text-align: justify;
-  font-weight: 400;
-  margin-bottom: 40px;
-
-   
-
-}
 
 
+.section_wandering_soul_section_left h2{ 
 
-.section_wandering_soul_section_left h2{
-
-    
 color:#405749;
 font-size:max(25px,4vw) ;
 font-weight: 900;
@@ -1961,38 +1952,36 @@ margin-bottom:1vw ;
 }
 
 
-
-
-.section_wandering_soul_section_left :nth-child(3){
+.section_wandering_soul_section_left p:nth-of-type(1){
   font-size: max(15px,1.2vw);
-  color: #000000;
+  color:#000000;
   line-height: 1.6;
   text-align: justify;
   font-weight: 400;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 
 
 
 
-.section_wandering_soul_section_left :nth-child(4){
+.section_wandering_soul_section_left p:nth-of-type(2){
 
    font-weight: 400;
-   font-size: 1.3vw;
+   font-size: max(15px,1.2vw);
    color:#000000;
-   margin-bottom:1vw ;
+   margin-bottom:20px ;
 }
 
 
 
 
 
-.section_wandering_soul_section_left :nth-child(6){
+.section_wandering_soul_section_left p:nth-of-type(3){
    font-weight: 400;
-   font-size: 1.3vw;
+   font-size: max(15px,1.2vw);
    color:#000000;
-    margin-bottom:1vw ;
+    margin-bottom:20px ;
   
 }
 
@@ -2001,7 +1990,7 @@ margin-bottom:1vw ;
 
 
 .section_wandering_soul_section_left button{
-  padding: 1vw 1vw;
+  padding: 10px 10px;
   border-radius: 5px;
   background-color: rgb(232, 183, 91) ;
   font-weight: 900;
@@ -2071,7 +2060,9 @@ margin-bottom:1vw ;
    /* Travel Blog Section */
 
 .section_travel_blog{
-      padding: 2vw 4.5vw;
+  padding: 3.5vw 4.5vw;
+
+
    }
 
 
@@ -2089,7 +2080,7 @@ text-align: center;
   font-weight: 400;
   font-style: normal;
   font-size: max(15px,1.3vw);
-  line-height: max(21px, 2vw); 
+  line-height: 1.6; 
   color:#405749;
   margin-bottom: 1.3vw;
 
@@ -2136,10 +2127,10 @@ text-align: center;
  .travel_blog_grid_left span {
     font-weight: 800;
     font-size: max(13px,1vw);
-    padding:1vw;
-    margin-top: 1vw;
+    padding:8px 6px;
+    margin-top: 10px;
     color: #fff;
-    padding: 0.3vw;
+ 
     background-color: #cb464f;
     border-radius: 8px;
     }
@@ -2156,24 +2147,26 @@ text-align: center;
  .travel_blog_grid_left h3 {
     font-weight: 900;
     font-size: max(15px,1.3vw);
-    line-height: max(21px, 2vw); 
-    margin-bottom: 1vw;
-    margin-top: 1vw;
+    line-height: 1.6; 
+  
+    margin-top:10px;
     }
     
  .travel_blog_grid_left img {
     width: 100%;
     border-radius: 8px;
     object-fit: cover;
-    margin-bottom:1vw ;
+    margin-bottom:10px;
+  
     }
 
-  .blog_post_left_1 span ,.blog_post_left_2 span{
+  .blog_post_left_1 span{
     font-weight: 800;
     font-size:max(13px,1vw);
     background-color: #cb464f;
     border-radius: 8px;
-    padding:0.5vw;
+    padding:8px 6px; 
+   
       
    }
    
@@ -2184,7 +2177,8 @@ text-align: center;
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    margin-bottom: 1vw;
+    align-items: center;
+    margin-bottom: 20px;
     gap: 2vw;
     }
     
@@ -2197,15 +2191,17 @@ text-align: center;
     
  .blog_post h3 {
     font-size: max(15px,1.3vw);
-   line-height: max(21px, 2vw);   
+   line-height: 1.6;   
     font-weight: 900;
-    margin-top: 1vw;
+    margin-top: 10px;
+
     }
     
   .blog_post span {
     font-size:max(13px,1vw);
     color: #fff;
-    padding: 0.5vw;
+    padding:8px 6px; 
+    margin-top: 10px;
     background-color: #cb464f;
     border-radius: 8px;
     font-weight: 800;  
@@ -2224,7 +2220,7 @@ text-align: center;
       background: rgb(232, 183, 91);
       color: #fff;
       border: none;
-      padding: 1vw 1vw;
+      padding: 10px 10px;
       border-radius: 4px;
       cursor: pointer;
       font-size: 1.2vw;
@@ -2243,8 +2239,6 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
   padding-left: 4.5vw;
   padding-right: 4.5vw;
 
@@ -2358,8 +2352,6 @@ font-weight: 400;
   bottom: 0;    /* Adjust based on where you want it */
   left: 50%;     /* Adjust based on where you want it */
   transform: translate(-50%,-50%);
-
-  
   border: none;
   border-radius: 50%;
   padding: 20px;
@@ -2389,7 +2381,7 @@ font-weight: 400;
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
 
 
 
@@ -2472,9 +2464,6 @@ display:none;
 
 
 
-.left-content-section button{
-  padding:1.5vw 1.5vw;
-}
 .main-content{
   display: flex;
   flex-direction: column;
@@ -2511,7 +2500,7 @@ text-align: center;
 .right-content-section img{
 
 width:100%;
-height:50vw;
+height:300px;
 object-fit: cover;
    
 }
@@ -2535,16 +2524,8 @@ object-fit: cover;
 }
 
 
-.Corbett_details_left button{
-
-  padding: 1.5vw 1.5vw;
-}
 
 
-.Corbett_details_right button {
-
-  padding:1.5vw;
-}
 
 
 
@@ -2615,50 +2596,59 @@ width:100%;
   }
 
 
-.Corbett_safari_zones button{
-
-  padding:1.5vw 1.5vw;
-}
 
 
 
 
 @media (max-width: 768px) {
   .hotel_ratings {
-     padding: 2vw; 
+     padding: 10px; 
    
   }
 }
 
 
+@media only screen and (min-width:540px){
 
+
+}
 
 
 
 
 .travel_blog_grid_container{
 
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap:0;
 
+  
 }
 
 
 
+figure{
 
+
+  width: 100%;
+}
 
 
 .blog_post{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+ display: flex;
+flex-direction: column;
+justify-content: center;
+gap:none
+ 
+   
 }
 
 
 .blog_post img{
 
- width: 90vw;
+ width: 100%;
+ 
 }
 
 
@@ -2731,10 +2721,29 @@ font-size: 18px;
 
 
 
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+
+  
+
+.main-icon img {
+  width: 120px;
+}
+
+.social-hamburger-icon img{
+width: 20px;
+height:20px;
+
   
 }
 
+.ham-menu span{
+
+width: 30px;
+height: 4px;
+
+}
+}
 
 @media only screen and (min-width: 900px) and (max-width:1200px) {
   

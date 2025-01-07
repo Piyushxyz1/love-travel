@@ -1,3 +1,53 @@
+
+
+// Hamburger Menu Toggle (For Mobile Screens)
+const hamMenu = document.querySelector(".ham-menu");
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+ 
+  if (window.innerWidth <= 900) {
+    hamMenu.classList.toggle("active");
+    offScreenMenu.classList.toggle("active");
+  }
+});
+
+
+
+  // Get all menu items with sub-menus
+  const menuItems = document.querySelectorAll('.menu-item'); 
+
+  menuItems.forEach(function(menuItem) {
+    // Get the sub-menu within each menu item
+    const subMenu = menuItem.querySelector('.sub-menu'); 
+
+    // Add event listener to each menu item
+    menuItem.addEventListener('click', function(event) {
+      // Prevent the default action of the link
+      event.preventDefault();
+
+      // Toggle the 'active' class on the menu item
+      menuItem.classList.toggle('active');
+
+      // If the sub-menu exists, toggle its visibility with animation using max-height
+      if (subMenu) {
+        // Check if the menu item has the 'active' class
+        if (menuItem.classList.contains('active')) {
+          // Set the submenu to its natural height (max-height for animation)
+          subMenu.style.maxHeight = subMenu.scrollHeight + 'px'; // Set to actual height
+        } else {
+          // Collapse the submenu
+          subMenu.style.maxHeight = '0'; // Animate collapse
+        }
+      }
+    });
+  });
+
+
+
+
+
+
 document.querySelector('.read-more-toggle').addEventListener('click', function() {
     var extraContent = document.querySelector('.tour-table');
     var arrow = document.querySelector('.arrow');

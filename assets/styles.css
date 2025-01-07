@@ -464,8 +464,7 @@ margin-right: 0.5vw;
   background-image: url('../assets/images/tiger2_0iten.jpeg'); /* Banner image */
   background-size: cover;
   background-position: center;
-
-  min-height: 500px;
+ height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -479,7 +478,7 @@ margin-right: 0.5vw;
   max-width: 800px;
   background-color: rgba(0, 0, 0, 0.6); /* Slight darkness behind content */
   border-radius: 10px;
-  min-height: 300px;
+ 
   display: flex;
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Center vertically */

@@ -386,6 +386,7 @@ transition:0.3s ease;
  
 .banner_section{
 position: relative;
+height:550 ;
 }
 
 
@@ -2382,8 +2383,6 @@ font-weight: 400;
 
 
 @media only screen and (max-width: 768px) {
-
-
 
 
 .main-navbar{

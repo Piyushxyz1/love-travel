@@ -52,47 +52,6 @@ document.getElementById("read-more-btn").addEventListener("click", function() {
 
 
 
-const gallery = document.querySelector('.gallery-container');
-
-let isMouseDown = false;
-let startX;
-let scrollLeft;
-
-
-gallery.addEventListener('mousedown', (e) => {
-    isMouseDown = true;
-    startX = e.pageX - gallery.offsetLeft;
-    scrollLeft = gallery.scrollLeft;      
-    gallery.style.cursor = 'pointer';      
-});
-
-
-gallery.addEventListener('mouseup', () => {
-    isMouseDown = false;
-    gallery.style.cursor = 'pointer';         
-});
-
-
-gallery.addEventListener('mouseleave', () => {
-    isMouseDown = false;
-    gallery.style.cursor = 'pointer';         
-});
-
-
-gallery.addEventListener('mousemove', (e) => {
-    if (!isMouseDown) return;  
-    e.preventDefault();        
-    
-    const x = e.pageX - gallery.offsetLeft; 
-    const walk = (x - startX) * 2;            
-    gallery.scrollLeft = scrollLeft - walk;   
-});
-
-
-
-
-
-
 
 
 
